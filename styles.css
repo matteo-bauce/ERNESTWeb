@@ -130,30 +130,13 @@ a {
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  font-size: 0;
-  position: relative;
+  color: var(--text);
 }
 
-.theme-toggle-sun::before,
-.theme-toggle-moon::before {
-  content: "";
+.theme-icon {
+  width: 18px;
+  height: 18px;
   display: block;
-}
-
-.theme-toggle-sun::before {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(255, 229, 72, 0.24);
-}
-
-.theme-toggle-moon::before {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  box-shadow: 5px -1px 0 0 var(--text);
-  background: transparent;
 }
 
 html[data-theme="light"] .theme-toggle-sun,
@@ -351,7 +334,7 @@ html[data-theme="dark"] .theme-toggle-moon {
   width: clamp(150px, 18vw, 230px);
   height: clamp(260px, 28vw, 360px);
   opacity: 0.14;
-  background-image: url("ERNEST_cat.svg");
+  background-image: url("ERNEST_cat_blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
@@ -647,6 +630,7 @@ html[data-theme="dark"] .hero-highlights li::before {
 
 html[data-theme="dark"] .hero-cat-mark {
   opacity: 0.1;
+  background-image: url("ERNEST_cat_yellow.svg");
 }
 
 html[data-theme="dark"] .card,

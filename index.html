@@ -23,7 +23,12 @@
       <header class="hero">
         <nav class="topbar">
           <a class="brand brand-logo" href="#top" aria-label="ERNEST home">
-            <img src="ERNEST_long.svg" alt="ERNEST project logo" />
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
           </a>
           <div class="topbar-actions">
             <div class="nav-links">
@@ -38,8 +43,29 @@
               aria-label="Toggle color theme"
               aria-pressed="false"
             >
-              <span class="theme-toggle-sun" aria-hidden="true">Sun</span>
-              <span class="theme-toggle-moon" aria-hidden="true">Moon</span>
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
             </button>
           </div>
         </nav>
@@ -281,11 +307,21 @@
       (() => {
         const root = document.documentElement;
         const toggle = document.querySelector(".theme-toggle");
+        const brandLogo = document.querySelector(".brand-logo img");
         if (!toggle) return;
+
+        const updateThemeAssets = (theme) => {
+          if (brandLogo) {
+            const nextSrc =
+              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
+            if (nextSrc) brandLogo.src = nextSrc;
+          }
+        };
 
         const applyTheme = (theme) => {
           root.setAttribute("data-theme", theme);
           toggle.setAttribute("aria-pressed", String(theme === "dark"));
+          updateThemeAssets(theme);
         };
 
         applyTheme(root.getAttribute("data-theme") || "light");
