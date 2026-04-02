@@ -8,6 +8,14 @@
       name="description"
       content="ERNEST is a European science outreach project bringing physics and astronomy to life through immersive escape rooms for teenagers and adults."
     />
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("ernest-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,11 +25,22 @@
           <a class="brand brand-logo" href="#top" aria-label="ERNEST home">
             <img src="ERNEST_long.svg" alt="ERNEST project logo" />
           </a>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#partners">Universities</a>
-            <a href="#events">Events</a>
-            <a href="#gallery">Gallery</a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="#about">About</a>
+              <a href="#partners">Universities</a>
+              <a href="#events">Events</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">Sun</span>
+              <span class="theme-toggle-moon" aria-hidden="true">Moon</span>
+            </button>
           </div>
         </nav>
 
@@ -258,5 +277,25 @@
         </p>
       </footer>
     </div>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        if (!toggle) return;
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          toggle.setAttribute("aria-pressed", String(theme === "dark"));
+        };
+
+        applyTheme(root.getAttribute("data-theme") || "light");
+
+        toggle.addEventListener("click", () => {
+          const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          localStorage.setItem("ernest-theme", nextTheme);
+          applyTheme(nextTheme);
+        });
+      })();
+    </script>
   </body>
 </html>
