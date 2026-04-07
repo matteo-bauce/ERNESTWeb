@@ -1,0 +1,26 @@
+name: Deploy to WebEOS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout del codice
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Installa rclone
+        run: sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
+      - name: 🚀 Copia i file su EOS (tramite WebDAV)
+        run: |
+          rclone copy ./ :webdav: \
+            --webdav-url="https://cernbox.cern.ch/cernbox/webdav/eos/home-s/sdonato/ERNEST-website/ERNESTWeb" \
+            --webdav-vendor="other" \
+            --webdav-bearer-token="${{ secrets.EOS_TOKEN }}" \
+            --exclude=".git/**" \
+            --exclude=".github/**"
