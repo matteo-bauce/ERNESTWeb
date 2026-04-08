@@ -13,7 +13,7 @@ If you spot a typo or need to update text, you can do it right here on GitHub in
 ### Step 1: Select the Correct Branch
 1. Navigate to the main page of this repository.
 2. In the top-left corner, just above the list of files, look for the branch dropdown menu (it usually says `main` by default).
-3. Ensure **`main`** is selected. *(Note: Once we implement the new workflow, you will switch this to `development` before editing).*
+3. Ensure **`main`** is selected. 
 
 ### Step 2: Open the File
 Click on the name of the file you want to edit. For example:
