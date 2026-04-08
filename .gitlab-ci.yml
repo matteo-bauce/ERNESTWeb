@@ -1,13 +1,13 @@
 deploy_to_webeos:
-  image: rclone/rclone:latest
+  stage: deploy
+  image: gitlab-registry.cern.ch/ci-tools/ci-web-deployer:latest
+  variables:
+    # La cartella locale del tuo repository da copiare ("." significa tutto il repo)
+    CI_OUTPUT_DIR: "."
+    
+    # Il percorso di destinazione esatto su WebEOS
+    EOS_PATH: "/eos/user/s/sdonato/ERNEST-website/ERNESTWeb"
   script:
-    - |
-      rclone copy ./ :webdav: \
-        --webdav-url="https://eosuser.cern.ch/eos/home-s/sdonato/ERNEST-website/ERNESTWeb" \
-        --webdav-vendor="other" \
-        --webdav-bearer-token="$EOS_TOKEN" \
-        --exclude=".git/**" \
-        --exclude=".github/**" \
-        --exclude=".gitlab-ci.yml"
+    - deploy-eos
   rules:
-    - if: $CI_COMMIT_BRANCH == "main" # Change to "master" if necessary
+    - if: $CI_COMMIT_BRANCH == "main" # Assicurati che sia il nome corretto del tuo branch principale
