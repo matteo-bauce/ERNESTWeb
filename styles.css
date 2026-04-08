@@ -327,17 +327,17 @@ html[data-theme="dark"] .theme-toggle-moon {
 }
 
 .hero-cat-mark {
-  left: -42px;
-  top: 36px;
+  left: -6px;
+  top: 42px;
   right: auto;
   bottom: auto;
-  width: clamp(150px, 18vw, 230px);
-  height: clamp(260px, 28vw, 360px);
-  opacity: 0.14;
+  width: clamp(118px, 14vw, 176px);
+  height: clamp(206px, 22vw, 278px);
+  opacity: 0.13;
   background-image: url("ERNEST_cat_blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;
+  background-position: center center;
 }
 
 .section {
@@ -957,9 +957,10 @@ html[data-theme="dark"] .footer {
   }
 
   .hero-cat-mark {
-    width: 180px;
-    height: 280px;
-    top: 56px;
+    left: 6px;
+    width: 140px;
+    height: 220px;
+    top: 60px;
     opacity: 0.12;
   }
 
@@ -1021,11 +1022,11 @@ html[data-theme="dark"] .footer {
   }
 
   .hero-cat-mark {
-    left: -28px;
-    width: 120px;
-    height: 190px;
-    top: 74px;
-    opacity: 0.11;
+    left: 2px;
+    width: 92px;
+    height: 146px;
+    top: 82px;
+    opacity: 0.1;
   }
 
   .hero-copy h1 {

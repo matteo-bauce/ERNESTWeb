@@ -30,7 +30,7 @@
      inkscape:window-x="2186"
      inkscape:window-y="30"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g38"
+     inkscape:current-layer="g18"
      showguides="true" />
   <defs
      id="defs8">
@@ -1182,7 +1182,7 @@
              fill-opacity="1"
              fill-rule="nonzero"
              id="path9"
-             style="fill:#ffffff;fill-opacity:1" />
+             style="fill:#1f2041;fill-opacity:1" />
           <path
              fill="#151516"
              d="m 29.539062,51.914062 c 0.929688,1.878907 3.199219,2.648438 3.199219,2.648438 0,0 0.753907,-2.273438 -0.175781,-4.152344 -0.933594,-1.875 -3.199219,-2.648437 -3.199219,-2.648437 0,0 -0.757812,2.273437 0.175781,4.152343"
@@ -1196,7 +1196,7 @@
              fill-opacity="1"
              fill-rule="nonzero"
              id="path11"
-             style="fill:#ffffff;fill-opacity:1" />
+             style="fill:#1f2041;fill-opacity:1" />
           <path
              fill="#151516"
              d="m 53.910156,41.222656 c 0.933594,1.878906 3.199219,2.648438 3.199219,2.648438 0,0 0.753906,-2.273438 -0.175781,-4.152344 C 56,37.84375 53.734375,37.074219 53.734375,37.074219 c 0,0 -0.757813,2.269531 0.175781,4.148437"
