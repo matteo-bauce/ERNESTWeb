@@ -35,8 +35,6 @@ Once the file is open, click the **Pencil icon ✏️** in the top right corner 
 ### Step 4: Make Your Changes
 Make your necessary text edits within the HTML. 
 
-> **💡 Pro-Tip for Content Updates:** > If you are adding a new Escape Room or a new Team Member, you don't need to write new HTML! Scroll down near the bottom of `escape-rooms.html` or `network.html` to find the `<script>` section. You will see a list of data formatted like `const rooms = [...]` or `const members = [...]`. You can simply copy an existing block (from `{` to `},`), paste it below, and change the text inside the quotes to add a new entry. The page will automatically generate the design for you!
-
 ### Step 5: Save (Commit) Your Changes
 1. Once you are happy with your edits, click the green **Commit changes...** button in the top right corner.
 2. A dialog box will appear. In the first text box, write a brief, descriptive message explaining what you changed (e.g., *"Added the Gravity Lab escape room"* or *"Fixed a typo in the About section"*).
