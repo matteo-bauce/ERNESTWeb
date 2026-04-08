@@ -254,11 +254,13 @@ html[data-theme="dark"] .theme-toggle-moon {
   content: "";
   position: absolute;
   left: 0;
-  top: 11px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent-strong);
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url("Star_blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-copy-full {
@@ -278,18 +280,11 @@ html[data-theme="dark"] .theme-toggle-moon {
 .star {
   position: absolute;
   display: block;
-  background: rgba(255, 229, 72, 0.95);
-  filter: drop-shadow(0 0 18px rgba(255, 229, 72, 0.52));
-  clip-path: polygon(
-    50% 0%,
-    60% 38%,
-    100% 50%,
-    60% 62%,
-    50% 100%,
-    40% 62%,
-    0% 50%,
-    40% 38%
-  );
+  background-image: url("Star_blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 0 18px rgba(31, 32, 65, 0.12));
 }
 
 .star-xl {
@@ -854,12 +849,17 @@ html[data-theme="dark"] .theme-toggle {
 }
 
 html[data-theme="dark"] .hero-highlights li::before {
-  background: #c1126b;
+  background-image: url("Star_yellow.svg");
 }
 
 html[data-theme="dark"] .hero-cat-mark {
   opacity: 0.1;
   background-image: url("ERNEST_cat_yellow.svg");
+}
+
+html[data-theme="dark"] .star {
+  background-image: url("Star_yellow.svg");
+  filter: drop-shadow(0 0 18px rgba(255, 229, 72, 0.28));
 }
 
 html[data-theme="dark"] .card,
