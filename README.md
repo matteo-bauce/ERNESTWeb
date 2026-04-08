@@ -6,12 +6,11 @@ This repository contains the HTML, CSS, and asset files that power the website. 
 
 ---
 
-## ⚠️ Important: Branching Strategy
+## Branching Strategy
 
 To keep our live website stable, we follow a specific workflow for updates:
 
 * **CURRENTLY:** Please select and commit your changes directly to the **`main`** branch. 
-* **UPCOMING CHANGE:** Soon, we will introduce a **`development`** branch. Once that branch is active, you will need to select `development` to make your edits. We will then use **Pull Requests (PRs)** to safely merge your changes from `development` into `main` to update the official live website. 
 
 ---
 
