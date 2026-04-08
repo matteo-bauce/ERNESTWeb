@@ -6,14 +6,6 @@ This repository contains the HTML, CSS, and asset files that power the website. 
 
 ---
 
-## Branching Strategy
-
-To keep our live website stable, we follow a specific workflow for updates:
-
-* **CURRENTLY:** Please select and commit your changes directly to the **`main`** branch. 
-
----
-
 ## 🛠️ How to Edit Files Directly on GitHub (Browser)
 
 If you spot a typo or need to update text, you can do it right here on GitHub in just a few clicks.
