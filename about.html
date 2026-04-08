@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About ERNEST | The Project Behind the Game</title>
+    <meta
+      name="description"
+      content="Discover the ERNEST project, its mission, methodology, work packages, and long-term impact on science engagement."
+    />
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("ernest-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html" aria-current="page">About ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">The Network</a>
+              <a href="index.html#events">Events</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">About ERNEST</p>
+            <h1>The Project Behind the Game</h1>
+            <p class="lead">
+              ERNEST combines science communication, live storytelling, and game-based design to make
+              research feel accessible, social, and memorable for diverse audiences across Europe.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Project overview</p>
+            <h2>An outreach framework built around curiosity, participation, and collaboration.</h2>
+          </div>
+
+          <div class="content-grid">
+            <article class="card card-large">
+              <h3>Why ERNEST exists</h3>
+              <p>
+                ERNEST was designed to translate complex scientific topics into experiences that feel
+                inviting rather than intimidating. Instead of presenting research only through talks or
+                exhibitions, the project turns learning into a shared mission where players investigate,
+                interpret evidence, solve puzzles, and discuss ideas together.
+              </p>
+              <p>
+                The escape room format helps create a strong emotional memory: participants are not only
+                told about science, they actively use observation, teamwork, logic, and experimental
+                thinking while moving through a story-driven environment.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Core mission</h3>
+              <p>
+                Connect research communities with teenagers, adults, schools, and the wider public
+                through immersive experiences inspired by physics and astronomy.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>What makes it different</h3>
+              <p>
+                ERNEST blends scientific content, scenography, facilitation, and game design into a
+                replicable format that can travel across institutions and public events.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section feature-band">
+          <div class="feature-band-copy">
+            <p class="section-kicker">How it works</p>
+            <h2>A project method built on co-design, testing, and public activation.</h2>
+          </div>
+          <div class="feature-points">
+            <article>
+              <span class="feature-number">01</span>
+              <h3>Scientific translation</h3>
+              <p>Research topics are converted into clues, mechanics, and stories without losing rigor.</p>
+            </article>
+            <article>
+              <span class="feature-number">02</span>
+              <h3>Prototype and test</h3>
+              <p>Rooms are trialed with audiences to balance accessibility, pacing, and educational value.</p>
+            </article>
+            <article>
+              <span class="feature-number">03</span>
+              <h3>Public deployment</h3>
+              <p>Experiences are activated during outreach events, festivals, university programmes, and schools.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Work areas</p>
+            <h2>Sections ready for the detailed project description.</h2>
+            <p class="section-note">
+              These blocks can be expanded with official text, milestones, deliverables, and timeline details.
+            </p>
+          </div>
+
+          <div class="detail-grid">
+            <article class="detail-card">
+              <h3>Objectives</h3>
+              <p>
+                Explain the educational, social, and dissemination goals of ERNEST, including the
+                audiences to reach and the long-term benefits for public engagement with science.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Methodology</h3>
+              <p>
+                Describe the design process, the collaboration between researchers and creative teams,
+                and the criteria used to evaluate impact and accessibility.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Timeline</h3>
+              <p>
+                Add the key phases of the project here: planning, production, piloting, dissemination,
+                and participation in the European Researchers' Night.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Expected impact</h3>
+              <p>
+                Present how ERNEST can improve science literacy, encourage dialogue with researchers,
+                and strengthen institutional cooperation in outreach.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Connected pages</p>
+            <h2>Use the site as a modular project presentation.</h2>
+          </div>
+
+          <div class="story-links">
+            <article class="story-link-card">
+              <p class="story-link-label">Catalogue</p>
+              <h3>Explore the rooms</h3>
+              <p>Move from the project overview to the playable experiences and compare their features.</p>
+              <a class="text-link" href="escape-rooms.html">Open The Escape Rooms</a>
+            </article>
+            <article class="story-link-card">
+              <p class="story-link-label">Consortium</p>
+              <h3>Meet the network</h3>
+              <p>Introduce the institutions, staff, facilitators, and researchers contributing to ERNEST.</p>
+              <a class="text-link" href="network.html">Open The Network</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ERNEST • European Researchers' Night Escape Science Team</p>
+        <p>
+          About page template for the full narrative, objectives, and impact of the ERNEST project.
+        </p>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        const brandLogo = document.querySelector(".brand-logo img");
+        if (!toggle) return;
+
+        const updateThemeAssets = (theme) => {
+          if (brandLogo) {
+            const nextSrc =
+              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
+            if (nextSrc) brandLogo.src = nextSrc;
+          }
+        };
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          toggle.setAttribute("aria-pressed", String(theme === "dark"));
+          updateThemeAssets(theme);
+        };
+
+        applyTheme(root.getAttribute("data-theme") || "light");
+
+        toggle.addEventListener("click", () => {
+          const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          localStorage.setItem("ernest-theme", nextTheme);
+          applyTheme(nextTheme);
+        });
+      })();
+    </script>
+  </body>
+</html>

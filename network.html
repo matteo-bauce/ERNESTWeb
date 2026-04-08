@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Network | Meet the Team</title>
+    <meta
+      name="description"
+      content="Meet the institutions and team members behind ERNEST through a modular network page with an automatically generated members gallery."
+    />
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("ernest-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html" aria-current="page">The Network</a>
+              <a href="index.html#events">Events</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">The Network</p>
+            <h1>Meet the Team</h1>
+            <p class="lead">
+              A modular overview of the institutions, researchers, facilitators, and creative profiles
+              shaping ERNEST across the project network.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Institutions</p>
+            <h2>The organizations that design, host, and support ERNEST.</h2>
+          </div>
+
+          <div class="institutions-grid">
+            <article class="detail-card">
+              <h3>Lead institution</h3>
+              <p>
+                Introduce the coordinating organization here, outlining project leadership, management,
+                and the main scientific or dissemination responsibilities.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Academic partners</h3>
+              <p>
+                Add universities, departments, and laboratories contributing scientific content, public
+                engagement expertise, and local event organization.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Cultural partners</h3>
+              <p>
+                Present museums, observatories, science centers, and civic partners involved in hosting
+                experiences and extending audience reach.
+              </p>
+            </article>
+            <article class="detail-card">
+              <h3>Local collaborators</h3>
+              <p>
+                Reserve this section for schools, associations, and community partners supporting
+                deployment, testing, or regional dissemination.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Members gallery</p>
+            <h2>An automatically generated team showcase ready for future photos.</h2>
+            <p class="section-note">
+              Update the dataset in the page script to add or reorder members; image placeholders can be
+              replaced later with real profile photos.
+            </p>
+          </div>
+
+          <div class="members-grid" id="members-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ERNEST • European Researchers' Night Escape Science Team</p>
+        <p>
+          Network page template for institutions and a data-driven members gallery that can grow over time.
+        </p>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        const brandLogo = document.querySelector(".brand-logo img");
+
+        const updateThemeAssets = (theme) => {
+          if (brandLogo) {
+            const nextSrc =
+              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
+            if (nextSrc) brandLogo.src = nextSrc;
+          }
+        };
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          if (toggle) toggle.setAttribute("aria-pressed", String(theme === "dark"));
+          updateThemeAssets(theme);
+        };
+
+        applyTheme(root.getAttribute("data-theme") || "light");
+
+        if (toggle) {
+          toggle.addEventListener("click", () => {
+            const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            localStorage.setItem("ernest-theme", nextTheme);
+            applyTheme(nextTheme);
+          });
+        }
+
+        const members = [
+          {
+            name: "Project Coordinator",
+            role: "Scientific Lead",
+            institution: "Lead University",
+            bio: "Coordinates the project vision, partnership workflow, and integration between research content and public engagement.",
+          },
+          {
+            name: "Outreach Designer",
+            role: "Engagement Specialist",
+            institution: "Partner University",
+            bio: "Shapes visitor journeys, accessibility strategies, and facilitation methods for schools and public events.",
+          },
+          {
+            name: "Game Experience Lead",
+            role: "Escape Room Designer",
+            institution: "Creative Partner",
+            bio: "Develops puzzle structures, narrative arcs, and interactive mechanics inspired by scientific investigation.",
+          },
+          {
+            name: "Research Liaison",
+            role: "Physics and Astronomy Content",
+            institution: "Research Centre",
+            bio: "Connects active research topics with the educational goals of each escape room experience.",
+          },
+          {
+            name: "Local Event Coordinator",
+            role: "Community Partnerships",
+            institution: "Associate Partner",
+            bio: "Supports local hosting, institutional relations, and event logistics across partner cities.",
+          },
+          {
+            name: "Evaluation Officer",
+            role: "Impact and Assessment",
+            institution: "Lead University",
+            bio: "Collects feedback, documents participation outcomes, and helps refine future iterations of ERNEST activities.",
+          },
+        ];
+
+        const membersGrid = document.querySelector("#members-grid");
+
+        members.forEach((member) => {
+          const card = document.createElement("article");
+          card.className = "member-card";
+          card.innerHTML = `
+            <div class="member-photo" aria-hidden="true">
+              <span>${member.name
+                .split(" ")
+                .map((part) => part[0])
+                .join("")
+                .slice(0, 2)}</span>
+            </div>
+            <div class="member-copy">
+              <p class="story-link-label">${member.role}</p>
+              <h3>${member.name}</h3>
+              <p class="member-institution">${member.institution}</p>
+              <p>${member.bio}</p>
+            </div>
+          `;
+          membersGrid.append(card);
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Escape Rooms | Play &amp; Explore</title>
+    <meta
+      name="description"
+      content="Browse the ERNEST escape rooms, filter them by characteristics, and manage a modular catalogue of participating experiences."
+    />
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("ernest-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About ERNEST</a>
+              <a href="escape-rooms.html" aria-current="page">Escape Rooms</a>
+              <a href="network.html">The Network</a>
+              <a href="index.html#events">Events</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">The Escape Rooms</p>
+            <h1>Play &amp; Explore</h1>
+            <p class="lead">
+              A filterable catalogue of ERNEST experiences, designed so each participating team can
+              present its escape room in the same format while keeping its own identity.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Room profile template</p>
+            <h2>A modular structure every escape room can fill in.</h2>
+            <p class="section-note">
+              Use this template to keep descriptions consistent when partners start adding official content.
+            </p>
+          </div>
+
+          <div class="template-grid">
+            <article class="detail-card">
+              <h3>Basic info</h3>
+              <p>Room title, hosting institution, city, country, and short teaser description.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Audience and access</h3>
+              <p>Recommended age, language availability, duration, accessibility notes, and team size.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Scientific identity</h3>
+              <p>Main theme, disciplines involved, learning goals, and links to featured research topics.</p>
+            </article>
+            <article class="detail-card">
+              <h3>Format and logistics</h3>
+              <p>Installation type, indoor or traveling setup, facilitator needs, and booking information.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Browse the catalogue</p>
+            <h2>Filter participating escape rooms by their key characteristics.</h2>
+          </div>
+
+          <div class="filters-panel">
+            <div class="filter-field">
+              <label for="filter-language">Language</label>
+              <select id="filter-language">
+                <option value="all">All languages</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-city">City</label>
+              <select id="filter-city">
+                <option value="all">All cities</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-theme">Theme</label>
+              <select id="filter-theme">
+                <option value="all">All themes</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-format">Format</label>
+              <select id="filter-format">
+                <option value="all">All formats</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="filter-summary" id="rooms-count"></p>
+          <div class="rooms-grid" id="rooms-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ERNEST • European Researchers' Night Escape Science Team</p>
+        <p>
+          Escape room catalogue template with filters for language, city, theme, and participation format.
+        </p>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        const brandLogo = document.querySelector(".brand-logo img");
+
+        const updateThemeAssets = (theme) => {
+          if (brandLogo) {
+            const nextSrc =
+              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
+            if (nextSrc) brandLogo.src = nextSrc;
+          }
+        };
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          if (toggle) toggle.setAttribute("aria-pressed", String(theme === "dark"));
+          updateThemeAssets(theme);
+        };
+
+        applyTheme(root.getAttribute("data-theme") || "light");
+
+        if (toggle) {
+          toggle.addEventListener("click", () => {
+            const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            localStorage.setItem("ernest-theme", nextTheme);
+            applyTheme(nextTheme);
+          });
+        }
+
+        const rooms = [
+          {
+            title: "Cosmic Signals",
+            host: "Lead University",
+            city: "Bologna",
+            country: "Italy",
+            language: ["English", "Italian"],
+            theme: "Astronomy",
+            format: "On-site",
+            audience: "Teenagers and adults",
+            duration: "45 minutes",
+            teamSize: "4-6 players",
+            description:
+              "Participants decode messages from deep space while learning how astronomers interpret light, distance, and cosmic events.",
+          },
+          {
+            title: "The Quantum Vault",
+            host: "Partner University",
+            city: "Barcelona",
+            country: "Spain",
+            language: ["English", "Spanish"],
+            theme: "Physics",
+            format: "Traveling",
+            audience: "Schools and public events",
+            duration: "50 minutes",
+            teamSize: "5-7 players",
+            description:
+              "A portable room about particles, uncertainty, and measurement, designed for festivals and campus outreach programmes.",
+          },
+          {
+            title: "Gravity Lab",
+            host: "Research Centre",
+            city: "Paris",
+            country: "France",
+            language: ["English", "French"],
+            theme: "Space exploration",
+            format: "On-site",
+            audience: "Families and adults",
+            duration: "40 minutes",
+            teamSize: "3-6 players",
+            description:
+              "Players restore control to a mission simulator by solving challenges linked to orbits, trajectories, and planetary science.",
+          },
+          {
+            title: "Light Hunters",
+            host: "Associate Partner",
+            city: "Prague",
+            country: "Czech Republic",
+            language: ["English"],
+            theme: "Optics",
+            format: "Hybrid",
+            audience: "Secondary schools",
+            duration: "35 minutes",
+            teamSize: "4-5 players",
+            description:
+              "A compact format about lenses, spectra, and observation tools, suitable for classrooms and public demonstrations.",
+          },
+        ];
+
+        const filters = {
+          language: document.querySelector("#filter-language"),
+          city: document.querySelector("#filter-city"),
+          theme: document.querySelector("#filter-theme"),
+          format: document.querySelector("#filter-format"),
+        };
+        const roomsGrid = document.querySelector("#rooms-grid");
+        const roomsCount = document.querySelector("#rooms-count");
+
+        const uniqueValues = (key) => {
+          const values = rooms.flatMap((room) => room[key]);
+          return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+        };
+
+        const populateSelect = (select, values) => {
+          values.forEach((value) => {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = value;
+            select.append(option);
+          });
+        };
+
+        populateSelect(filters.language, uniqueValues("language"));
+        populateSelect(filters.city, uniqueValues("city"));
+        populateSelect(filters.theme, uniqueValues("theme"));
+        populateSelect(filters.format, uniqueValues("format"));
+
+        const matchesFilter = (room, key, value) => {
+          if (value === "all") return true;
+          const field = room[key];
+          return Array.isArray(field) ? field.includes(value) : field === value;
+        };
+
+        const renderRooms = () => {
+          const activeFilters = {
+            language: filters.language.value,
+            city: filters.city.value,
+            theme: filters.theme.value,
+            format: filters.format.value,
+          };
+
+          const filteredRooms = rooms.filter((room) =>
+            Object.entries(activeFilters).every(([key, value]) => matchesFilter(room, key, value))
+          );
+
+          roomsCount.textContent =
+            filteredRooms.length === 1
+              ? "1 escape room matches the current filters."
+              : `${filteredRooms.length} escape rooms match the current filters.`;
+
+          roomsGrid.innerHTML = "";
+
+          filteredRooms.forEach((room) => {
+            const card = document.createElement("article");
+            card.className = "room-card";
+
+            const languageTags = room.language
+              .map((item) => `<span class="tag">${item}</span>`)
+              .join("");
+
+            card.innerHTML = `
+              <div class="room-card-head">
+                <p class="story-link-label">${room.theme}</p>
+                <h3>${room.title}</h3>
+                <p>${room.description}</p>
+              </div>
+              <div class="room-meta">
+                <p><strong>Host</strong><span>${room.host}</span></p>
+                <p><strong>Location</strong><span>${room.city}, ${room.country}</span></p>
+                <p><strong>Audience</strong><span>${room.audience}</span></p>
+                <p><strong>Duration</strong><span>${room.duration}</span></p>
+                <p><strong>Team size</strong><span>${room.teamSize}</span></p>
+                <p><strong>Format</strong><span>${room.format}</span></p>
+              </div>
+              <div class="tag-row">
+                ${languageTags}
+              </div>
+            `;
+
+            roomsGrid.append(card);
+          });
+
+          if (!filteredRooms.length) {
+            roomsGrid.innerHTML = `
+              <article class="room-card room-card-empty">
+                <h3>No rooms match this combination yet.</h3>
+                <p>Try a broader filter selection or add more room entries to the dataset.</p>
+              </article>
+            `;
+          }
+        };
+
+        Object.values(filters).forEach((select) => {
+          select.addEventListener("change", renderRooms);
+        });
+
+        renderRooms();
+      })();
+    </script>
+  </body>
+</html>
