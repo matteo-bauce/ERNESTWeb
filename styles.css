@@ -1131,5 +1131,14 @@ html[data-theme="dark"] .footer {
   justify-content: space-between;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  .people-card-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .people-text {
+    text-align: center;
+  }
+}
 
