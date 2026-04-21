@@ -1079,9 +1079,18 @@ html[data-theme="dark"] .footer {
   margin: 0 auto;
 }
 .people-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
   display: grid;
   gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+
 
 .people-card-head p:last-child {
   margin-bottom: 0;
@@ -1139,11 +1148,7 @@ html[data-theme="dark"] .footer {
   display: block;
 }
 
-.people-card {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
+
 
 @media (max-width: 768px) {
   .people-card-content {
