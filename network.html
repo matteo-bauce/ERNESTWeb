@@ -368,14 +368,14 @@
 
           filteredPeople.forEach((people) => {
             const card = document.createElement("article");
-            card.className = "room-card";
+            card.className = "people-card";
 
             const institutionTags = people.institution
               .map((item) => `<span class="tag">${item}</span>`)
               .join("");
 
             card.innerHTML = `
-              <div class="room-card-head">
+              <div class="people-card-head">
                 <p class="story-link-label">${people.topic}</p>
                 <h3>${people.name}</h3>
                 <p>${people.description}</p>
@@ -395,9 +395,9 @@
 
           if (!filteredPeople.length) {
             peopleGrid.innerHTML = `
-              <article class="room-card room-card-empty">
+              <article class="people-card people-card-empty">
                 <h3>No team members match this combination yet.</h3>
-                <p>Try a broader filter selection or add more room entries to the dataset.</p>
+                <p>Try a broader filter selection or add more people entries to the dataset.</p>
               </article>
             `;
           }
