@@ -1124,10 +1124,11 @@ html[data-theme="dark"] .footer {
 
 .people-card-content {
   display: grid;
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 1fr auto;  
   align-items: center;
   gap: 2rem;
   width: 100%;
+  padding: 2rem;   
 }
 
 .people-text {
@@ -1163,7 +1164,8 @@ html[data-theme="dark"] .footer {
     order: -1;
   }
 }
-#people-grid {
+
+.people-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 2rem;
