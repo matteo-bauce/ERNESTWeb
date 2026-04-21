@@ -373,22 +373,31 @@
 
             const institutionTags = `<span class="tag">${people.institution}</span>`;
 
-            card.innerHTML = `
-              <div class="people-card-head">
-                <img src="${people.image}" alt="${people.name}" class="people-photo">
-                <p class="story-link-label">${people.topic}</p>
-                <h3>${people.name}</h3>
-                <p>${people.description}</p>
-              </div>
-              <div class="people-meta">
-                <p><strong>Institution</strong><span>${people.institution}</span></p>
-                <p><strong>Location</strong><span>${people.city}, ${people.country}</span></p>
-                <p><strong>Research field</strong><span>${people.topic}</span></p>
-              </div>
-              <div class="tag-row">
-                ${institutionTags}
-              </div>
-            `;
+           card.innerHTML = `
+    <div class="people-card-content">
+    
+    <div class="people-text">
+      <p class="story-link-label">${people.topic}</p>
+      <h3>${people.name}</h3>
+      <p>${people.description}</p>
+
+      <div class="people-meta">
+        <p><strong>Institution</strong><span>${people.institution}</span></p>
+        <p><strong>Location</strong><span>${people.city}, ${people.country}</span></p>
+        <p><strong>Research field</strong><span>${people.topic}</span></p>
+      </div>
+
+      <div class="tag-row">
+        <span class="tag">${people.institution}</span>
+      </div>
+    </div>
+
+    <div class="people-image">
+      <img src="${people.image}" alt="${people.name}" class="people-photo">
+    </div>
+
+  </div>
+`;
 
             peopleGrid.append(card);
           });
