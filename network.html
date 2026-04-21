@@ -318,7 +318,7 @@
         const peopleCount = document.querySelector("#people-count");
 
         const uniqueValues = (key) => {
-          const values = rooms.flatMap((people) => people[key]);
+          const values = people.flatMap((people) => people[key]);
           return [...new Set(values)].sort((a, b) => a.localeCompare(b));
         };
 
@@ -361,7 +361,7 @@
             const card = document.createElement("article");
             card.className = "room-card";
 
-            const institutionTags = room.institution
+            const institutionTags = people.institution
               .map((item) => `<span class="tag">${item}</span>`)
               .join("");
 
