@@ -1112,10 +1112,24 @@ html[data-theme="dark"] .footer {
     grid-template-columns: 1fr;
   }
 .people-photo {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 50%; /* makes it circular */
-  display: block;
-  margin: 0 auto 1rem;
+  border-radius: 50%;
 }
+.people-image {
+  flex-shrink: 0;
+}
+.people-text {
+  flex: 1;
+  text-align: left;
+}
+
+.people-card-content {
+  display: flex;
+  align-items: center;       /* vertical alignment */
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
