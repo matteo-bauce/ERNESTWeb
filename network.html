@@ -370,9 +370,8 @@
             const card = document.createElement("article");
             card.className = "people-card";
 
-            const institutionTags = people.institution
-              .map((item) => `<span class="tag">${item}</span>`)
-              .join("");
+
+            const institutionTags = `<span class="tag">${people.institution}</span>`;
 
             card.innerHTML = `
               <div class="people-card-head">
