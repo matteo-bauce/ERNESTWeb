@@ -1141,4 +1141,9 @@ html[data-theme="dark"] .footer {
     text-align: center;
   }
 }
-
+.people-card-content {
+  align-items: flex-start;
+}
+.people-card-content {
+  align-items: flex-start;
+}
