@@ -1111,3 +1111,11 @@ html[data-theme="dark"] .footer {
  .people-meta {
     grid-template-columns: 1fr;
   }
+.people-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  display: block;
+  margin: 0 auto 1rem;
+}
