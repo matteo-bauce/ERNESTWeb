@@ -239,33 +239,21 @@
 
             <div class="filters-panel">
             <div class="filter-field">
-              <label for="filter-language">Language</label>
-              <select id="filter-language">
-                <option value="all">All languages</option>
+              <label for="filter-institution">Institution</label>
+              <select id="filter-institution">
+                <option value="all">All institutions</option>
               </select>
             </div>
             <div class="filter-field">
-              <label for="filter-city">City</label>
-              <select id="filter-city">
-                <option value="all">All cities</option>
-              </select>
-            </div>
-            <div class="filter-field">
-              <label for="filter-theme">Theme</label>
-              <select id="filter-theme">
-                <option value="all">All themes</option>
-              </select>
-            </div>
-            <div class="filter-field">
-              <label for="filter-format">Format</label>
-              <select id="filter-format">
-                <option value="all">All formats</option>
+              <label for="filter-topic">Research topic</label>
+              <select id="filter-topic">
+                <option value="all">All research topics</option>
               </select>
             </div>
           </div>
 
-          <p class="filter-summary" id="rooms-count"></p>
-          <div class="rooms-grid" id="rooms-grid"></div>
+          <p class="filter-summary" id="people-count"></p>
+          <div class="people-grid" id="people-grid"></div>
           
 
           
@@ -311,76 +299,26 @@
           });
         }
 
-        const rooms = [
+        const people = [
           {
-            title: "Cosmic Signals",
-            host: "Lead University",
-            city: "Bologna",
+            Name: "Livia Soffi",
+            institution: "INFN",
+            city: "Rome",
             country: "Italy",
-            language: ["English", "Italian"],
-            theme: "Astronomy",
-            format: "On-site",
-            audience: "Teenagers and adults",
-            duration: "45 minutes",
-            teamSize: "4-6 players",
-            description:
-              "Participants decode messages from deep space while learning how astronomers interpret light, distance, and cosmic events.",
-          },
-          {
-            title: "The Quantum Vault",
-            host: "Partner University",
-            city: "Barcelona",
-            country: "Spain",
-            language: ["English", "Spanish"],
-            theme: "Physics",
-            format: "Traveling",
-            audience: "Schools and public events",
-            duration: "50 minutes",
-            teamSize: "5-7 players",
-            description:
-              "A portable room about particles, uncertainty, and measurement, designed for festivals and campus outreach programmes.",
-          },
-          {
-            title: "Gravity Lab",
-            host: "Research Centre",
-            city: "Paris",
-            country: "France",
-            language: ["English", "French"],
-            theme: "Space exploration",
-            format: "On-site",
-            audience: "Families and adults",
-            duration: "40 minutes",
-            teamSize: "3-6 players",
-            description:
-              "Players restore control to a mission simulator by solving challenges linked to orbits, trajectories, and planetary science.",
-          },
-          {
-            title: "Light Hunters",
-            host: "Associate Partner",
-            city: "Prague",
-            country: "Czech Republic",
-            language: ["English"],
-            theme: "Optics",
-            format: "Hybrid",
-            audience: "Secondary schools",
-            duration: "35 minutes",
-            teamSize: "4-5 players",
-            description:
-              "A compact format about lenses, spectra, and observation tools, suitable for classrooms and public demonstrations.",
-          },
+            topic: "Physics",
+             },
+       
         ];
 
         const filters = {
-          language: document.querySelector("#filter-language"),
-          city: document.querySelector("#filter-city"),
-          theme: document.querySelector("#filter-theme"),
-          format: document.querySelector("#filter-format"),
+          institution: document.querySelector("#filter-institution"),
+          topic: document.querySelector("#filter-topic"),
         };
-        const roomsGrid = document.querySelector("#rooms-grid");
-        const roomsCount = document.querySelector("#rooms-count");
+        const peopleGrid = document.querySelector("#people-grid");
+        const peopleCount = document.querySelector("#people-count");
 
         const uniqueValues = (key) => {
-          const values = rooms.flatMap((room) => room[key]);
+          const values = rooms.flatMap((people) => people[key]);
           return [...new Set(values)].sort((a, b) => a.localeCompare(b));
         };
 
@@ -393,70 +331,63 @@
           });
         };
 
-        populateSelect(filters.language, uniqueValues("language"));
-        populateSelect(filters.city, uniqueValues("city"));
-        populateSelect(filters.theme, uniqueValues("theme"));
-        populateSelect(filters.format, uniqueValues("format"));
-
-        const matchesFilter = (room, key, value) => {
+        populateSelect(filters.institution, uniqueValues("institution"));
+        populateSelect(filters.topic, uniqueValues("topic"));
+   
+        const matchesFilter = (people, key, value) => {
           if (value === "all") return true;
-          const field = room[key];
+          const field = people[key];
           return Array.isArray(field) ? field.includes(value) : field === value;
         };
 
-        const renderRooms = () => {
+        const renderPeople = () => {
           const activeFilters = {
-            language: filters.language.value,
-            city: filters.city.value,
-            theme: filters.theme.value,
-            format: filters.format.value,
+            institution: filters.institution.value,
+            topic: filters.topic.value,
           };
 
-          const filteredRooms = rooms.filter((room) =>
-            Object.entries(activeFilters).every(([key, value]) => matchesFilter(room, key, value))
+          const filteredPeople = people.filter((people) =>
+            Object.entries(activeFilters).every(([key, value]) => matchesFilter(people, key, value))
           );
 
-          roomsCount.textContent =
-            filteredRooms.length === 1
-              ? "1 escape room matches the current filters."
-              : `${filteredRooms.length} escape rooms match the current filters.`;
+          peopleCount.textContent =
+            filteredPeople.length === 1
+              ? "1 team member matches the current filters."
+              : `${filteredPeople.length} team members match the current filters.`;
 
-          roomsGrid.innerHTML = "";
+          peopleGrid.innerHTML = "";
 
-          filteredRooms.forEach((room) => {
+          filteredPeople.forEach((people) => {
             const card = document.createElement("article");
             card.className = "room-card";
 
-            const languageTags = room.language
+            const institutionTags = room.institution
               .map((item) => `<span class="tag">${item}</span>`)
               .join("");
 
             card.innerHTML = `
               <div class="room-card-head">
-                <p class="story-link-label">${room.theme}</p>
-                <h3>${room.title}</h3>
-                <p>${room.description}</p>
+                <p class="story-link-label">${people.theme}</p>
+                <h3>${people.title}</h3>
+                <p>${people.description}</p>
               </div>
-              <div class="room-meta">
-                <p><strong>Host</strong><span>${room.host}</span></p>
-                <p><strong>Location</strong><span>${room.city}, ${room.country}</span></p>
-                <p><strong>Audience</strong><span>${room.audience}</span></p>
-                <p><strong>Duration</strong><span>${room.duration}</span></p>
-                <p><strong>Team size</strong><span>${room.teamSize}</span></p>
-                <p><strong>Format</strong><span>${room.format}</span></p>
+              <div class="people-meta">
+                <p><strong>Host</strong><span>${people.institution}</span></p>
+                <p><strong>Location</strong><span>${people.city}, ${people.country}</span></p>
+                <p><strong>Audience</strong><span>${people.topic}</span></p>
               </div>
               <div class="tag-row">
                 ${languageTags}
               </div>
             `;
 
-            roomsGrid.append(card);
+            peopleGrid.append(card);
           });
 
-          if (!filteredRooms.length) {
-            roomsGrid.innerHTML = `
+          if (!filteredPeople.length) {
+            peopleGrid.innerHTML = `
               <article class="room-card room-card-empty">
-                <h3>No rooms match this combination yet.</h3>
+                <h3>No team members match this combination yet.</h3>
                 <p>Try a broader filter selection or add more room entries to the dataset.</p>
               </article>
             `;
@@ -464,10 +395,10 @@
         };
 
         Object.values(filters).forEach((select) => {
-          select.addEventListener("change", renderRooms);
+          select.addEventListener("change", renderPeople);
         });
 
-        renderRooms();
+        renderPeople();
       })();
     </script>   
     
