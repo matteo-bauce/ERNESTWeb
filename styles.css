@@ -1050,7 +1050,12 @@ html[data-theme="dark"] .footer {
   }
 
 }
-
+/* below are added by LS */
+.institutions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 1.5rem; /* space between cards */
+}
 .institution-card {
   text-align: center;
   padding: 1.5rem;
