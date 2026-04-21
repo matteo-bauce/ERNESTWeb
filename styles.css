@@ -1141,6 +1141,7 @@ html[data-theme="dark"] .footer {
 
 .people-card {
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -1156,4 +1157,9 @@ html[data-theme="dark"] .footer {
   .people-image {
     order: -1;
   }
+}
+#people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2rem;
 }
