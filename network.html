@@ -301,11 +301,12 @@
 
         const people = [
           {
-            Name: "Livia Soffi",
+            name: "Livia Soffi",
             institution: "INFN",
             city: "Rome",
             country: "Italy",
             topic: "Physics",
+            description: "blablabla",
              },
        
         ];
@@ -367,8 +368,8 @@
 
             card.innerHTML = `
               <div class="room-card-head">
-                <p class="story-link-label">${people.theme}</p>
-                <h3>${people.title}</h3>
+                <p class="story-link-label">${people.topic}</p>
+                <h3>${people.name}</h3>
                 <p>${people.description}</p>
               </div>
               <div class="people-meta">
@@ -377,7 +378,7 @@
                 <p><strong>Audience</strong><span>${people.topic}</span></p>
               </div>
               <div class="tag-row">
-                ${languageTags}
+                ${institutionTags}
               </div>
             `;
 
