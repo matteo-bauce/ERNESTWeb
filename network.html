@@ -235,8 +235,6 @@
             </p>
           </div>
 
-     <!--     <div class="members-grid" id="members-grid"></div> -->
-
             <div class="filters-panel">
             <div class="filter-field">
               <label for="filter-institution">Institution</label>
@@ -307,7 +305,7 @@
             country: "Italy",
             topic: "Physics",
             description: "blablabla",
-            image: "network_img/team/livia.jpg"
+            image: "network_img/Team/livia.png"
              },
           {
             name: "Maura Sandri",
@@ -316,7 +314,7 @@
             country: "Italy",
             topic: "Astrophysics & Space",
             description: "blablabla",
-            image: "network_img/team/maura.jpg"
+            image: "network_img/Team/maura.jpg"
              },
        
         ];
@@ -413,100 +411,5 @@
       })();
     </script>   
     
-    <!--
-     <script>
-      (() => {
-        const root = document.documentElement;
-        const toggle = document.querySelector(".theme-toggle");
-        const brandLogo = document.querySelector(".brand-logo img");
-
-        const updateThemeAssets = (theme) => {
-          if (brandLogo) {
-            const nextSrc =
-              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
-            if (nextSrc) brandLogo.src = nextSrc;
-          }
-        };
-
-        const applyTheme = (theme) => {
-          root.setAttribute("data-theme", theme);
-          if (toggle) toggle.setAttribute("aria-pressed", String(theme === "dark"));
-          updateThemeAssets(theme);
-        };
-
-        applyTheme(root.getAttribute("data-theme") || "light");
-
-        if (toggle) {
-          toggle.addEventListener("click", () => {
-            const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-            localStorage.setItem("ernest-theme", nextTheme);
-            applyTheme(nextTheme);
-          });
-        }
-
-        const members = [
-          {
-            name: "Project Coordinator",
-            role: "Scientific Lead",
-            institution: "Lead University",
-            bio: "Coordinates the project vision, partnership workflow, and integration between research content and public engagement.",
-          },
-          {
-            name: "Outreach Designer",
-            role: "Engagement Specialist",
-            institution: "Partner University",
-            bio: "Shapes visitor journeys, accessibility strategies, and facilitation methods for schools and public events.",
-          },
-          {
-            name: "Game Experience Lead",
-            role: "Escape Room Designer",
-            institution: "Creative Partner",
-            bio: "Develops puzzle structures, narrative arcs, and interactive mechanics inspired by scientific investigation.",
-          },
-          {
-            name: "Research Liaison",
-            role: "Physics and Astronomy Content",
-            institution: "Research Centre",
-            bio: "Connects active research topics with the educational goals of each escape room experience.",
-          },
-          {
-            name: "Local Event Coordinator",
-            role: "Community Partnerships",
-            institution: "Associate Partner",
-            bio: "Supports local hosting, institutional relations, and event logistics across partner cities.",
-          },
-          {
-            name: "Evaluation Officer",
-            role: "Impact and Assessment",
-            institution: "Lead University",
-            bio: "Collects feedback, documents participation outcomes, and helps refine future iterations of ERNEST activities.",
-          },
-        ];
-
-        const membersGrid = document.querySelector("#members-grid");
-
-        members.forEach((member) => {
-          const card = document.createElement("article");
-          card.className = "member-card";
-          card.innerHTML = `
-            <div class="member-photo" aria-hidden="true">
-              <span>${member.name
-                .split(" ")
-                .map((part) => part[0])
-                .join("")
-                .slice(0, 2)}</span>
-            </div>
-            <div class="member-copy">
-              <p class="story-link-label">${member.role}</p>
-              <h3>${member.name}</h3>
-              <p class="member-institution">${member.institution}</p>
-              <p>${member.bio}</p>
-            </div>
-          `;
-          membersGrid.append(card);
-        });
-      })();
-    </script>
-    -->
   </body>
 </html>
