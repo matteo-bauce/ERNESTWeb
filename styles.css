@@ -1111,39 +1111,49 @@ html[data-theme="dark"] .footer {
  .people-meta {
     grid-template-columns: 1fr;
   }
-.people-photo {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
+
+
+.people-card-content {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
-.people-image {
-  flex-shrink: 0;
-}
+
 .people-text {
-  flex: 1;
   text-align: left;
 }
 
-.people-card-content {
+.people-image {
   display: flex;
-  align-items: center;       /* vertical alignment */
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
+
+.people-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+.people-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .people-card-content {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: 1fr;
   }
 
   .people-text {
     text-align: center;
   }
-}
-.people-card-content {
-  align-items: flex-start;
-}
-.people-card-content {
-  align-items: flex-start;
+
+  .people-image {
+    order: -1;
+  }
 }
