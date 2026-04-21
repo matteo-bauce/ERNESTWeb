@@ -1058,6 +1058,10 @@ html[data-theme="dark"] .footer {
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 1.5rem; /* space between cards */
 }
+.detail-card {
+  width: 100%;
+  box-sizing: border-box;
+}
 .institution-card {
   text-align: center;
   padding: 1.5rem;
