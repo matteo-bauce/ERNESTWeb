@@ -327,7 +327,7 @@
         const peopleCount = document.querySelector("#people-count");
 
         const uniqueValues = (key) => {
-          const values = people.flatMap((people) => people[key]);
+          const values = people.map((person) => person[key]);
           return [...new Set(values)].sort((a, b) => a.localeCompare(b));
         };
 
@@ -380,9 +380,9 @@
                 <p>${people.description}</p>
               </div>
               <div class="people-meta">
-                <p><strong>Host</strong><span>${people.institution}</span></p>
+                <p><strong>Institution</strong><span>${people.institution}</span></p>
                 <p><strong>Location</strong><span>${people.city}, ${people.country}</span></p>
-                <p><strong>Audience</strong><span>${people.topic}</span></p>
+                <p><strong>Research field</strong><span>${people.topic}</span></p>
               </div>
               <div class="tag-row">
                 ${institutionTags}
