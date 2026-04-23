@@ -1170,11 +1170,12 @@ html[data-theme="dark"] .footer {
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 2rem;
 }
-.card {
-    font-family: '"Helvetica Neue", sans-serif;
-}
-.card ul,
-.card ol,
-.card li {
-    font-family: inherit;
+ul,
+ol,
+li {
+  all: unset;
+  display: revert;
+  list-style: revert;
+  font: inherit;
+  color: inherit;
 }
