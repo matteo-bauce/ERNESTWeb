@@ -1170,3 +1170,10 @@ html[data-theme="dark"] .footer {
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 2rem;
 }
+
+<style>
+ul, ol, li {
+    font-family: inherit;
+    color: inherit;
+}
+</style>
