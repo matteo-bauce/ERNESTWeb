@@ -305,7 +305,7 @@ html[data-theme="dark"] .theme-toggle-moon {
 .star-a {
   right: 7%;
   top: 2%;
-  transform: rotate(12deg);
+/*   transform: rotate(12deg); */
 }
 
 .star-b {
