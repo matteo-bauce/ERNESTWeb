@@ -1055,6 +1055,7 @@ html[data-theme="dark"] .footer {
 }
 /* below are added by LS */
 .room-website {
+   font-weight: bold;
   display: inline-block;
   margin-top: 0.8rem;
 }
