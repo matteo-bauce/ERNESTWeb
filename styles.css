@@ -7,7 +7,7 @@
   --text: #1f2041;
   --muted: #3a3d73;
   --accent: #ffe548;
-  --accent-strong: #c1126b;
+  --accent-strong: #ffb300;
   --accent-soft: rgba(255, 229, 72, 0.14);
   --line: rgba(31, 32, 65, 0.14);
   --shadow: 0 24px 70px rgba(31, 32, 65, 0.14);
@@ -815,7 +815,7 @@ html[data-theme="dark"] {
   --text: #ffe548;
   --muted: #fffbea;
   --accent: #ffe548;
-  --accent-strong: #c1126b;
+  --accent-strong: #ffb300;
   --accent-soft: rgba(255, 229, 72, 0.18);
   --line: rgba(255, 229, 72, 0.18);
   --shadow: 0 24px 80px rgba(8, 8, 18, 0.52);
