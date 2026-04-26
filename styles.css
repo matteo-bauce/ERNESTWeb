@@ -1172,6 +1172,25 @@ html[data-theme="dark"] .footer {
   display: inline-block;
   margin-top: 0.8rem;
 }
+
+.people-card .people-image {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.people-card .people-photo {
+  display: block !important;
+  width: 100%;
+}
+
+.people-card .people-website {
+  display: block !important;
+  margin-top: 0.75rem;
+  width: fit-content;
+}
+
+
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
