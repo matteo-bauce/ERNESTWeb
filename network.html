@@ -828,8 +828,16 @@
     </div>
 
     <div class="people-image">
-      <img src="${people.image}" alt="${people.name}" class="people-photo">
-    </div>
+  <img src="${people.image}" alt="${people.name}" class="people-photo">
+
+  ${
+    people.website
+      ? `<a class="people-website" href="${people.website}" target="_blank" rel="noopener noreferrer">
+          Personal Website
+        </a>`
+      : ""
+  }
+</div>
 
   </div>
 `;
