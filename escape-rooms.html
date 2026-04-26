@@ -180,7 +180,7 @@
             audience: "Schools and public events",
             duration: "45 minutes",
             teamSize: "Up to 25 players",
-            website: "https://web.infn.it/hepscape/)",
+            website: "https://web.infn.it/hepscape/",
             description:
               "Participants solve physics-inspired puzzles to uncover how particles are discovered and experiments at the Large Hadron Collider reveal the hidden structure of matter.",
           },
@@ -376,7 +376,16 @@
                 <p class="story-link-label">${room.theme}</p>
                 <h3>${room.title}</h3>
                 <p>${room.description}</p>
-                <p>${room.website}</p>
+
+${
+    people.website
+      ? `<a class="people-website" href="${people.website}" target="_blank" rel="noopener noreferrer">
+          Personal Website
+        </a>`
+      : ""
+  }
+                
+               
               </div>
               <div class="room-meta">
                <p><strong>Host</strong><span>${room.host}</span></p>
