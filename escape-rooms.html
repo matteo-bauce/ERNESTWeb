@@ -172,8 +172,8 @@
           {
             title: "HEPscape!",
             host: "INFN",
-            city: ["Catania", "Bari", "Rome", "Perugia", "Pisa", "Paris"]
-            country: ["Italy", "France"]
+            city: ["Catania", "Bari", "Rome", "Perugia", "Pisa", "Paris"],
+            country: ["Italy", "France"],
             language: ["French", "Italian"],
             theme: "Particle Physics",
             format: ["On-site","Traveling"]
@@ -295,13 +295,13 @@
                 <p>${room.description}</p>
               </div>
               <div class="room-meta">
-                <p><strong>Host</strong><span>${room.host}</span></p>
-                <p><strong>Location</strong><span>${room.city}, ${room.country}</span></p>
-                <p><strong>Audience</strong><span>${room.audience}</span></p>
-                <p><strong>Duration</strong><span>${room.duration}</span></p>
-                <p><strong>Team size</strong><span>${room.teamSize}</span></p>
-                <p><strong>Format</strong><span>${room.format}</span></p>
-              </div>
+               <p><strong>Host</strong><span>${room.host}</span></p>
+               <p><strong>Location</strong><span>${room.city.join(", ")} — ${room.country.join(", ")}</span></p>
+               <p><strong>Audience</strong><span>${room.audience}</span></p>
+               <p><strong>Duration</strong><span>${room.duration}</span></p>
+               <p><strong>Team size</strong><span>${room.teamSize}</span></p>
+               <p><strong>Format</strong><span>${room.format.join(", ")}</span></p>
+</div>
               <div class="tag-row">
                 ${languageTags}
               </div>
