@@ -1165,7 +1165,10 @@ html[data-theme="dark"] .footer {
     order: -1;
   }
 }
-
+.people-website {
+  display: inline-block;
+  margin-top: 0.8rem;
+}
 .people-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
