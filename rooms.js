@@ -63,6 +63,71 @@ window.escapeRooms = [
     contact: {
       email: "hepscape@lists.infn.it"
     }
+  },
+  {
+    slug: "equilibrio",
+    title: "Alla Ricerca dell'Equilibrio Perduto",
+    heroText:
+      " A multidisciplinary escape room where biology, chemistry, physics, and mathematics come together to restore the balance between humans and planet Earth. Solve puzzles, perform experiments, and uncover the “Formula of Balance” before time runs out.",
+    story:
+      "“Alla Ricerca dell’Equilibrio Perduto” is a multidisciplinary science-themed Escape Room created and presented by researchers working indifferent  CNR Institutes involved in various fields such as Biology, Mathematics, Physics and Chemistry. Different scientific concepts are explored and exploited through reasoning, hands-on experiments whose components have to be found and connected in the right way to discover, according to the narrative, the cure for planet Earth. The balance between humans and planet Earth is broken. Scientists have been working for years to find new solutions to the impact of human activity on the environment, but as the situation worsens, the previously identified solutions are no longer sufficient.   At the CNR, the interdisciplinary team led by Dr Chiara Costanza has succeeded in identifying a system which, by bringing together all disciplines, could finally be a solution that is truly applicable on a global scale.   Unfortunately, Dr Costanza has fallen, hitting her head, and she is now undergoing surgery to prevent cerebral hematoma. Her team should  present her findings at the G20 session which will start in one hour’s time.  The presentation is already prepared, but unfortunately, to protect her research, Dr Costanza has scattered her study with puzzles that only her whole team is able to solve (Each participant will wear a lab coat;  each coat contains some useful items to solve the following puzzles…) as soon as you enter her room, the door closes. You have 45 minutes to find the ‘Formula of Balance’.  You heard Chiara’s story, which ended with her cry for help. What happened? The last sentence she utters is the first clue that will set you on your way… ",
+    mission:
+      "The USB stick with the presentation is placed in a hidden password-protected box.  The password is a 5-letter word. The letters are collected independently following different parallel paths. ",
+    discover:
+      "By solving all the proposed problems, you will discover various scientific topics and phenomena. This experience will offer you the opportunity to explore new fields of knowledge and serve as a starting point for further exploration. ",
+    participants: {
+      ageGroup: "Ages 12 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "From 4 to 10 people"
+    },
+    practicalInfo: {
+      duration: "45 minutes",
+      languages: "Italian",
+      website: "",
+      websiteLabel: ""
+    },
+    special:
+      "",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "CNR Campania Outreach",
+      description:
+        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
+      logo: {
+        src: "network_img/Logos/PNG/logo_CNR_transparent.png",
+        alt: "CNR logo"
+      },
+      website: "https://creo.na.cnr.it/",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "Alessandra.rocco@cnr.it Mariafrancesca.carfora@cnr.it  Simona.deluca@cnr.it  Valentina.marchesano@cnr.it  Filomenaanna.digilio@cnr.it  Lorena.affatato@cnr.it  Mario.barra@cnr.it  Rosarita.tatè@cnr.it "
+    }
   }
 
 ];
