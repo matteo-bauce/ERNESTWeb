@@ -4,10 +4,8 @@ window.escapeRooms = [
     title: "HEPscape! - The High Energy Physics escape room",
     heroText:
       "A missing research signal, a race against time, and a portable science escape room that turns participants into problem-solvers at the heart of a quantum mystery.",
-    overview:
-      "HEPscape! is an immersive escape room dedicated to high-energy physics. Born from the passion of scientists involved in the CMS experiment at CERN, the project turns complex ideas into an engaging adventure for all ages. Its mission is to bring particle physics closer to the public through play and discovery. Touring across Italy, HEPscape! has reached thousands of people, offering a unique experience: an interactive and accessible journey into the mysteries of the Large Hadron Collider. ",
-    story:
-      "The HEPscape! experience starts already outside the room. Visitors are welcomed in the experimental aerea by the facilitator that acts like a CMS guide,  as it happen in the real visit of the experiments at CERN.   Since visitors have to enter the experimental cavern, they are asked to wear the helmet! Once entered in the HEPscape! room, visitors are guided through virtual journey at the LHC and will have to tackle and solve puzzles before being allowed to leave the room.      Although virtual, the experience at 360°, with projections, sounds, lights e many unexpected surprises.  Any element in the room could be useful to find the solution of the games.",
+     story:
+      "HEPscape! is an immersive escape room dedicated to high-energy physics. Born from the passion of scientists involved in the CMS experiment at CERN, the project turns complex ideas into an engaging adventure for all ages. Its mission is to bring particle physics closer to the public through play and discovery. Touring across Italy, HEPscape! has reached thousands of people, offering a unique experience: an interactive and accessible journey into the mysteries of the Large Hadron Collider. The HEPscape! experience starts already outside the room. Visitors are welcomed in the experimental aerea by the facilitator that acts like a CMS guide,  as it happen in the real visit of the experiments at CERN.   Since visitors have to enter the experimental cavern, they are asked to wear the helmet! Once entered in the HEPscape! room, visitors are guided through virtual journey at the LHC and will have to tackle and solve puzzles before being allowed to leave the room.      Although virtual, the experience at 360°, with projections, sounds, lights e many unexpected surprises.  Any element in the room could be useful to find the solution of the games.",
     mission:
       "Step into the role of physicists and solve a series of scientific challenges to uncover how particles are studied and discovered. Working as a team, participants follow clues, interpret data, and complete experiments inspired by real high-energy physics research. Their goal is to progress through the investigation and ultimately reveal the “discovery” hidden within the escape room narrative — mirroring the journey of scientists at the Large Hadron Collider.",
     discover:
@@ -70,8 +68,6 @@ window.escapeRooms = [
     slug: "BLABLA",
     title: "",
     heroText:
-      "",
-    overview:
       "",
     story:
       "",
