@@ -1,6 +1,6 @@
 window.escapeRooms = [
   {
-    slug: "room-01",
+    slug: "hepscape",
     title: "The Quantum Signal",
     heroText:
       "A missing research signal, a race against time, and a portable science escape room that turns participants into problem-solvers at the heart of a quantum mystery.",
