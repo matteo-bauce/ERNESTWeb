@@ -261,12 +261,77 @@ window.escapeRooms = [
       websiteLabel: "Visit institution website"
     },
     contact: {
+      email: "Alessandra.rocco@cnr.it Mariafrancesca.carfora@cnr.it  Simona.deluca@cnr.it  Valentina.marchesano@cnr.it  Filomenaanna.digilio@cnr.it  Lorena.affatato@cnr.it  Mario.barra@cnr.it  Rosarita.tatè@cnr.it "
+    }
+  },
+  {
+    slug: "medical",
+    title: "Medical Physics Escape Room",
+    heroText:
+      "",
+    story:
+      "",
+    mission:
+      "",
+    discover:
+      "",
+    participants: {
+      ageGroup: "Ages 8 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 25 participants per session"
+    },
+    practicalInfo: {
+      duration: "",
+      languages: "",
+      website: "",
+      websiteLabel: "Official website"
+    },
+    special:
+      "",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "",
+      description:
+        "",
+      logo: {
+        src: "",
+        alt: ""
+      },
+      website: "",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
       email: ""
     }
   },
-  {
-    slug: "fotone",
-    title: "A cavallo di un fotone",
+   {
+    slug: "mastem",
+    title: "maSTEM game",
     heroText:
       "",
     story:
@@ -281,9 +346,9 @@ window.escapeRooms = [
       groupSize: "Up to 25 participants per session"
     },
     practicalInfo: {
-      duration: "45 minutes",
-      languages: "English, Italian",
-      website: "web.infn.it/hepscape/",
+      duration: "",
+      languages: "",
+      website: "",
       websiteLabel: "Official website"
     },
     special:
@@ -315,40 +380,105 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "Istituto Nazionale di Fisica Nucleare",
+      name: "",
       description:
-        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
+        "",
       logo: {
         src: "",
-        alt: "INFN"
+        alt: ""
       },
-      website: "https://www.infn.it/",
+      website: "",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "hepscape@lists.infn.it"
+      email: ""
     }
   },
-  {
-    slug: "fotone",
-    title: "A cavallo di un fotone",
+   {
+    slug: "per",
+    title: "PER me si va ne la fisica recente",
     heroText:
       "",
     story:
-      "",
+      "PER me si va ne la fisica recente is an immersive escape room experience created by the "Physics4Teenagers" group at the University of Pavia. Inspired by Dante’s Divina Commedia, this adventure challenges you to navigate the evolution of particle physics. From the first atomic theories to the discovery of the Higgs boson and beyond, you will solve intricate puzzles to reconstruct the standard model of particle physics. Are you ready to follow in the footsteps of great scientists and uncover the mysteries of the universe?  Your guide is Democritus, acting as a modern-day Virgil, who will lead you through the historical experiments and revolutionary ideas that shaped our understanding of fundamental particles. As you progress, the journey transitions from established knowledge to the unknown. The character Curiosity—our Beatrice—will eventually take the lead, accompanying you beyond the standard model to face the greatest open questions in physics today. ",
     mission:
-      "",
+      "Solve a series of logic and physics-based puzzles — such as simulations of the Rutherford and Chadwick experiments — where you recreate the analog processes behind pivotal scientific discoveries.  Goal: Complete the standard model puzzle to "escape" and unlock the secrets of the subatomic world.  You must collaborate, think critically, and communicate effectively to succeed. ",
     discover:
-      "",
+      "Visitors will discover the major experimental measurements and historical "eureka" moments—from the discovery of the electron to the Higgs boson—that turned theoretical predictions into scientific certainty.  Besides, once the standard model of particle physics is complete, they’ll get a "taste" of the unknown, exploring the frontiers of modern research from dark matter to neutrino oscillations. ",
     participants: {
-      ageGroup: "Ages 8 and up",
+      ageGroup: "Ages 8\16 and up",
       audience: "School students, families, and general public audiences",
       groupSize: "Up to 25 participants per session"
     },
     practicalInfo: {
-      duration: "45 minutes",
-      languages: "English, Italian",
-      website: "web.infn.it/hepscape/",
+      duration: "75-90 mins",
+      languages: "Italian",
+      website: "https://fisica.dip.unipv.it/it/divulgazione/physics4teenagers/particle-escape-room  ",
+      websiteLabel: "Official website"
+    },
+    special:
+      "This is not just a collection of puzzles, but a chronological immersion into the milestones of particle physics. Participants experience the long-term human effort and the sequence of discoveries that led to the standard model we have today. ",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "Università di Pavia",
+      description:
+        "A historic Italian university active in physics research and innovative science education initiatives.",
+      logo: {
+        src: "network_img/Logos/SVG/UNIPV.svg",
+        alt: "Pavia logo"
+      },
+      website: "https://www.unipv.it",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "https://www.unipv.it"
+    }
+  },
+   {
+    slug: "acceler8",
+    title: "Acceler8Escape",
+    heroText:
+      "",
+    story:
+      "Acceler8Escape places participants inside a particle accelerator, working in teams to solve 8 interactive puzzles corresponding to key elements of an accelerator. Each puzzle mimics real-life research skills through combinations of visual, audio and physical problem-solving, revealing a code that unlocks a customized stamp for participants to complete their “accelerator passport” within a time-limit. Acceler8Escape provides a fun, immersive, hands-on experience for all ages to access, engage with and learn all about the fascinating science of particle accelerators.  You are scientists working at the national accelerator facility on the verge of a groundbreaking new discovery...but something has gone wrong... the particle accelerator is broken and it looks like someone has sabotaged your experiments! And to make things worse, radiation levels in the machine are dangerously high so you can’t stay in there for long. ",
+    mission:
+      "As a team, we need you to explore all 8 components of the particle accelerator and complete your “accelerator passport” checklist to confirm everything is working. Look carefully for clues to solve the codes, unlock the padlocks and retrieve your passport stamps. However, you only have around 30 minutes before the radiation exposure is too much, so work quickly! Can you fix the particle accelerator, make your discovery and find out who is responsible? Time is ticking! ",
+    discover:
+      "You will explore the key elements of a particle accelerator, including lasers, photocathodes, accelerating cavities, magnets, detectors, vacuum, radiation and more, discovering how they all work together in huge accelerator machines. Each interactive puzzle is directly related to real-life research, requiring you to be observant, work well in a team and think outside the box, just like a real scientist. ",
+    participants: {
+      ageGroup: "Ages 8 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 50 participants per session"
+    },
+    practicalInfo: {
+      duration: "50 min",
+      languages: "English",
+      website: "",
       websiteLabel: "Official website"
     },
     special:
@@ -380,23 +510,23 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "Istituto Nazionale di Fisica Nucleare",
+      name: "The University of Manchester",
       description:
-        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
+        "",
       logo: {
-        src: "",
-        alt: "INFN"
+        src: "network_img/Logos/SVG/UniMAN_logo.svg",
+        alt: "Manchester logo"
       },
-      website: "https://www.infn.it/",
+      website: "https://www.manchester.ac.uk",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "hepscape@lists.infn.it"
+      email: "morgan.hibberd@manchester.ac.uk "
     }
   },
-  {
-    slug: "fotone",
-    title: "A cavallo di un fotone",
+   {
+    slug: "medical",
+    title: "Medical Physics Escape Room",
     heroText:
       "",
     story:
@@ -411,9 +541,9 @@ window.escapeRooms = [
       groupSize: "Up to 25 participants per session"
     },
     practicalInfo: {
-      duration: "45 minutes",
-      languages: "English, Italian",
-      website: "web.infn.it/hepscape/",
+      duration: "",
+      languages: "",
+      website: "",
       websiteLabel: "Official website"
     },
     special:
@@ -445,84 +575,20 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "Istituto Nazionale di Fisica Nucleare",
+      name: "",
       description:
-        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
+        "",
       logo: {
         src: "",
-        alt: "INFN"
+        alt: ""
       },
-      website: "https://www.infn.it/",
+      website: "",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "hepscape@lists.infn.it"
+      email: ""
     }
   },
-  {
-    slug: "fotone",
-    title: "A cavallo di un fotone",
-    heroText:
-      "",
-    story:
-      "",
-    mission:
-      "",
-    discover:
-      "",
-    participants: {
-      ageGroup: "Ages 8 and up",
-      audience: "School students, families, and general public audiences",
-      groupSize: "Up to 25 participants per session"
-    },
-    practicalInfo: {
-      duration: "45 minutes",
-      languages: "English, Italian",
-      website: "web.infn.it/hepscape/",
-      websiteLabel: "Official website"
-    },
-    special:
-      "",
-    gallery: [
-      {
-        src: "gallery-image-1.jpg",
-        alt: "Main scene of Escape Room 01",
-        caption: "Main scene or room setup",
-        size: "gallery-card-xl"
-      },
-      {
-        src: "gallery-image-2.jpg",
-        alt: "Puzzle detail from Escape Room 01",
-        caption: "Puzzle detail",
-        size: "gallery-card-square"
-      },
-      {
-        src: "gallery-image-3.jpg",
-        alt: "Participants in Escape Room 01",
-        caption: "Participants in action",
-        size: "gallery-card-square"
-      },
-      {
-        src: "gallery-image-4.jpg",
-        alt: "Interactive feature of Escape Room 01",
-        caption: "Interactive station or clue sequence",
-        size: "gallery-card-landscape"
-      }
-    ],
-    owner: {
-      name: "Istituto Nazionale di Fisica Nucleare",
-      description:
-        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
-      logo: {
-        src: "",
-        alt: "INFN"
-      },
-      website: "https://www.infn.it/",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "hepscape@lists.infn.it"
-    }
-  },
+ 
  
 ];
