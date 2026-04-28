@@ -1,30 +1,30 @@
 window.escapeRooms = [
   {
     slug: "hepscape",
-    title: "The Quantum Signal",
+    title: "HEPscape! - The High Energy Physics escape room",
     heroText:
       "A missing research signal, a race against time, and a portable science escape room that turns participants into problem-solvers at the heart of a quantum mystery.",
     overview:
-      "The Quantum Signal is a portable escape-room experience designed to bring science engagement into schools, festivals, community spaces, and remote locations. Participants step into the role of a rapid-response team called to recover a critical transmission from an experimental research device before the data is lost. Through clues, coded messages, and hands-on reasoning, the room introduces scientific thinking in a playful and accessible way. It is ideal for audiences who enjoy collaborative challenges and want to discover how curiosity, logic, and teamwork can unlock complex ideas.",
+      "HEPscape! is an immersive escape room dedicated to high-energy physics. Born from the passion of scientists involved in the CMS experiment at CERN, the project turns complex ideas into an engaging adventure for all ages. Its mission is to bring particle physics closer to the public through play and discovery. Touring across Italy, HEPscape! has reached thousands of people, offering a unique experience: an interactive and accessible journey into the mysteries of the Large Hadron Collider. ",
     story:
-      "A research team has been testing a prototype system capable of transmitting fragile quantum information across long distances. Just before a public demonstration, the main signal disappears and the laboratory records become scrambled. Participants are recruited as the emergency team brought in to reconstruct the final sequence, recover the lost data, and understand what caused the interruption. Every solved clue reveals part of the story and brings the team closer to restoring the experiment.",
+      "The HEPscape! experience starts already outside the room. Visitors are welcomed in the experimental aerea by the facilitator that acts like a CMS guide,  as it happen in the real visit of the experiments at CERN.   Since visitors have to enter the experimental cavern, they are asked to wear the helmet! Once entered in the HEPscape! room, visitors are guided through virtual journey at the LHC and will have to tackle and solve puzzles before being allowed to leave the room.      Although virtual, the experience at 360°, with projections, sounds, lights e many unexpected surprises.  Any element in the room could be useful to find the solution of the games.",
     mission:
-      "Participants must recover the missing signal, rebuild the correct experimental sequence, and unlock the final control protocol before the system shuts down. Along the way they face coded instructions, logic puzzles, pattern recognition tasks, and collaborative problem-solving challenges that require careful observation and clear communication. The experience is designed to create a sense of urgency, with a typical session lasting around one hour.",
+      "Step into the role of physicists and solve a series of scientific challenges to uncover how particles are studied and discovered. Working as a team, participants follow clues, interpret data, and complete experiments inspired by real high-energy physics research. Their goal is to progress through the investigation and ultimately reveal the “discovery” hidden within the escape room narrative — mirroring the journey of scientists at the Large Hadron Collider.",
     discover:
-      "The room introduces ideas linked to quantum communication, information transfer, experimental reasoning, and the importance of precision in scientific work. Participants explore how invisible processes can still be measured, interpreted, and used in real research settings. At the same time, they practice skills such as logical deduction, teamwork, communication, and creative problem-solving.",
+      "Visitors will be close to the LHC environment, with videos showing them a real experiment control room, with researchers at CERN that recorded contents in different locations within the experiment areas.   The knowledge of the fundamental brick of matters, as well as the discovery of the Higgs boson at the LHC, are the main learning goal of the experience. ",
     participants: {
-      ageGroup: "Ages 12 and up",
-      audience: "Secondary school students, families, and general public audiences",
-      groupSize: "3 to 6 participants per session"
+      ageGroup: "Ages 8 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 25 participants per session"
     },
     practicalInfo: {
-      duration: "60 minutes",
+      duration: "45 minutes",
       languages: "English, Italian",
-      website: "#",
+      website: "web.infn.it/hepscape/",
       websiteLabel: "Official website"
     },
     special:
-      "The Quantum Signal is designed as a portable outreach kit rather than a fixed-location installation, making it easy to bring into diverse educational and public contexts, including remote settings. Its puzzles combine storytelling with scientific concepts in a format that is both accessible and intellectually engaging. The experience connects current research themes with hands-on public participation, helping audiences encounter advanced science in a memorable and social way.",
+      "",
     gallery: [
       {
         src: "gallery-image-1.jpg",
@@ -52,263 +52,86 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "ERNEST Outreach Team",
+      name: "Istituto Nazionale di Fisica Nucleare",
       description:
-        "A science communication team developing portable escape-room experiences that connect research, public engagement, and inclusive outreach.",
+        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
       logo: {
         src: "",
-        alt: "ERNEST Outreach Team logo"
+        alt: "INFN"
       },
-      website: "#",
+      website: "https://www.infn.it/",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "ernest@example.org"
+      email: "hepscape@lists.infn.it"
     }
   },
   {
-    slug: "room-02",
-    title: "Escape Room 02",
-    heroText: "Replace this with the short teaser for Escape Room 02.",
-    overview: "Add the overview for Escape Room 02 here.",
-    story: "Add the story for Escape Room 02 here.",
-    mission: "Add the mission paragraph for Escape Room 02.",
-    discover: "Add the discovery paragraph for Escape Room 02.",
+    slug: "BLABLA",
+    title: "",
+    heroText:
+      "",
+    overview:
+      "",
+    story:
+      "",
+    mission:
+      "",
+    discover:
+      "",
     participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
+      ageGroup: "Ages 8 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 25 participants per session"
     },
     practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
+      duration: "45 minutes",
+      languages: "English, Italian",
+      website: "web.infn.it/hepscape/",
       websiteLabel: "Official website"
     },
-    special: "Add the special features paragraph for Escape Room 02.",
-    gallery: [],
+    special:
+      "",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
     owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 02.",
+      name: "Istituto Nazionale di Fisica Nucleare",
+      description:
+        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
       logo: {
         src: "",
-        alt: "Institution logo"
+        alt: "INFN"
       },
-      website: "#",
+      website: "https://www.infn.it/",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "contact-room-02@example.org"
+      email: "hepscape@lists.infn.it"
     }
   },
-  {
-    slug: "room-03",
-    title: "Escape Room 03",
-    heroText: "Replace this with the short teaser for Escape Room 03.",
-    overview: "Add the overview for Escape Room 03 here.",
-    story: "Add the story for Escape Room 03 here.",
-    mission: "Add the mission paragraph for Escape Room 03.",
-    discover: "Add the discovery paragraph for Escape Room 03.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 03.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 03.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-03@example.org"
-    }
-  },
-  {
-    slug: "room-04",
-    title: "Escape Room 04",
-    heroText: "Replace this with the short teaser for Escape Room 04.",
-    overview: "Add the overview for Escape Room 04 here.",
-    story: "Add the story for Escape Room 04 here.",
-    mission: "Add the mission paragraph for Escape Room 04.",
-    discover: "Add the discovery paragraph for Escape Room 04.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 04.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 04.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-04@example.org"
-    }
-  },
-  {
-    slug: "room-05",
-    title: "Escape Room 05",
-    heroText: "Replace this with the short teaser for Escape Room 05.",
-    overview: "Add the overview for Escape Room 05 here.",
-    story: "Add the story for Escape Room 05 here.",
-    mission: "Add the mission paragraph for Escape Room 05.",
-    discover: "Add the discovery paragraph for Escape Room 05.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 05.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 05.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-05@example.org"
-    }
-  },
-  {
-    slug: "room-06",
-    title: "Escape Room 06",
-    heroText: "Replace this with the short teaser for Escape Room 06.",
-    overview: "Add the overview for Escape Room 06 here.",
-    story: "Add the story for Escape Room 06 here.",
-    mission: "Add the mission paragraph for Escape Room 06.",
-    discover: "Add the discovery paragraph for Escape Room 06.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 06.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 06.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-06@example.org"
-    }
-  },
-  {
-    slug: "room-07",
-    title: "Escape Room 07",
-    heroText: "Replace this with the short teaser for Escape Room 07.",
-    overview: "Add the overview for Escape Room 07 here.",
-    story: "Add the story for Escape Room 07 here.",
-    mission: "Add the mission paragraph for Escape Room 07.",
-    discover: "Add the discovery paragraph for Escape Room 07.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 07.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 07.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-07@example.org"
-    }
-  },
-  {
-    slug: "room-08",
-    title: "Escape Room 08",
-    heroText: "Replace this with the short teaser for Escape Room 08.",
-    overview: "Add the overview for Escape Room 08 here.",
-    story: "Add the story for Escape Room 08 here.",
-    mission: "Add the mission paragraph for Escape Room 08.",
-    discover: "Add the discovery paragraph for Escape Room 08.",
-    participants: {
-      ageGroup: "Recommended age group",
-      audience: "Target audience",
-      groupSize: "Group size"
-    },
-    practicalInfo: {
-      duration: "Duration",
-      languages: "Languages",
-      website: "#",
-      websiteLabel: "Official website"
-    },
-    special: "Add the special features paragraph for Escape Room 08.",
-    gallery: [],
-    owner: {
-      name: "Institution name",
-      description: "Add a short description of the institution for Escape Room 08.",
-      logo: {
-        src: "",
-        alt: "Institution logo"
-      },
-      website: "#",
-      websiteLabel: "Visit institution website"
-    },
-    contact: {
-      email: "contact-room-08@example.org"
-    }
-  }
+ 
 ];
