@@ -1084,6 +1084,7 @@ html[data-theme="dark"] .footer {
   display: block;
   margin: 0 auto;
 }
+
 .people-card {
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -1210,4 +1211,10 @@ li {
   list-style: revert;
   font: inherit;
   color: inherit;
+}
+
+.logo-box {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 2rem;
 }
