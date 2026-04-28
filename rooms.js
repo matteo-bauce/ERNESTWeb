@@ -64,6 +64,8 @@ window.escapeRooms = [
       email: "hepscape@lists.infn.it"
     }
   },
+
+  
   {
     slug: "fotone",
     title: "A cavallo di un fotone",
@@ -115,26 +117,26 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "Istituto Nazionale di Fisica Nucleare",
+      name: "",
       description:
-        "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
+        "",
       logo: {
         src: "",
-        alt: "INFN"
+        alt: ""
       },
-      website: "https://www.infn.it/",
+      website: "",
       websiteLabel: "Visit institution website"
     },
     contact: {
-      email: "hepscape@lists.infn.it"
+      email: ""
     }
   },
 
 
   
   {
-    slug: "fotone",
-    title: "A cavallo di un fotone",
+    slug: "",
+    title: "",
     heroText:
       "",
     story:
@@ -183,14 +185,14 @@ window.escapeRooms = [
       }
     ],
     owner: {
-      name: "Istituto Nazionale di Astrofisica",
+      name: "",
       description:
-        "Italy’s leading institute for astrophysics research, contributing expertise in space science, astronomy, and public engagement. ",
+        "",
       logo: {
-        src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
-        alt: "INAF logo"
+        src: "",
+        alt: ""
       },
-      website: "http://www.inaf.it/en",
+      website: "",
       websiteLabel: "Visit institution website"
     },
     contact: {
@@ -252,7 +254,7 @@ window.escapeRooms = [
       description:
         "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
       logo: {
-        src: "",
+        src: "network_img/Logos/PNG/logo_CNR_transparent.png",
         alt: "CNR logo"
       },
       website: "https://creo.na.cnr.it/",
