@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape Room | ERNEST</title>
+    <meta
+      name="description"
+      content="Discover the story, mission, practical information, and scientific dimension of this ERNEST escape room."
+    />
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("ernest-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="about.html">About ERNEST</a>
+              <a href="escape-rooms.html" aria-current="page">Escape Rooms</a>
+              <a href="network.html">The Network</a>
+              <a href="index.html#events">Events</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout" id="top">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">Escape room profile</p>
+            <h1 id="room-title">Escape Room Title</h1>
+            <p class="lead" id="room-hero-text">
+              Discover the story, mission, and scientific dimension of this ERNEST escape room.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#mission">See the mission</a>
+              <a class="button button-secondary" href="#practical-info">Plan your visit</a>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section" id="overview">
+          <div class="section-heading">
+            <p class="section-kicker">Overview</p>
+            <h2>At a Glance</h2>
+          </div>
+          <article class="card">
+            <p id="room-overview"></p>
+          </article>
+        </section>
+
+        <section class="section" id="story">
+          <div class="section-heading">
+            <p class="section-kicker">The Story</p>
+            <h2>The Narrative</h2>
+          </div>
+          <article class="card">
+            <p id="room-story"></p>
+          </article>
+        </section>
+
+        <section class="section feature-band mission-triad" id="mission">
+          <div class="feature-band-copy">
+            <p class="section-kicker">Inside the Experience</p>
+            <h2>The core elements of the experience.</h2>
+          </div>
+          <div class="feature-points feature-points-full">
+            <article>
+              <span class="feature-number">01</span>
+              <h3>Your Role</h3>
+              <p id="room-mission"></p>
+            </article>
+            <article>
+              <span class="feature-number">02</span>
+              <h3>Scientific Focus</h3>
+              <p id="room-discover"></p>
+            </article>
+            <article>
+              <span class="feature-number">03</span>
+              <h3>Distinctive Features</h3>
+              <p id="room-special"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="participants">
+          <div class="section-heading">
+            <p class="section-kicker">Participants and Practical Info</p>
+            <h2>Participation and logistics.</h2>
+          </div>
+          <div class="two-card-grid">
+            <article class="detail-card">
+              <h3>Who It Is For</h3>
+              <div class="info-stack">
+                <p><strong>Recommended age:</strong> <span id="room-age-group"></span></p>
+                <p><strong>Suitable for:</strong> <span id="room-audience"></span></p>
+                <p><strong>Group size:</strong> <span id="room-group-size"></span></p>
+              </div>
+            </article>
+            <article class="detail-card info-card">
+              <h3>Essential Details</h3>
+              <div class="info-stack">
+                <p><strong>Duration:</strong> <span id="room-duration"></span></p>
+                <p><strong>Language(s):</strong> <span id="room-languages"></span></p>
+                <p id="room-website-row">
+                  <strong>Website:</strong>
+                  <a class="text-link" id="room-website" href="#">Visit the official page</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+          <div class="section-heading">
+            <p class="section-kicker">Gallery</p>
+            <h2>Inside the Room</h2>
+          </div>
+          <div class="gallery-grid gallery-grid-photos" id="room-gallery"></div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="section-heading">
+            <p class="section-kicker">Contact</p>
+            <h2>Get in Touch</h2>
+          </div>
+          <article class="detail-card institution-feature">
+            <div class="institution-feature-logo-wrap" id="room-owner-logo-wrap">
+              <img
+                id="room-owner-logo"
+                class="institution-feature-logo"
+                src=""
+                alt=""
+              />
+            </div>
+            <div class="institution-feature-copy">
+              <h3 id="room-owner-name"></h3>
+              <p id="room-owner-description"></p>
+              <p><strong>Email:</strong> <a id="room-email-link" href="#"></a></p>
+              <p id="room-owner-website-row">
+                <a class="text-link" id="room-owner-website" href="#">Visit institution website</a>
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ERNEST • European Researchers' Night Escape Science Team</p>
+        <p>
+          This page uses one shared layout and one data file, so you can manage all escape
+          rooms from a single structure.
+        </p>
+      </footer>
+    </div>
+
+    <script src="rooms.js"></script>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        const brandLogo = document.querySelector(".brand-logo img");
+
+        const updateThemeAssets = (theme) => {
+          if (brandLogo) {
+            const nextSrc =
+              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
+            if (nextSrc) brandLogo.src = nextSrc;
+          }
+        };
+
+        const applyTheme = (theme) => {
+          root.setAttribute("data-theme", theme);
+          if (toggle) {
+            toggle.setAttribute("aria-pressed", String(theme === "dark"));
+          }
+          updateThemeAssets(theme);
+        };
+
+        applyTheme(root.getAttribute("data-theme") || "light");
+
+        if (toggle) {
+          toggle.addEventListener("click", () => {
+            const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            localStorage.setItem("ernest-theme", nextTheme);
+            applyTheme(nextTheme);
+          });
+        }
+
+        const safeRooms = Array.isArray(window.escapeRooms) ? window.escapeRooms : [];
+        const params = new URLSearchParams(window.location.search);
+        const selectedSlug = params.get("room");
+        const room =
+          safeRooms.find((entry) => entry.slug === selectedSlug) || safeRooms[0] || null;
+
+        if (!room) return;
+
+        const setText = (id, value) => {
+          const node = document.getElementById(id);
+          if (node) node.textContent = value || "";
+        };
+
+        setText("room-title", room.title);
+        setText("room-hero-text", room.heroText || room.overview);
+        setText("room-overview", room.overview);
+        setText("room-story", room.story);
+        setText("room-mission", room.mission);
+        setText("room-discover", room.discover);
+        setText("room-age-group", room.participants.ageGroup);
+        setText("room-audience", room.participants.audience);
+        setText("room-group-size", room.participants.groupSize);
+        setText("room-duration", room.practicalInfo.duration);
+        setText("room-languages", room.practicalInfo.languages);
+        setText("room-special", room.special);
+        document.title = room.title + " | ERNEST";
+
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+          metaDescription.setAttribute("content", room.heroText || room.overview);
+        }
+
+        const websiteLink = document.getElementById("room-website");
+        const websiteRow = document.getElementById("room-website-row");
+        if (websiteLink) {
+          const website = room.practicalInfo.website;
+          const hasWebsite = Boolean(website && website !== "#");
+
+          if (websiteRow) {
+            websiteRow.hidden = !hasWebsite;
+          }
+
+          if (hasWebsite) {
+            websiteLink.href = website;
+            websiteLink.textContent = room.practicalInfo.websiteLabel || "Visit the official page";
+          }
+        }
+
+        const emailLink = document.getElementById("room-email-link");
+        if (emailLink) {
+          emailLink.href = "mailto:" + room.contact.email;
+          emailLink.textContent = room.contact.email;
+        }
+
+        const ownerLogo = document.getElementById("room-owner-logo");
+        const ownerLogoWrap = document.getElementById("room-owner-logo-wrap");
+        const ownerWebsite = document.getElementById("room-owner-website");
+        const ownerWebsiteRow = document.getElementById("room-owner-website-row");
+
+        setText("room-owner-name", room.owner.name);
+        setText("room-owner-description", room.owner.description);
+
+        if (ownerLogo) {
+          const hasLogo = Boolean(room.owner.logo && room.owner.logo.src);
+          if (ownerLogoWrap) {
+            ownerLogoWrap.hidden = !hasLogo;
+          }
+          if (hasLogo) {
+            ownerLogo.src = room.owner.logo.src;
+            ownerLogo.alt = room.owner.logo.alt || room.owner.name + " logo";
+          }
+        }
+
+        if (ownerWebsite) {
+          const ownerUrl = room.owner.website;
+          const hasOwnerWebsite = Boolean(ownerUrl && ownerUrl !== "#");
+          if (ownerWebsiteRow) {
+            ownerWebsiteRow.hidden = !hasOwnerWebsite;
+          }
+          if (hasOwnerWebsite) {
+            ownerWebsite.href = ownerUrl;
+            ownerWebsite.textContent = room.owner.websiteLabel || "Visit institution website";
+          }
+        }
+
+        const gallery = document.getElementById("room-gallery");
+        if (gallery) {
+          gallery.innerHTML = "";
+          (room.gallery || []).forEach((image, index) => {
+            const figure = document.createElement("figure");
+            const sizeClass = image.size || (index === 0 ? "gallery-card-xl" : "gallery-card-square");
+            figure.className = "gallery-card gallery-image-card " + sizeClass;
+
+            const img = document.createElement("img");
+            img.src = image.src;
+            img.alt = image.alt;
+
+            const caption = document.createElement("figcaption");
+            caption.textContent = image.caption;
+
+            figure.appendChild(img);
+            figure.appendChild(caption);
+            gallery.appendChild(figure);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
