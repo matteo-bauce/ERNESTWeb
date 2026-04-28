@@ -54,8 +54,8 @@ window.escapeRooms = [
       description:
         "Italy’s national institute for nuclear and particle physics, leading ERNEST and contributing expertise in large-scale research and science outreach",
       logo: {
-        src: "",
-        alt: "INFN"
+        src: "network_img/Logos/SVG/INFN_logo.svg",
+        alt: "INFN logo"
       },
       website: "https://www.infn.it/",
       websiteLabel: "Visit institution website"
