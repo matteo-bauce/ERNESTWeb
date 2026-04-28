@@ -171,6 +171,7 @@
         const rooms = [
           {
             title: "HEPscape!",
+            slug: "hepscape",
             host: "INFN",
             city: ["Catania", "Bari", "Rome", "Perugia", "Pisa", "Paris"],
             country: ["Italy", "France"],
@@ -182,7 +183,7 @@
             teamSize: "Up to 25 players",
             website: "https://web.infn.it/hepscape/",
             description:
-              "Participants solve physics-inspired puzzles to uncover how particles are discovered and experiments at the Large Hadron Collider reveal the hidden structure of matter. <a href="escape-room-templ.html?room=hepscape">Open this escape room</a>",
+              "Participants solve physics-inspired puzzles to uncover how particles are discovered and experiments at the Large Hadron Collider reveal the hidden structure of matter.",
           },
            {
             title: "A cavallo di un fotone",
@@ -377,14 +378,20 @@
                 <h3>${room.title}</h3>
                 <p>${room.description}</p>
 
-${
+ ${/*
     room.website
       ? `<a class="room-website" href="${room.website}" target="_blank" rel="noopener noreferrer">
           Website
         </a>`
-      : ""
+      : */ ""
   }
-                
+               ${
+  room.slug
+    ? `<a class="room-website" href="escape-room-template.html?room=${room.slug}">
+         Open this escape room
+       </a>`
+    : ""
+} 
                
               </div>
               <div class="room-meta">
