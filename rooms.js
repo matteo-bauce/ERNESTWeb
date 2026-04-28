@@ -263,6 +263,6 @@ window.escapeRooms = [
     contact: {
       email: "morgan.hibberd@manchester.ac.uk "
     }
-  },
+  }
 
 ];
