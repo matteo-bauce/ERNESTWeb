@@ -65,7 +65,7 @@ window.escapeRooms = [
     }
   },
    {
-    slug: "acceler8",
+    slug: "acceler",
     title: "Acceler8Escape",
     heroText:
       "HEPscape! is an immersive escape room inspired by real research at CERN’s Large Hadron Collider. Guided through a virtual journey into an LHC experiment, participants solve puzzles, uncover clues, and work together to explore the fundamental building blocks of matter.",
