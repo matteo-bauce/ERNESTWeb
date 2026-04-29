@@ -64,6 +64,71 @@ window.escapeRooms = [
       email: "hepscape@lists.infn.it"
     }
   },
+   {
+    slug: "acceler8",
+    title: "Acceler8Escape",
+    heroText:
+      "HEPscape! is an immersive escape room inspired by real research at CERN’s Large Hadron Collider. Guided through a virtual journey into an LHC experiment, participants solve puzzles, uncover clues, and work together to explore the fundamental building blocks of matter.",
+     story:
+      "Acceler8Escape places participants inside a particle accelerator, working in teams to solve 8 interactive puzzles corresponding to key elements of an accelerator. Each puzzle mimics real-life research skills through combinations of visual, audio and physical problem-solving, revealing a code that unlocks a customized stamp for participants to complete their “accelerator passport” within a time-limit. Acceler8Escape provides a fun, immersive, hands-on experience for all ages to access, engage with and learn all about the fascinating science of particle accelerators.  You are scientists working at the national accelerator facility on the verge of a groundbreaking new discovery...but something has gone wrong... the particle accelerator is broken and it looks like someone has sabotaged your experiments! And to make things worse, radiation levels in the machine are dangerously high so you can’t stay in there for long. ",
+    mission:
+      "As a team, we need you to explore all 8 components of the particle accelerator and complete your “accelerator passport” checklist to confirm everything is working. Look carefully for clues to solve the codes, unlock the padlocks and retrieve your passport stamps. However, you only have around 30 minutes before the radiation exposure is too much, so work quickly! Can you fix the particle accelerator, make your discovery and find out who is responsible? Time is ticking! ",
+    discover:
+      "You will explore the key elements of a particle accelerator, including lasers, photocathodes, accelerating cavities, magnets, detectors, vacuum, radiation and more, discovering how they all work together in huge accelerator machines. Each interactive puzzle is directly related to real-life research, requiring you to be observant, work well in a team and think outside the box, just like a real scientist. ",
+    participants: {
+      ageGroup: "Ages 8 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 50 participants per session"
+    },
+    practicalInfo: {
+      duration: "50 minutes",
+      languages: "English",
+      website: "",
+      websiteLabel: ""
+    },
+    special:
+      "",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "The University of Manchester",
+      description:
+        "A globally recognized research university contributing expertise in physics, data science, and large-scale science communication.",
+      logo: {
+        src: "network_img/Logos/SVG/UniMAN_logo.svg",
+        alt: "Manchester logo"
+      },
+      website: "https://www.manchester.ac.uk",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "morgan.hibberd@manchester.ac.uk"
+    }
+  },
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
