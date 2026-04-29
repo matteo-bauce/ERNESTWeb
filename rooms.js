@@ -284,25 +284,25 @@ window.escapeRooms = [
       "",
     gallery: [
       {
-        src: "gallery-image-1.jpg",
+        src: "escape-rooms_img/equilibrio/img1.jpg",
         alt: "Main scene of Escape Room 01",
         caption: "Main scene or room setup",
         size: "gallery-card-xl"
       },
       {
-        src: "gallery-image-2.jpg",
+        src: "escape-rooms_img/equilibrio/img2.jpg",
         alt: "Puzzle detail from Escape Room 01",
         caption: "Puzzle detail",
         size: "gallery-card-square"
       },
       {
-        src: "gallery-image-3.jpg",
+        src: "escape-rooms_img/equilibrio/img3.jpg",
         alt: "Participants in Escape Room 01",
         caption: "Participants in action",
         size: "gallery-card-square"
       },
       {
-        src: "gallery-image-4.jpg",
+        src: "escape-rooms_img/equilibrio/img4.jpg",
         alt: "Interactive feature of Escape Room 01",
         caption: "Interactive station or clue sequence",
         size: "gallery-card-landscape"
