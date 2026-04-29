@@ -65,6 +65,71 @@ window.escapeRooms = [
     }
   },
    {
+    slug: "bang",
+    title: "Bang! Chi è stato?",
+    heroText:
+      "",
+     story:
+      "Bang! Chi è stato? is a scientific escape room that brings the participants to the world of Gamma-ray astronomy, one of the new frontiers of modern astrophysics. Gamma rays are invisible to the human eye and telling how scientists catch this invisible and dramatically energetic radiation is a real challenge. Taking part in this mystery investigation, participants will meet the two ground-based observatories – the ASTRI Mini Array and the Cherenkov Telescope Array Observatory – that in the next few years will set a new benchmark in this field, as well as their science and the brilliant strategy they use to see the invisible. An unexpected signal from space was recorded by an X-ray satellite. Something violent happened, maybe an explosion. But we do not have enough information to get the whole picture, yet, not on the real nature of the emission, nor about its incoming direction. The Astronomer’s Telegram announcing the event, however, suggested what to do next: more observations, covering different electromagnetic bands. That’s where the real investigation starts! Will you be able to find out who fired the shot in the sky? ",
+    mission:
+      "Open your Astronomer’s Telegram and read it carefully. Something happened in the sky that is worth investigating, but where exactly? This is the first challenge: look at the sky around you and find your target. This will allow you to identify your Cherenkov telescope: open it and collect the gamma-ray data. And then the data must be analyzed: the next two puzzles give you the key to discovering the sky source of your interest and its peculiarities. Finally, as in every scientific research, results are to be shared with the community, that is the only way to make science advance. So, with the last step -writing a paper- your discovery can finally reach the world. ",
+    discover:
+      "Our knowledge of astronomical objects and events relies almost entirely on the observation of the light they emit. Every band of the electromagnetic spectrum gives its contribution to the overall picture, and the best knowledge of the nature of any sky objects comes from combining these pieces together. Gamma rays from space track the most energetic phenomena in the Universe, going from supernovae explosion to extreme accreting system. Unlike visible light, they cannot penetrate the atmosphere, where they soon get absorbed, and their flux (at least at the higher energies) is too low to be observable with instruments onboard satellites outside the atmosphere (as we do, for example, with X-rays). The solution, however, is in the problem itself: when entering the atmosphere, high-energy gamma-rays produce a cascade of ultra-fast charged particles, that polarize other particles along their trajectory. The result is a faint flash of blue light, the Cherenkov light, that can be observed with ground-based telescopes.  ",
+    participants: {
+      ageGroup: "Ages 10 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 30 participants per session"
+    },
+    practicalInfo: {
+      duration: "60 minutes",
+      languages: "English, Italian",
+      website: "",
+      websiteLabel: ""
+    },
+    special:
+      "",
+    gallery: [
+      {
+        src: "gallery-image-1.jpg",
+        alt: "Main scene of Escape Room 01",
+        caption: "Main scene or room setup",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "gallery-image-2.jpg",
+        alt: "Puzzle detail from Escape Room 01",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-3.jpg",
+        alt: "Participants in Escape Room 01",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "gallery-image-4.jpg",
+        alt: "Interactive feature of Escape Room 01",
+        caption: "Interactive station or clue sequence",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "Istituto Nazionale di Astrofisica (INAF)",
+      description:
+        "Italy’s leading institute for astrophysics research, contributing expertise in space science, astronomy, and public engagement. ",
+      logo: {
+        src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+        alt: "INAF logo"
+      },
+      website: "http://www.inaf.it/en",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "Valentina.laparola@inaf.it"
+    }
+  },
+   {
     slug: "acceler",
     title: "Acceler8Escape",
     heroText:
