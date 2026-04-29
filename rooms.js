@@ -284,7 +284,7 @@ window.escapeRooms = [
       "",
     gallery: [
       {
-        src: "escape-rooms_img/equilibrio/img1.jpg",
+        src: "escape-rooms_img/equilibrio/img3.jpg",
         alt: "Main scene of Escape Room 01",
         caption: "Main scene or room setup",
         size: "gallery-card-xl"
@@ -296,7 +296,7 @@ window.escapeRooms = [
         size: "gallery-card-square"
       },
       {
-        src: "escape-rooms_img/equilibrio/img3.jpg",
+        src: "escape-rooms_img/equilibrio/img1.jpg",
         alt: "Participants in Escape Room 01",
         caption: "Participants in action",
         size: "gallery-card-square"
