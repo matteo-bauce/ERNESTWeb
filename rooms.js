@@ -219,27 +219,27 @@ window.escapeRooms = [
   special: "This is not just a collection of puzzles, but a chronological immersion into the milestones of particle physics. Participants experience the long-term human effort and the sequence of discoveries that led to the standard model we have today. ",
   gallery: [
     {
-      src: "escape-rooms_img/per/img1.jpg",
-      alt: "Main scene of Escape Room 01",
-      caption: "Main scene or room setup",
+      src: "escape-rooms_img/per/img1.png",
+      alt: "Main scene",
+      caption: "Main scene",
       size: "gallery-card-xl"
     },
     {
       src: "escape-rooms_img/per/img2.jpg",
-      alt: "Puzzle detail from Escape Room 01",
+      alt: "Puzzle detail",
       caption: "Puzzle detail",
       size: "gallery-card-square"
     },
     {
       src: "escape-rooms_img/per/img3.jpg",
-      alt: "Participants in Escape Room 01",
+      alt: "Participants",
       caption: "Participants in action",
       size: "gallery-card-square"
     },
     {
       src: "escape-rooms_img/per/img4.jpg",
-      alt: "Interactive feature of Escape Room 01",
-      caption: "Interactive station or clue sequence",
+      alt: "Interactive feature",
+      caption: "Interactive station",
       size: "gallery-card-landscape"
     }
   ],
@@ -285,26 +285,26 @@ window.escapeRooms = [
     gallery: [
       {
         src: "escape-rooms_img/equilibrio/img3.jpg",
-        alt: "Main scene of Escape Room 01",
-        caption: "Main scene or room setup",
+        alt: "Main scene",
+        caption: "Main scene",
         size: "gallery-card-xl"
       },
       {
         src: "escape-rooms_img/equilibrio/img2.jpg",
-        alt: "Puzzle detail from Escape Room 01",
+        alt: "Puzzle detail",
         caption: "Puzzle detail",
         size: "gallery-card-square"
       },
       {
         src: "escape-rooms_img/equilibrio/img1.png",
-        alt: "Participants in Escape Room 01",
+        alt: "Participants",
         caption: "Participants in action",
         size: "gallery-card-square"
       },
       {
         src: "escape-rooms_img/equilibrio/img4.jpg",
-        alt: "Interactive feature of Escape Room 01",
-        caption: "Interactive station or clue sequence",
+        alt: "Interactive feature",
+        caption: "Interactive station",
         size: "gallery-card-landscape"
       }
     ],
