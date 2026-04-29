@@ -132,7 +132,7 @@ window.escapeRooms = [
   {
   slug: "per",
   title: "PER me si va ne la fisica recente",
-  heroText: "",
+  heroText: "An immersive Dante-inspired escape room where you solve puzzles to journey through the history of particle physics and uncover the mysteries beyond the standard model",
   story:
     "PER me si va ne la fisica recente is an immersive escape room experience created by the \"Physics4Teenagers\" group at the University of Pavia. Inspired by Dante’s Divina Commedia, this adventure challenges you to navigate the evolution of particle physics. From the first atomic theories to the discovery of the Higgs boson and beyond, you will solve intricate puzzles to reconstruct the standard model of particle physics. Are you ready to follow in the footsteps of great scientists and uncover the mysteries of the universe? Your guide is Democritus, acting as a modern-day Virgil, who will lead you through the historical experiments and revolutionary ideas that shaped our understanding of fundamental particles. As you progress, the journey transitions from established knowledge to the unknown. The character Curiosity—our Beatrice—will eventually take the lead, accompanying you beyond the standard model to face the greatest open questions in physics today.",
   mission:
@@ -151,7 +151,7 @@ window.escapeRooms = [
       "https://fisica.dip.unipv.it/it/divulgazione/physics4teenagers/particle-escape-room",
     websiteLabel: "Official website"
   },
-  special: "",
+  special: "This is not just a collection of puzzles, but a chronological immersion into the milestones of particle physics. Participants experience the long-term human effort and the sequence of discoveries that led to the standard model we have today. ",
   gallery: [
     {
       src: "gallery-image-1.jpg",
