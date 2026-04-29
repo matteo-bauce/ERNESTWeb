@@ -68,7 +68,7 @@ window.escapeRooms = [
     slug: "bang",
     title: "Bang! Chi è stato?",
     heroText:
-      "",
+      "A mystery-themed escape room where participants investigate a cosmic explosion and explore the invisible world of gamma-ray astronomy through real astrophysical observatories.",
      story:
       "Bang! Chi è stato? is a scientific escape room that brings the participants to the world of Gamma-ray astronomy, one of the new frontiers of modern astrophysics. Gamma rays are invisible to the human eye and telling how scientists catch this invisible and dramatically energetic radiation is a real challenge. Taking part in this mystery investigation, participants will meet the two ground-based observatories – the ASTRI Mini Array and the Cherenkov Telescope Array Observatory – that in the next few years will set a new benchmark in this field, as well as their science and the brilliant strategy they use to see the invisible. An unexpected signal from space was recorded by an X-ray satellite. Something violent happened, maybe an explosion. But we do not have enough information to get the whole picture, yet, not on the real nature of the emission, nor about its incoming direction. The Astronomer’s Telegram announcing the event, however, suggested what to do next: more observations, covering different electromagnetic bands. That’s where the real investigation starts! Will you be able to find out who fired the shot in the sky? ",
     mission:
