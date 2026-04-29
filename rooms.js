@@ -192,7 +192,7 @@ window.escapeRooms = [
   contact: {
     email: "physics4teenagers@unipv.it"
   }
-}
+},
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
