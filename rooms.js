@@ -87,7 +87,7 @@ window.escapeRooms = [
       websiteLabel: ""
     },
     special:
-      "",
+      "Gamma-ray astronomy with Cherenkov telescopes is a very peculiar way of studying the sky, since it uses the atmosphere as the detector, and looks only indirectly at the sources we are interested in. This escape room shows how it works, giving the players the role of a science team, and having them follow all the steps of real scientific research, from asking the right questions, to data collection and analysis, all the way to the final publication of a paper.  ",
     gallery: [
       {
         src: "gallery-image-1.jpg",
