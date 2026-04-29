@@ -25,27 +25,27 @@ window.escapeRooms = [
       "HEPscape! is a unique opportunity to learn about particle physics in an alternative approach, with a dedicated setup and installation. It is the first escape room devoted to high energy particle physics and it opened the way for collateral projects and replicas not only in Italy, but also in other European cities.  ",
     gallery: [
       {
-        src: "gallery-image-1.jpg",
-        alt: "Main scene of Escape Room 01",
-        caption: "Main scene or room setup",
+        src: "escape-rooms_img/hepscape/img1.jpg",
+        alt: "Main scene of HEPscape!",
+        caption: "Main scene",
         size: "gallery-card-xl"
       },
       {
-        src: "gallery-image-2.jpg",
-        alt: "Puzzle detail from Escape Room 01",
+        src: "escape-rooms_img/hepscape/img2.jpg",
+        alt: "Puzzle detail from HEPscape!",
         caption: "Puzzle detail",
         size: "gallery-card-square"
       },
       {
-        src: "gallery-image-3.jpg",
-        alt: "Participants in Escape Room 01",
+        src: "escape-rooms_img/hepscape/img3.jpg",
+        alt: "Participants in HEPscape!",
         caption: "Participants in action",
         size: "gallery-card-square"
       },
       {
-        src: "gallery-image-4.jpg",
-        alt: "Interactive feature of Escape Room 01",
-        caption: "Interactive station or clue sequence",
+        src: "escape-rooms_img/hepscape/img4.jpg",
+        alt: "Interactive feature of HEPscape!",
+        caption: "Interactive station",
         size: "gallery-card-landscape"
       }
     ],
