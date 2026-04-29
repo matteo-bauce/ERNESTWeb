@@ -296,7 +296,7 @@ window.escapeRooms = [
         size: "gallery-card-square"
       },
       {
-        src: "escape-rooms_img/equilibrio/img1.jpg",
+        src: "escape-rooms_img/equilibrio/img1.png",
         alt: "Participants in Escape Room 01",
         caption: "Participants in action",
         size: "gallery-card-square"
