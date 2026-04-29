@@ -219,13 +219,13 @@ window.escapeRooms = [
   special: "This is not just a collection of puzzles, but a chronological immersion into the milestones of particle physics. Participants experience the long-term human effort and the sequence of discoveries that led to the standard model we have today. ",
   gallery: [
     {
-      src: "escape-rooms_img/per/img1.png",
+      src: "escape-rooms_img/per/img2.jpg",
       alt: "Main scene",
       caption: "Main scene",
       size: "gallery-card-xl"
     },
     {
-      src: "escape-rooms_img/per/img2.jpg",
+      src: "escape-rooms_img/per/img1.png",
       alt: "Puzzle detail",
       caption: "Puzzle detail",
       size: "gallery-card-square"
