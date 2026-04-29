@@ -80,7 +80,7 @@
           </div>
           <div class="hero-cat-mark" aria-hidden="true"></div>
           <div class="page-hero-copy">
-            <p class="eyebrow">The Escape Room Kits</p>
+            <p class="eyebrow">The Escape Rooms</p>
             <h1>Portable science escape rooms</h1>
             <p class="lead">
               Browse the ERNEST catalogue of portable scientific escape room kits: modular
@@ -96,8 +96,8 @@
       <main>
         <section class="section">
           <div class="section-heading">
-            <p class="section-kicker">Browse the kit catalogue</p>
-            <h2>Filter ERNEST escape room kits by their key characteristics.</h2>
+            <p class="section-kicker">Browse the catalogue</p>
+            <h2>Filter ERNEST escape rooms by their key characteristics.</h2>
           </div>
 
           <div class="filters-panel">
@@ -361,8 +361,8 @@
 
           roomsCount.textContent =
             filteredRooms.length === 1
-              ? "1 escape room kit matches the current filters."
-              : `${filteredRooms.length} escape room kits match the current filters.`;
+              ? "1 escape room matches the current filters."
+              : `${filteredRooms.length} escape rooms match the current filters.`;
 
           roomsGrid.innerHTML = "";
 
@@ -382,7 +382,7 @@
                 ${
                   room.slug
                     ? `<a class="room-website" href="escape-room-templ.html?room=${room.slug}">
-                         Explore this escape room kit
+                         Explore this escape room
                        </a>`
                     : ""
                 }
