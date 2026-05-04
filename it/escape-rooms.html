@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape Rooms | Kit scientifici portatili</title>
+    <meta
+      name="description"
+      content="Esplora il catalogo ERNEST di escape room scientifiche portatili, filtra per caratteristiche e scopri esperienze modulari pensate per scuole, eventi e contesti partner."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">ERNEST</a>
+              <a href="escape-rooms.html" aria-current="page">Escape Rooms</a>
+              <a href="network.html">La Rete</a>
+              <a href="index.html#events">Eventi</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambia tema colore"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../escape-rooms.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">Le Escape Rooms</p>
+            <h1>Escape room scientifiche portatili</h1>
+            <p class="lead">
+              Esplora il catalogo ERNEST di kit scientifici portatili: esperienze modulari pensate per
+              muoversi tra scuole, eventi pubblici, festival e sedi partner. Usa i filtri per cercare per
+              tema, lingua, ambito scientifico o formato, e scopri il racconto, le attività e gli obiettivi
+              educativi che caratterizzano ogni escape room.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Esplora il catalogo</p>
+            <h2>Filtra le escape room ERNEST in base alle loro caratteristiche principali.</h2>
+          </div>
+
+          <div class="filters-panel">
+            <div class="filter-field">
+              <label for="filter-language">Lingua</label>
+              <select id="filter-language">
+                <option value="all">Tutte le lingue</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-city">Disponibile / ospitata a</label>
+              <select id="filter-city">
+                <option value="all">Tutti i luoghi</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-theme">Tema</label>
+              <select id="filter-theme">
+                <option value="all">Tutti i temi</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-format">Formato</label>
+              <select id="filter-format">
+                <option value="all">Tutti i formati</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="filter-summary" id="rooms-count"></p>
+          <div class="rooms-grid" id="rooms-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Finanziato dall'Unione europea">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione europea">
+          </div>
+        </div>
+
+        <p class="funding-text">
+          ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione Europea nell’ambito delle Marie Skłodowska-Curie Actions. GA 101305138
+        </p>
+
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../site.js"></script>
+    <script>
+      (() => {
+        const rooms = [
+          {
+            title: "HEPscape!",
+            slug: "hepscape",
+            host: "INFN",
+            city: ["Catania", "Bari", "Roma", "Perugia", "Pisa", "Parigi"],
+            country: ["Italia", "Francia"],
+            language: ["Francese", "Italiano"],
+            theme: "Fisica delle particelle",
+            format: ["In presenza", "Itinerante"],
+            audience: "Scuole (6+) ed eventi pubblici",
+            duration: "Circa 45 minuti",
+            teamSize: "Fino a 25 partecipanti",
+            website: "https://web.infn.it/hepscape/",
+            description:
+              "Le persone partecipanti risolvono enigmi ispirati alla fisica per scoprire come vengono identificate le particelle e in che modo gli esperimenti al Large Hadron Collider rivelano la struttura nascosta della materia.",
+          },
+          {
+            title: "A cavallo di un fotone",
+            host: "INAF",
+            city: ["Roma", "Bologna", "Padova", "Torino"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "Astrofisica",
+            format: ["In presenza", "Itinerante"],
+            audience: "Scuole (8+) ed eventi pubblici",
+            duration: "Circa 50 minuti",
+            teamSize: "Fino a 25 partecipanti",
+            website: "",
+            description:
+              "Attraverso sfide di coding e robotica, le persone partecipanti seguono il viaggio dei fotoni, le particelle di luce, dalle profondità del Sole fino ai telescopi degli astronomi che osservano i corpi celesti dalla Terra per studiarli e svelarne i misteri.",
+          },
+          {
+            title: "A caccia nel buio",
+            host: "INAF",
+            city: ["Cagliari"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "Astrofisica",
+            format: ["In presenza"],
+            audience: "",
+            duration: "",
+            teamSize: "",
+            website: "https://play.inaf.it/escape-room/",
+            description:
+              "Risolvendo enigmi all’interno dell’ufficio di un’astronoma o di un astronomo, si scopre come gli scienziati studiano la nascita di stelle e sistemi planetari usando dati da radiotelescopi e metodi di ricerca reali.",
+          },
+          {
+            title: "Alla Ricerca dell'Equilibrio Perduto",
+            slug: "equilibrio",
+            host: "CNR",
+            city: ["Napoli"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "STEM",
+            format: ["In presenza", "Itinerante"],
+            audience: "Scuole (12+) ed eventi pubblici",
+            duration: "Circa 45 minuti",
+            teamSize: "Da 4 a 10 partecipanti",
+            website: "",
+            description:
+              "Una scia nascosta di indizi ed esperimenti tra fisica, chimica, biologia e matematica mette alla prova logica, osservazione e spirito di scoperta per svelare il segreto di una scienziata o di uno scienziato.",
+          },
+          {
+            title: "Medical Physics Escape Room",
+            host: "Università degli Studi di Torino e INFN Torino",
+            city: ["Torino"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "Fisica medica",
+            format: ["In presenza", "Itinerante"],
+            audience: "Scuole (16+)",
+            duration: "Da 15 minuti a 1 ora",
+            teamSize: "Da 3 a 10 partecipanti",
+            website: "https://fisica61.wordpress.com/",
+            description:
+              "Sfide interattive tra diagnosi, terapia e ricerca mostrano come la fisica sostenga la medicina contemporanea, dall’imaging medico alla terapia con particelle.",
+          },
+          {
+            title: "maSTEM game",
+            host: "Università degli Studi di Torino e INFN Torino",
+            city: ["Torino"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "STEM",
+            format: ["In presenza", "Itinerante"],
+            audience: "Scuole (16+)",
+            duration: "Da 15 minuti a 1 ora",
+            teamSize: "Da 3 a 10 partecipanti",
+            website: "https://www.mastem-game.unito.it/",
+            description:
+              "Sfide STEM interattive combinano scienza, linguaggio e lavoro di squadra per esplorare fisica, biologia, matematica e medicina in un’esperienza di apprendimento multilingue.",
+          },
+          {
+            title: "PER me si va ne la fisica recente",
+            slug: "per",
+            host: "Università di Pavia",
+            city: ["Pavia"],
+            country: ["Italia"],
+            language: ["Italiano"],
+            theme: "Fisica delle particelle",
+            format: ["In presenza"],
+            audience: "Scuole (16+) ed eventi pubblici",
+            duration: "Circa 75-90 minuti",
+            teamSize: "Fino a 25 partecipanti",
+            website: "https://fisicapaviaeducational.it/phys4teens/p4t_per/",
+            description:
+              "Un percorso ispirato alla Divina Commedia di Dante guida chi partecipa tra le scoperte che hanno plasmato la fisica delle particelle moderna, dal Modello Standard ai grandi interrogativi ancora aperti sull’universo.",
+          },
+          {
+            title: "Acceler8 Escape",
+            slug: "acceler",
+            host: "Università di Manchester",
+            city: ["Manchester"],
+            country: ["Regno Unito"],
+            language: ["Inglese"],
+            theme: "Fisica delle particelle",
+            format: ["In presenza"],
+            audience: "Scuole (8+) ed eventi pubblici",
+            duration: "Circa 50 minuti",
+            teamSize: "Fino a 50 partecipanti",
+            website: "",
+            description:
+              "I team affrontano sfide interattive all’interno di un acceleratore di particelle simulato per scoprire come laser, magneti, rivelatori e sistemi di radiazione sostengono la ricerca fisica contemporanea.",
+          },
+          {
+            title: "Bang! Chi è stato?",
+            slug: "bang",
+            host: "INAF",
+            city: ["Palermo", "Bologna"],
+            country: ["Italia"],
+            language: ["Italiano", "Inglese"],
+            theme: "Astronomia",
+            format: ["In presenza"],
+            audience: "Scuole (10+) ed eventi pubblici",
+            duration: "Circa 1 ora",
+            teamSize: "Fino a 25 partecipanti",
+            website: "",
+            description:
+              "Un’indagine scientifica su un’esplosione cosmica guida i partecipanti attraverso dati telescopici, energia dei fotoni e indizi astronomici per identificare l’origine di un evento gamma-ray.",
+          },
+        ];
+
+        const filters = {
+          language: document.querySelector("#filter-language"),
+          city: document.querySelector("#filter-city"),
+          theme: document.querySelector("#filter-theme"),
+          format: document.querySelector("#filter-format"),
+        };
+        const roomsGrid = document.querySelector("#rooms-grid");
+        const roomsCount = document.querySelector("#rooms-count");
+
+        const uniqueValues = (key) => {
+          const values = rooms.flatMap((room) => room[key]);
+          return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+        };
+
+        const populateSelect = (select, values) => {
+          values.forEach((value) => {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = value;
+            select.append(option);
+          });
+        };
+
+        populateSelect(filters.language, uniqueValues("language"));
+        populateSelect(filters.city, uniqueValues("city"));
+        populateSelect(filters.theme, uniqueValues("theme"));
+        populateSelect(filters.format, uniqueValues("format"));
+
+        const matchesFilter = (room, key, value) => {
+          if (value === "all") return true;
+          const field = room[key];
+          return Array.isArray(field) ? field.includes(value) : field === value;
+        };
+
+        const renderRooms = () => {
+          const activeFilters = {
+            language: filters.language.value,
+            city: filters.city.value,
+            theme: filters.theme.value,
+            format: filters.format.value,
+          };
+
+          const filteredRooms = rooms.filter((room) =>
+            Object.entries(activeFilters).every(([key, value]) => matchesFilter(room, key, value))
+          );
+
+          roomsCount.textContent =
+            filteredRooms.length === 1
+              ? "1 escape room corrisponde ai filtri selezionati."
+              : `${filteredRooms.length} escape room corrispondono ai filtri selezionati.`;
+
+          roomsGrid.innerHTML = "";
+
+          filteredRooms.forEach((room) => {
+            const card = document.createElement("article");
+            card.className = "room-card";
+
+            const languageTags = room.language
+              .map((item) => `<span class="tag">${item}</span>`)
+              .join("");
+
+            card.innerHTML = `
+              <div class="room-card-head">
+                <p class="story-link-label">${room.theme}</p>
+                <h3>${room.title}</h3>
+                <p>${room.description}</p>
+                ${
+                  room.slug
+                    ? `<a class="room-website" href="escape-room-templ.html?room=${room.slug}">
+                         Esplora questa escape room
+                       </a>`
+                    : ""
+                }
+              </div>
+              <div class="room-meta">
+                <p><strong>Ente proponente</strong><span>${room.host}</span></p>
+                <p><strong>Disponibile / ospitata a</strong><span>${room.city.join(", ")} - ${room.country.join(", ")}</span></p>
+                <p><strong>Pubblico</strong><span>${room.audience}</span></p>
+                <p><strong>Durata</strong><span>${room.duration}</span></p>
+                <p><strong>Dimensione del gruppo</strong><span>${room.teamSize}</span></p>
+                <p><strong>Formato</strong><span>${room.format.join(", ")}</span></p>
+              </div>
+              <div class="tag-row">
+                ${languageTags}
+              </div>
+            `;
+
+            roomsGrid.append(card);
+          });
+
+          if (!filteredRooms.length) {
+            roomsGrid.innerHTML = `
+              <article class="room-card room-card-empty">
+                <h3>Nessun kit corrisponde ancora a questa combinazione.</h3>
+                <p>Prova a selezionare filtri meno restrittivi o ad aggiungere nuove voci al dataset.</p>
+              </article>
+            `;
+          }
+        };
+
+        Object.values(filters).forEach((select) => {
+          select.addEventListener("change", renderRooms);
+        });
+
+        renderRooms();
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERNEST | European Researchers' Night Escape Science Team</title>
+    <meta
+      name="description"
+      content="ERNEST è un progetto europeo di divulgazione scientifica che porta fisica e astronomia fuori dai luoghi convenzionali attraverso escape room immersive e attività partecipative."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="about.html">ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">La Rete</a>
+              <a href="index.html#events">Eventi</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambia tema colore"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../index.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+            </div>
+          </div>
+        </nav>
+
+        <section class="hero-layout" id="top">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="hero-copy hero-copy-full">
+            <p class="eyebrow">Progetto europeo di divulgazione scientifica</p>
+            <h1>Esplorare la scienza attraverso escape room immersive.</h1>
+            <p class="lead">
+              ERNEST trasforma la curiosità in azione, creando esperienze scientifiche pratiche e coinvolgenti
+              per ragazze, ragazzi e adulti. Attraverso enigmi, narrazione, esperimenti e attività dal vivo,
+              chi partecipa non si limita a conoscere la scienza: la vive in prima persona.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="escape-rooms.html">Esplora le escape room</a>
+              <a class="button button-secondary" href="network.html">Scopri la rete</a>
+            </div>
+            <ul class="hero-highlights" aria-label="Punti chiave del progetto">
+              <li>Escape room interattive ispirate a temi reali della ricerca scientifica</li>
+              <li>Esperienze coinvolgenti per scuole, famiglie e pubblico generalista</li>
+              <li>Attività sviluppate nel contesto della Notte Europea delle Ricercatrici e dei Ricercatori</li>
+            </ul>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section intro" id="about">
+          <div class="section-heading">
+            <p class="section-kicker">Cosa fa il progetto</p>
+            <h2>La comunicazione scientifica prende la forma di un’avventura.</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="card card-large">
+              <h3>Dai concetti alle esperienze</h3>
+              <p>
+                ERNEST porta fisica e astronomia fuori dai loro contesti abituali e le trasforma in esperienze
+                immersive. Le persone partecipanti affrontano sfide ispirate al metodo scientifico, all’esplorazione
+                dello spazio, alla luce, alla materia e all’universo.
+              </p>
+              <p>
+                Ogni attività è pensata per rendere la ricerca accessibile, concreta e memorabile, offrendo un modo
+                giocoso ma rigoroso per entrare in contatto con il pensiero scientifico.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>A chi si rivolge</h3>
+              <p>
+                Il progetto si rivolge a bambine e bambini, adolescenti, adulti, famiglie, scuole e visitatrici e
+                visitatori curiosi che desiderano incontrare la scienza in una forma partecipativa, dinamica e collaborativa.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Dove e quando</h3>
+              <p>
+                Le escape room di ERNEST possono essere allestite in contesti diversi, con un ruolo speciale durante la
+                Notte Europea delle Ricercatrici e dei Ricercatori e in altri eventi dedicati al coinvolgimento del pubblico.
+                Segui il progetto per scoprire i prossimi appuntamenti.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-links">
+          <div class="section-heading">
+            <p class="section-kicker">Per approfondire</p>
+            <h2>La storia di ERNEST, dall’idea all’impatto.</h2>
+            <p class="section-note">
+              Esplora le pagine dedicate per conoscere meglio il progetto, le escape room e la rete che le rende possibili.
+            </p>
+          </div>
+
+          <div class="story-links">
+            <article class="story-link-card">
+              <p class="story-link-label">ERNEST</p>
+              <h3>Il progetto dietro il gioco</h3>
+              <p>
+                Scopri la visione complessiva del progetto, la sua missione, il metodo di lavoro e l’impatto che ERNEST
+                intende generare attraverso la comunicazione della scienza.
+              </p>
+              <a class="text-link" href="about.html">Apri la pagina del progetto</a>
+            </article>
+
+            <article class="story-link-card">
+              <p class="story-link-label">Gioca ed esplora</p>
+              <h3>Trova la tua escape room</h3>
+              <p>
+                Sfoglia le escape room del progetto, confrontane caratteristiche e temi, e scopri come la ricerca si traduce
+                in esperienze interattive per pubblici diversi.
+              </p>
+              <a class="text-link" href="escape-rooms.html">Esplora le escape room</a>
+            </article>
+
+            <article class="story-link-card">
+              <p class="story-link-label">La rete</p>
+              <h3>Le persone e le istituzioni</h3>
+              <p>
+                Conosci le istituzioni, le ricercatrici, i ricercatori, le educatrici, gli educatori e i partner che collaborano
+                per dare forma a ERNEST in tutta Europa.
+              </p>
+              <a class="text-link" href="network.html">Scopri la rete</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section feature-band">
+          <div class="feature-band-copy">
+            <p class="section-kicker">Perché le escape room</p>
+            <h2>Perché rendono la ricerca partecipata, sociale e memorabile.</h2>
+          </div>
+          <div class="feature-points">
+            <article>
+              <span class="feature-number">01</span>
+              <h3>Imparare facendo</h3>
+              <p>Gli enigmi diventano porte d’ingresso al pensiero scientifico, trasformando il problem solving in scoperta.</p>
+            </article>
+            <article>
+              <span class="feature-number">02</span>
+              <h3>Ricerca nello spazio pubblico</h3>
+              <p>Laboratori e osservatori si trasformano in esperienze accessibili, condivise e coinvolgenti per pubblici diversi.</p>
+            </article>
+            <article>
+              <span class="feature-number">03</span>
+              <h3>Eventi con impatto</h3>
+              <p>ERNEST aiuta università ed enti di ricerca a dialogare con il pubblico ben oltre i contesti tradizionali della didattica.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="partners">
+          <div class="section-heading">
+            <p class="section-kicker">Università e istituzioni partecipanti</p>
+            <h2>Una rete di realtà che collaborano per la comunicazione della scienza.</h2>
+            <p class="section-note">
+              Per una panoramica completa di ruoli, istituzioni e persone coinvolte, visita la pagina dedicata alla rete ERNEST.
+            </p>
+          </div>
+
+          <div class="institutions-grid">
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.infn.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/INFN_logo.svg" alt="INFN logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/PNG/inaf-fondo-trasparente.png" alt="INAF logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.cnr.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/PNG/logo_CNR_transparent.png" alt="CNR logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.cnrs.fr" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/CNRS_logo.svg" alt="CNRS logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.manchester.ac.uk" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UniMAN_logo.svg" alt="Manchester logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.uniba.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UNIBA.svg" alt="Bari logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.unipv.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UNIPV.svg" alt="Pavia logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.unipg.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UNIPG.svg" alt="Perugia logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.uniupo.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/PNG/UNIUPO.png" alt="Piemonte Orientale logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.unipi.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UNIPI.svg" alt="Pisa logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://www.unito.it" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/SVG/UNITO.svg" alt="Torino logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+
+            <article class="detail-card institution-card">
+              <div class="logo-box">
+                <a href="https://agenzialama.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="../network_img/Logos/PNG/LAMA.png" alt="LAMA logo" class="institution-logo">
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <p class="section-cta">
+            <a class="text-link" href="network.html">Vai a La Rete</a>
+          </p>
+        </section>
+
+        <section class="section" id="events">
+          <div class="section-heading">
+            <p class="section-kicker">Programma eventi</p>
+            <h2>Prossime occasioni per entrare nel mondo ERNEST.</h2>
+            <p class="section-note">
+              Scopri i prossimi eventi di ERNEST: dettagli di programma e link per la registrazione verranno aggiunti man mano che le attività saranno confermate.
+            </p>
+          </div>
+
+          <div class="events-list">
+            <article class="event-card">
+              <p class="event-date">Settembre 2026</p>
+              <h3>Notte Europea delle Ricercatrici e dei Ricercatori</h3>
+              <p>
+                Evento pubblico di punta con esperienze ERNEST pensate per pubblici ampi e diversificati.
+              </p>
+            </article>
+            <article class="event-card">
+              <p class="event-date">Autunno 2026</p>
+              <h3>La scienza incontra la scuola</h3>
+              <p>
+                Attività nelle scuole con formazione docenti, laboratori di co-creazione ed esperienze guidate da ricercatrici e ricercatori che coinvolgono gli studenti nell’indagine scientifica e nel lavoro collaborativo.
+              </p>
+            </article>
+            <article class="event-card">
+              <p class="event-date">Inverno 2026</p>
+              <h3>La scienza incontra la scuola</h3>
+              <p>
+                Un formato itinerante di escape room pensato per il pubblico delle scuole secondarie e per il personale docente.
+              </p>
+            </article>
+          </div>
+
+          <p class="section-cta">
+            <a class="text-link" href="escape-rooms.html">Sfoglia il catalogo delle escape room</a>
+          </p>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+          <div class="section-heading">
+            <p class="section-kicker">Galleria fotografica</p>
+            <h2>Uno sguardo a workshop, installazioni e attività pubbliche.</h2>
+            <p class="section-note">
+              Una selezione di immagini raccolte durante workshop recenti, installazioni ed eventi di public engagement.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card-xl">
+              <div class="gallery-media gallery-tone-1">
+                <img src="../index_img/INAF-img.png" alt="Allestimento e scenografia di un'escape room">
+              </div>
+              <figcaption>Allestimento e scenografia di un’escape room</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-portrait">
+              <div class="gallery-media gallery-tone-2">
+                <img src="../index_img/IMG_2280.jpeg" alt="Partecipanti alle prese con indizi scientifici">
+              </div>
+              <figcaption>Partecipanti alle prese con indizi scientifici</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-square">
+              <div class="gallery-media gallery-tone-3">
+                <img src="../index_img/IMG_9182.JPG" alt="Team universitari e facilitatrici e facilitatori">
+              </div>
+              <figcaption>Team universitari e facilitatrici e facilitatori</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-wide">
+              <div class="gallery-media gallery-tone-4">
+                <img src="../index_img/INAF-A-cavallo-di-un-fotone-1.png" alt="ERNEST alla Notte Europea delle Ricercatrici e dei Ricercatori">
+              </div>
+              <figcaption>ERNEST alla Notte Europea delle Ricercatrici e dei Ricercatori</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-square">
+              <div class="gallery-media gallery-tone-5">
+                <img src="../index_img/INAF-A-cavallo-di-un-fotone-3.jpg" alt="Momenti hands-on durante workshop pubblici">
+              </div>
+              <figcaption>Momenti hands-on durante workshop pubblici</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-landscape">
+              <div class="gallery-media gallery-tone-6">
+                <img src="../index_img/img05.jpeg" alt="Narrazione scientifica, teamwork e facilitazione dal vivo">
+              </div>
+              <figcaption>Narrazione scientifica, teamwork e facilitazione dal vivo</figcaption>
+            </figure>
+
+            <figure class="gallery-card gallery-card-portrait">
+              <div class="gallery-media gallery-tone-7">
+                <img src="../index_img/IMG20230206114420.jpg" alt="Dettagli di un allestimento pensato per partner e contesti itineranti">
+              </div>
+              <figcaption>Dettagli di un allestimento pensato per contesti partner e itineranti</figcaption>
+            </figure>
+          </div>
+
+          <p class="section-cta">
+            <a class="text-link" href="about.html">Leggi la storia completa del progetto ERNEST</a>
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Finanziato dall'Unione europea">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione europea">
+          </div>
+        </div>
+
+        <p class="funding-text">
+          ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione Europea nell’ambito delle Marie Skłodowska-Curie Actions. GA 101305138
+        </p>
+
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../site.js"></script>
+  </body>
+</html>

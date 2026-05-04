@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERNEST | Il progetto dietro il gioco</title>
+    <meta
+      name="description"
+      content="Scopri ERNEST: un progetto europeo che trasforma la ricerca scientifica in esperienze immersive, accessibili e coinvolgenti per pubblici diversi."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="../index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html" aria-current="page">ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">La Rete</a>
+              <a href="index.html#events">Eventi</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambia tema colore"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../about.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">ERNEST</p>
+            <h1>La scienza diventa esperienza</h1>
+            <p class="lead">
+              ERNEST è un gatto quantistico in missione: portare la scienza nei luoghi più inattesi e
+              trasformarla in un’esperienza viva, partecipata e memorabile. Ispirato in modo giocoso al
+              gatto di Schrödinger, simbolo di curiosità, possibilità e scoperta, ERNEST abita proprio
+              quello spazio sospeso tra ciò che ancora non sappiamo e ciò che possiamo comprendere solo
+              mettendoci in gioco. Attraverso escape room e attività immersive ispirate alla ricerca
+              scientifica, il progetto invita ragazze, ragazzi e adulti a osservare, ragionare,
+              collaborare e sperimentare come farebbe una ricercatrice o un ricercatore.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Panoramica del progetto</p>
+            <h2>Un modo diverso di incontrare la ricerca.</h2>
+          </div>
+
+          <div class="content-grid">
+            <article class="card card">
+              <h3>Dalle idee alle esperienze</h3>
+              <p>
+                ERNEST progetta escape room scientifiche ispirate a temi di ricerca reali. Attraverso
+                enigmi, narrazione e collaborazione, concetti complessi diventano sfide accessibili,
+                coinvolgenti e concrete. Ogni attività è pensata per trasformare la curiosità in azione,
+                stimolando osservazione, pensiero critico e lavoro di squadra. Grazie a formati portatili
+                e adattabili, ERNEST porta la scienza direttamente nei territori, rendendola più vicina,
+                inclusiva e partecipata.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Cosa esploriamo</h3>
+              <p>
+                ERNEST traduce molti ambiti della ricerca in esperienze interattive, tra cui:
+              </p>
+              <ul>
+                <li><p>fisica delle particelle e struttura della materia</p></li>
+                <li><p>spazio, astrofisica e osservazione della Terra</p></li>
+                <li><p>clima, sostenibilità e ricerca ambientale</p></li>
+                <li><p>salute, medicina e innovazione biomedica</p></li>
+                <li><p>intelligenza artificiale, data science e tecnologie digitali</p></li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Scienza per tutte e tutti</h3>
+              <p>
+                ERNEST è pensato per studentesse e studenti, famiglie, educatrici, educatori e per tutte
+                le persone curiose, a ogni età. Il progetto porta esperienze pratiche di scienza in scuole,
+                musei, biblioteche, spazi pubblici e altri contesti non convenzionali. Raggiungendo comunità
+                che spesso restano ai margini delle attività di divulgazione, ERNEST apre nuove occasioni di
+                partecipazione, incontro e scoperta, anche nei territori con minore accesso a iniziative
+                scientifiche strutturate.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section feature-band">
+          <div class="feature-band-copy">
+            <p class="section-kicker">Come funziona</p>
+            <h2>Perché proprio le escape room?</h2>
+          </div>
+          <div class="feature-points">
+            <article>
+              <span class="feature-number">01</span>
+              <h3>La scienza diventa sfida</h3>
+              <p>Le persone partecipanti incontrano idee scientifiche attraverso enigmi, indizi e attività pratiche inserite in ambienti narrativi immersivi.</p>
+            </article>
+            <article>
+              <span class="feature-number">02</span>
+              <h3>La ricerca diventa accessibile</h3>
+              <p>Ogni esperienza nasce da contenuti scientifici reali e avvicina il pubblico ai temi della ricerca in modo diretto, umano e coinvolgente.</p>
+            </article>
+            <article>
+              <span class="feature-number">03</span>
+              <h3>L’apprendimento diventa condiviso</h3>
+              <p>Per portare a termine la missione servono le 4C: pensiero critico, collaborazione, creatività e comunicazione.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Pagine collegate</p>
+            <h2>Esplora ERNEST attraverso esperienze, persone e visione.</h2>
+          </div>
+
+          <div class="story-links">
+            <article class="story-link-card">
+              <p class="story-link-label">Catalogo</p>
+              <h3>Scopri le escape room</h3>
+              <p>
+                Esplora gli scenari scientifici sviluppati all’interno di ERNEST e scopri come i temi della
+                ricerca diventano esperienze interattive e narrative per il pubblico.
+              </p>
+              <a class="text-link" href="escape-rooms.html">Esplora le Escape Rooms</a>
+            </article>
+            <article class="story-link-card">
+              <p class="story-link-label">Consorzio</p>
+              <h3>Conosci la rete ERNEST</h3>
+              <p>
+                Scopri le istituzioni, le ricercatrici, i ricercatori, le educatrici, gli educatori e i partner
+                che collaborano per portare attività di public engagement scientifico in tutta Europa.
+              </p>
+              <a class="text-link" href="network.html">Scopri la Rete</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Finanziato dall'Unione europea">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione europea">
+          </div>
+        </div>
+        <p class="funding-text">
+          ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione Europea nell’ambito delle Marie Skłodowska-Curie Actions. GA 101305138
+        </p>
+
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../site.js"></script>
+  </body>
+</html>

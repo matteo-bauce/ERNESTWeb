@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Rete | Persone e istituzioni</title>
+    <meta
+      name="description"
+      content="Scopri le istituzioni e le persone che danno forma a ERNEST, attraverso una rete europea che unisce ricerca, educazione e coinvolgimento del pubblico."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="../index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html" aria-current="page">La Rete</a>
+              <a href="index.html#events">Eventi</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambia tema colore"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />  
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../network.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">La Rete ERNEST</p>
+            <h1>Le persone e le istituzioni del progetto</h1>
+            <p class="lead">
+              ERNEST nasce da una rete europea ampia e multidisciplinare composta da istituzioni di ricerca,
+              università, educatrici, educatori, ricercatrici, ricercatori e professioniste e professionisti
+              della comunicazione. Insieme, queste realtà collaborano per trasformare la scienza in esperienze
+              immersive, accessibili e coinvolgenti, capaci di mettere in dialogo ricerca, società e partecipazione
+              pubblica. Al centro del progetto c’è un consorzio che unisce eccellenza scientifica, competenze
+              educative e capacita progettuale.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Istituzioni</p>
+            <h2>La rete che rende possibile ERNEST.</h2>
+            <p class="section-note">
+             Le organizzazioni che collegano ricerca, educazione e società attraverso esperienze scientifiche immersive.
+            </p>
+          </div>
+
+
+
+          
+
+
+
+          
+<div class="institutions-grid">
+  <article class="detail-card institution-card">
+    <h3>Istituto Nazionale di Fisica Nucleare (INFN) – Coordinatore </h3>
+    <div class="logo-box">
+    <a href="https://www.infn.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/INFN_logo.svg" alt="INFN logo" class="institution-logo">
+    </a>
+    </div>
+    <p>Ente nazionale di riferimento per la fisica nucleare e delle particelle, coordina ERNEST e contribuisce con competenze nella ricerca su larga scala e nella divulgazione scientifica. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Istituto Nazionale di Astrofisica (INAF) </h3>
+     <div class="logo-box">
+    <a href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/PNG/inaf-fondo-trasparente.png" alt="INAF logo" class="institution-logo">
+    </a>
+       </div>
+    <p>L’ente italiano di riferimento per la ricerca astrofisica, con competenze in scienze dello spazio, astronomia e coinvolgimento del pubblico. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Consiglio Nazionale delle Ricerche (CNR)</h3>
+     <div class="logo-box">
+    <a href="https://www.cnr.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/PNG/logo_CNR_transparent.png" alt="CNR logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Il più grande ente pubblico di ricerca italiano, attivo in un ampio spettro di discipline scientifiche, dalle scienze ambientali alla tecnologia e all’innovazione. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Centre National de la Recherche Scientifique (CNRS)</h3>
+     <div class="logo-box">
+    <a href="https://www.cnrs.fr" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/CNRS_logo.svg" alt="CNRS logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Il principale centro di ricerca francese, che apporta una prospettiva internazionale nelle scienze di base e nella ricerca interdisciplinare. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>The University of Manchester </h3>
+     <div class="logo-box">
+    <a href="https://www.manchester.ac.uk" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UniMAN_logo.svg" alt="Manchester logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un’università di ricerca di rilievo internazionale, con competenze in fisica, data science e comunicazione scientifica su larga scala. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università degli Studi di Bari Aldo Moro</h3>
+     <div class="logo-box">
+    <a href="https://www.uniba.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UNIBA.svg" alt="Bari logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un grande ateneo italiano che contribuisce con competenze di ricerca e formazione in diversi ambiti scientifici. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università di Pavia</h3>
+     <div class="logo-box">
+    <a href="https://www.unipv.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UNIPV.svg" alt="Pavia logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Uno storico ateneo italiano attivo nella ricerca in fisica e nello sviluppo di iniziative innovative di educazione scientifica.</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università degli Studi di Perugia </h3>
+     <div class="logo-box">
+    <a href="https://www.unipg.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UNIPG.svg" alt="Perugia logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Ateneo che coordina le attività di comunicazione e outreach di ERNEST, con una solida esperienza nel public engagement.</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università del Piemonte Orientale </h3>
+     <div class="logo-box">
+    <a href="https://www.uniupo.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/PNG/UNIUPO.png" alt="PO logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un’università italiana impegnata nella ricerca interdisciplinare, con particolare attenzione anche alle scienze della salute e all’innovazione. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università di Pisa</h3>
+     <div class="logo-box">
+    <a href="https://www.unipi.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UNIPI.svg" alt="Pisa logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un’università europea di primo piano, con contributi significativi nella fisica, nell’ingegneria e nella comunicazione della scienza. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>Università degli Studi di Torino</h3>
+     <div class="logo-box">
+    <a href="https://www.unito.it" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/SVG/UNITO.svg" alt="Torino logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un grande ateneo italiano che contribuisce alla ricerca, alla formazione e allo sviluppo di metodologie innovative di divulgazione. 
+</p>
+  </article>
+
+  <article class="detail-card institution-card">
+    <h3>LAMA Società Cooperativa Impresa Sociale</h3>
+     <div class="logo-box">
+    <a href="https://agenzialama.eu/" target="_blank" rel="noopener noreferrer">
+      <img src="../network_img/Logos/PNG/LAMA.png" alt="LAMA logo" class="institution-logo">
+    </a>
+       </div>
+    <p>Un’organizzazione specializzata in innovazione sociale e inclusione, che supporta ERNEST nelle strategie di outreach e nell’impatto sociale. 
+</p>
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+        
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Membri della rete</p>
+            <h2>Le persone dietro ERNEST.</h2>
+            <p class="section-note">
+              Una comunità in crescita di ricercatrici, ricercatori, educatrici, educatori e professioniste e professionisti creativi che danno vita alla scienza attraverso collaborazione e gioco.
+            </p>
+          </div>
+
+            <div class="filters-panel">
+            <div class="filter-field">
+              <label for="filter-institution">Istituzione</label>
+              <select id="filter-institution">
+                <option value="all">Tutte le istituzioni</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="filter-topic">Ambito di ricerca</label>
+              <select id="filter-topic">
+                <option value="all">Tutti gli ambiti</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="filter-summary" id="people-count"></p>
+          <div class="people-grid" id="people-grid"></div>
+          
+
+          
+        </section>
+      </main>
+
+     <footer class="footer">
+  <div class="eu-funding-mark" aria-label="Finanziato dall'Unione europea">
+    <div class="eu-logo-box">
+  <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione europea">
+</div>
+    </div>
+
+  <p class="funding-text">
+    ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione Europea nell’ambito delle Marie Skłodowska-Curie Actions. GA 101305138
+  </p>
+
+  <div class="footer-policy-links">
+    <p>© 2026 ERNEST</p>
+    <a href="cookie-policy-eu.html">Cookie policy</a>
+  </div>
+</footer>
+    </div>
+    <script src="../site.js"></script>
+    <script>
+      (() => {
+        const people = [
+           {
+            name: "Lorena Affatato",
+            institution: "CNR", 
+            city: "Napoli",
+            country: "Italia",
+            topic: "Educazione scientifica",
+            image: "../network_img/Team/LorenaAffatato-CNR.jpeg",
+            website: "https://www.ipcb.cnr.it/personale/"
+             },
+           {
+            name: "Chiara Aimè",
+            institution: "INFN",
+            city: "Pavia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/Chiara-Aime.jpg",
+            website: ""
+             },
+          {
+            name: "Antonio Amoroso",
+            institution: "Università degli Studi di Torino",
+            city: "Torino",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/amoroso.png",
+            website: ""
+             },
+          {
+            name: "Mario Barra",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/MarioBarra_CNR.jpg",
+            website: "https://www.spin.cnr.it/people/researchers/barra-mario"
+             },
+            {
+            name: "Matteo Bauce",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/INFN_MatteoBauce.jpg",
+            website: ""
+             },
+          {
+            name: "Mariangela Bondì",
+            institution: "INFN",
+            city: "Catania",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/BONDI`.jpg",
+            website: ""
+             },
+     
+          { 
+            name: "Nello Bruscino",
+           institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/NelloBruscino-INFN.jpg",
+            website: "https://www.linkedin.com/in/nellobruscino/"
+             },
+            { 
+            name: "Francesco Cafagna",
+            institution: "INFN",
+            city: "Bari",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/CAFAGNA.jpg",
+            website: ""
+             },
+          { 
+            name: "Maria Francesca Carfora",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Data science e calcolo",
+            image: "../network_img/Team/MFrancescaCarfora-CNR.jpg",
+            website: "https://sites.google.com/view/francescacarfora"
+             },
+           { 
+            name: "Silvia Casu",
+           institution: "INAF",
+            city: "Cagliari",
+            country: "Italia",
+            topic: "Astrofisica e spazio",
+            image: "../network_img/Team/CASU.jpg",
+            website: ""
+             },
+           { 
+            name: "Francesca Cavallari",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/CAVALLARI.jpg",
+            website: ""
+             },
+           { 
+            name: "Daniele Cianelli",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Comunicazione scientifica",
+            image: "../network_img/Team/CIANELLI.jpg",
+            website: ""
+             },
+            { 
+            name: "Elisa Corino",
+            institution: "Università degli Studi di Torino",
+            city: "Torino",
+            country: "Italia",
+            topic: "Didattica delle lingue",
+            image: "../network_img/Team/CORINO.jpg",
+            website: ""
+             },
+           { 
+            name: "Simona De Luca",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Comunicazione scientifica",
+            image: "../network_img/Team/DELUCA.png",
+            website: ""
+             },
+          { 
+            name: "Filomena Anna Digilio",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Scienze ambientali e della Terra",
+            image: "../network_img/Team/F.Anna_Digilio_CNR_IRET.jpeg",
+            website: "https://www.iret.cnr.it/en/user-detail/?user_id=166"
+             },
+          { 
+            name: "Caterina Doglioni",
+            institution: "The University of Manchester",
+            city: "Manchester",
+            country: "Regno Unito",
+            topic: "Fisica",
+            image: "../network_img/Team/CaterinaDoglioni.jpg",
+            website: "https://caterina-doglioni.github.io/"
+             }, 
+          { 
+            name: "Silvio Donato",
+            institution: "Università degli Studi di Pisa",
+            city: "Pisa",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/DONATO.jpg",
+            website: ""
+             },
+          { 
+            name: "Livio Fanò",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/FANO.png",
+            website: ""
+             },
+          { 
+            name: "Mattia Forni",
+            institution: "LAMA",
+            city: "Firenze",
+            country: "Italia",
+            topic: "Strategie di impatto",
+            image: "../network_img/Team/FORNI.webp",
+            website: ""
+             },
+          { 
+            name: "Maura Graziani",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/GRAZIANI.jpg",
+            website: ""
+             },
+           { 
+            name: "Morgan Hibberd",
+            institution: "The University of Manchester",
+            city: "Manchester",
+            country: "Regno Unito",
+            topic: "Fisica",
+            image: "../network_img/Team/photo_MorganHibberd.jpg",
+            website: "https://research.manchester.ac.uk/en/persons/morgan-hibberd/"
+             }, 
+          { 
+            name: "Valentina La Parola",
+            institution: "INAF",
+            city: "Palermo",
+            country: "Italia",
+            topic: "Astrofisica e spazio",
+            image: "../network_img/Team/ValentinaLaParola-INAF.jpg",
+            website: ""
+             }, 
+          { 
+            name: "Valentina Marchesano",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Biosensori e nanotecnologie",
+            image: "../network_img/Team/Valentina Marchesano-ISASI.jpg",
+            website: ""
+             }, 
+          { 
+            name: "Valentina Mariani",
+            institution: "INFN",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/MARIANI.png",
+            website: ""
+             }, 
+          { 
+            name: "Andrea Marini",
+            institution: "Università degli Studi di Pisa",
+            city: "Pisa",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/MARINI.jpg",
+            website: ""
+             }, 
+          { 
+            name: "Simone Mastrogiovanni",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/MASTROGIOVANNI.png",
+            website: ""
+             }, 
+          {
+            name: "Emilie Maurice",
+            institution: "CNRS",
+            city: "Parigi",
+            country: "Francia",
+            topic: "Fisica",
+            image: "../network_img/Team/LLR-CNRS-Emilie-Maurice.jpg",
+            website: ""
+             },
+          {
+            name: "Claudia Mignone",
+            institution: "INAF",
+            city: "Roma",
+            country: "Italia",
+            topic: "Astrofisica e spazio",
+            image: "../network_img/Team/INAF-Claudia-Mignone.jpg",
+            website: "https://www.linkedin.com/in/claudia-mignone-58429048/"
+             },
+           {
+            name: "Paolo Montagna",
+            institution: "Università degli Studi di Pavia",
+            city: "Pavia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/MONTAGNA.jpg",
+            website: ""
+             },
+          {
+            name: "Carlo Nicolau",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/NICOLAU.png",
+            website: ""
+             },
+          {
+            name: "Simone Pacetti",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/PACETTI.jpeg",
+            website: ""
+             },
+          {
+            name: "Serena Pastore",
+            institution: "INAF",
+            city: "Padova",
+            country: "Italia",
+            topic: "Data science e calcolo",
+            image: "../network_img/Team/SerenaPastore-INAF.jpeg",
+            website: ""
+             },
+          {
+            name: "Sylvaine Pieyre",
+            institution: "CNRS",
+            city: "Parigi",
+            country: "Francia",
+            topic: "Comunicazione scientifica",
+            image: "../network_img/Team/LLR-CNRS-Sylvaine-Pieyre.jpg",
+            website: ""
+             },
+          {
+            name: "Marta Rinaudo",
+            institution: "Università degli Studi di Torino",
+            city: "Torino",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/RINAUDO.png",
+            website: ""
+             },
+          {
+            name: "Alessandra Rocco",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/AlessandraRocco_INO_CNR.jpeg",
+            website: ""
+             },
+          {
+            name: "Alessandro Rossi",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/ROSSI.jpg",
+            website: ""
+             },
+           {
+            name: "Chiara Rovelli",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/ROVELLI.jpg",
+            website: ""
+             },
+          {
+            name: "Marta Ruspa",
+            institution: "Università degli Studi del Piemonte Orientale",
+            city: "Torino",
+            country: "Italia",
+            topic: "Salute e fisica medica",
+            image: "../network_img/Team/RUSPA.jpg",
+            website: ""
+             },
+          {
+            name: "Maura Sandri",
+            institution: "INAF",
+            city: "Bologna",
+            country: "Italia",
+            topic: "Astrofisica e spazio",
+            image: "../network_img/Team/SANDRI.jpg",
+            website: "https://www.linkedin.com/in/maura-sandri"
+             },
+           {
+            name: "Attilio Santiocchia",
+            institution: "Università degli Studi di Perugia",
+            city: "Perugia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/SANTIOCCHIA.jpg",
+            website: ""
+             },
+            {
+            name: "Federica Maria Simone",
+            institution: "Università degli Studi di Bari",
+            city: "Bari",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/FedericaSimoneUniba.jpeg",
+            website: ""
+             },
+          {
+            name: "Livia Soffi",
+            institution: "INFN",
+            city: "Roma",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/livia.png",
+            website: "https://www.roma1.infn.it/~lsoffi/"
+             },
+          {
+            name: "Rosarita Tatè",
+            institution: "CNR",
+            city: "Napoli",
+            country: "Italia",
+            topic: "Salute e fisica medica",
+            image: "../network_img/Team/TATE.jpg",
+            website: ""
+             },
+          {
+            name: "Harshita Thakare",
+            institution: "LAMA",
+            city: "Firenze",
+            country: "Italia",
+            topic: "Strategie di impatto",
+            image: "../network_img/Team/HARSHITA.jpg",
+            website: ""
+             },
+         
+          {
+            name: "Christophe Thiebaux",
+            institution: "CNRS",
+            city: "Parigi",
+            country: "Francia",
+            topic: "Salute e fisica medica",
+            image: "../network_img/Team/LLR-CNRS-Christophe-Thiebaux.jpg",
+            website: ""
+             },
+            {
+            name: "Daniele Trocino",
+            institution: "INFN",
+            city: "Torino",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/TROCINO.jpg",
+            website: ""
+             },
+            {
+            name: "Alberto Vecchiato",
+            institution: "INAF",
+            city: "Torino",
+            country: "Italia",
+            topic: "Astrofisica e spazio",
+            image: "../network_img/Team/AlbertoVecchiato-INAF.jpg",
+            website: "https://www.oato.inaf.it/ricerca/home-pages-personali/vecchiato-alberto/"
+             },
+           {
+            name: "Rosamaria Venditti",
+            institution: "Università degli Studi di Bari",
+            city: "Bari",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/VENDITTI.jpg",
+            website: ""
+             },
+         
+              {
+            name: "Anna Vignati",
+            institution: "Università degli Studi di Torino",
+            city: "Torino",
+            country: "Italia",
+            topic: "Salute e fisica medica",
+            image: "../network_img/Team/Anna-Vignati.jpg",
+            website: "https://www.df.unito.it/do/docenti.pl/Show?_id=avignati#tab-profilo"
+             },
+             {
+            name: "Luca Zatti",
+            institution: "Università degli Studi di Pavia",
+            city: "Pavia",
+            country: "Italia",
+            topic: "Fisica",
+            image: "../network_img/Team/ZATTI.jpg",
+            website: ""
+             },
+         
+                         
+        ];
+
+        const filters = {
+          institution: document.querySelector("#filter-institution"),
+          topic: document.querySelector("#filter-topic"),
+        };
+        const peopleGrid = document.querySelector("#people-grid");
+        const peopleCount = document.querySelector("#people-count");
+
+        const uniqueValues = (key) => {
+          const values = people.map((person) => person[key]);
+          return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+        };
+
+        const populateSelect = (select, values) => {
+          values.forEach((value) => {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = value;
+            select.append(option);
+          });
+        };
+
+        populateSelect(filters.institution, uniqueValues("institution"));
+        populateSelect(filters.topic, uniqueValues("topic"));
+   
+        const matchesFilter = (people, key, value) => {
+          if (value === "all") return true;
+          const field = people[key];
+          return Array.isArray(field) ? field.includes(value) : field === value;
+        };
+
+        const renderPeople = () => {
+          const activeFilters = {
+            institution: filters.institution.value,
+            topic: filters.topic.value,
+          };
+
+          const filteredPeople = people.filter((people) =>
+            Object.entries(activeFilters).every(([key, value]) => matchesFilter(people, key, value))
+          );
+
+          peopleCount.textContent =
+            filteredPeople.length === 1
+              ? "1 membro del team corrisponde ai filtri selezionati."
+              : filteredPeople.length + " membri del team corrispondono ai filtri selezionati.";
+
+          peopleGrid.innerHTML = "";
+
+          filteredPeople.forEach((people) => {
+            const card = document.createElement("article");
+            card.className = "people-card";
+
+
+            const institutionTags = `<span class="tag">${people.institution}</span>`;
+
+           card.innerHTML = `
+    <div class="people-card-content">
+    
+    <div class="people-text">
+      <p class="story-link-label">${people.topic}</p>
+      <h3>${people.name}</h3>
+
+
+      <div class="people-meta">
+        <p><strong>Istituzione</strong><span>${people.institution}</span></p>
+        <p><strong>Luogo</strong><span>${people.city}, ${people.country}</span></p>
+        <p><strong>Ambito di ricerca</strong><span>${people.topic}</span></p>
+      </div>
+
+
+
+    </div>
+
+  <div class="people-image">
+  <img src="${people.image}" alt="${people.name}" class="people-photo">
+
+  ${
+    people.website
+      ? `<a class="people-website" href="${people.website}" target="_blank" rel="noopener noreferrer">
+          Sito personale
+        </a>`
+      : ""
+  }
+</div>
+
+  </div>
+`;
+
+            peopleGrid.append(card);
+          });
+
+          if (!filteredPeople.length) {
+            peopleGrid.innerHTML = `
+              <article class="people-card people-card-empty">
+                <h3>Nessun membro del team corrisponde ancora a questa combinazione di filtri.</h3>
+                <p>Prova a selezionare filtri meno restrittivi o ad aggiungere nuove persone al dataset.</p>
+              </article>
+            `;
+          }
+        };
+
+        Object.values(filters).forEach((select) => {
+          select.addEventListener("change", renderPeople);
+        });
+
+        renderPeople();
+      })();
+    </script>   
+    
+  </body>
+</html>

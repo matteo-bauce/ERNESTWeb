@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy (UE) | ERNEST</title>
+    <meta
+      name="description"
+      content="Informativa sui cookie del sito ERNEST per utenti nell’Unione Europea e nello Spazio Economico Europeo."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="../index.html#top" aria-label="Home ERNEST">
+            <img
+              src="../ERNEST_long_blue.svg"
+              data-light-src="../ERNEST_long_blue.svg"
+              data-dark-src="../ERNEST_long_yellow.svg"
+              alt="Logo del progetto ERNEST"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">La Rete</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambia tema colore"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Selettore lingua">
+              <a href="../cookie-policy-eu.html" lang="en">EN</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <span class="lang-switch-current" aria-current="true">IT</span>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="hero-copy hero-copy-full">
+            <p class="eyebrow">Cookie Policy</p>
+            <h1>Cookie Policy (UE)</h1>
+            <p class="lead">
+              Questa pagina spiega come il sito ERNEST utilizza cookie e tecnologie simili per le persone
+              che visitano il sito dall’Unione Europea, dallo Spazio Economico Europeo e dalla Svizzera.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Ultimo aggiornamento</p>
+            <h2>Informazioni sui cookie del sito ERNEST.</h2>
+            <p class="section-note">
+              Questa informativa si applica al sito ERNEST e descrive quali tecnologie di archiviazione locale
+              vengono utilizzate, per quali finalità e in che modo puoi gestirle.
+            </p>
+          </div>
+          <article class="card">
+            <ol class="policy-list">
+              <li>
+                <h3>Introduzione</h3>
+                <p>
+                  Il sito ERNEST utilizza cookie e tecnologie di archiviazione locale correlate per garantire
+                  il corretto funzionamento dei servizi essenziali del sito e, se l’utente lo consente,
+                  per ricordare le preferenze di visualizzazione del tema.
+                </p>
+                <p>
+                  Ai fini di questa pagina, il termine “cookie” include anche tecnologie simili, come il
+                  local storage del browser, quando vengono usate per memorizzare impostazioni sul dispositivo.
+                </p>
+              </li>
+              <li>
+                <h3>Cosa sono i cookie?</h3>
+                <p>
+                  I cookie sono piccoli file di testo salvati dal browser su computer, tablet o smartphone
+                  quando si visita un sito web. Possono essere utilizzati per ricordare preferenze, supportare
+                  funzionalità e migliorare il funzionamento del sito tra una visita e l’altra.
+                </p>
+              </li>
+              <li>
+                <h3>Cosa sono gli script?</h3>
+                <p>
+                  Uno script è una porzione di codice che permette a un sito web di funzionare correttamente
+                  e in modo interattivo. Gli script possono essere eseguiti sul server oppure direttamente nel browser.
+                </p>
+              </li>
+              <li>
+                <h3>Cosa sono i web beacon?</h3>
+                <p>
+                  Un web beacon, pixel tag o tecnologia simile è un piccolo elemento invisibile che può essere
+                  usato per verificare se un contenuto e stato visualizzato. Al momento della pubblicazione,
+                  il sito ERNEST non utilizza web beacon per finalità pubblicitarie o di profilazione.
+                </p>
+              </li>
+              <li>
+                <h3>Tipologie di cookie utilizzate</h3>
+                <p>
+                  ERNEST utilizza solo le categorie strettamente necessarie al funzionamento del sito e,
+                  se l’utente sceglie di abilitarle, cookie di preferenza per ricordare la selezione del tema.
+                </p>
+                <p>
+                  Il sito non utilizza cookie di marketing o di profilazione.
+                </p>
+              </li>
+              <li>
+                <h3>Consenso</h3>
+                <p>
+                  Alla prima visita compare un banner nella parte inferiore della pagina. L’utente può accettare,
+                  rifiutare oppure aprire il pannello delle preferenze. I cookie necessari restano attivi,
+                  poiché indispensabili per il corretto funzionamento del servizio.
+                </p>
+              </li>
+              <li>
+                <h3>Local storage attualmente utilizzato da ERNEST</h3>
+                <p>
+                  Lo storage necessario viene utilizzato per ricordare la scelta dell’utente relativa al consenso
+                  sui cookie e per mantenere correttamente funzionante la relativa interfaccia.
+                </p>
+                <p><strong>Chiave:</strong> <code>ernest-cookie-consent</code></p>
+                <p><strong>Finalita:</strong> memorizza se l’utente ha accettato o rifiutato le preferenze opzionali.</p>
+                <p><strong>Base giuridica:</strong> legittimo interesse / funzionalità strettamente necessaria.</p>
+                <p>
+                  Se l’utente autorizza esplicitamente le preferenze, il sito può ricordare anche la scelta
+                  tra tema chiaro e tema scuro.
+                </p>
+                <p><strong>Chiave:</strong> <code>ernest-theme</code></p>
+                <p><strong>Finalita:</strong> memorizza il tema colore selezionato tra una visita e l’altra.</p>
+                <p><strong>Base giuridica:</strong> consenso.</p>
+              </li>
+              <li>
+                <h3>Gestione del consenso</h3>
+                <p>
+                  L’utente può gestire la propria scelta direttamente dal banner o dal pannello delle preferenze.
+                  Se rifiuta le preferenze, il sito continuera a funzionare normalmente, ma il tema selezionato
+                  non verra memorizzato per le visite successive.
+                </p>
+              </li>
+              <li>
+                <h3>Controlli del browser</h3>
+                <p>
+                  E possibile eliminare cookie e dati di archiviazione locale anche manualmente dalle impostazioni
+                  del browser. La maggior parte dei browser consente di bloccare i cookie, rimuovere i dati esistenti
+                  o ricevere notifiche quando vengono salvati.
+                </p>
+                <p>
+                  La disattivazione totale delle tecnologie di archiviazione potrebbe tuttavia influire sul corretto
+                  comportamento di alcune parti del sito.
+                </p>
+              </li>
+              <li>
+                <h3>I tuoi diritti in relazione ai dati personali</h3>
+                <p>
+                  In base alla normativa applicabile in materia di protezione dei dati, l’utente può avere il diritto
+                  di conoscere perché i dati vengono trattati, richiedere l’accesso ai propri dati, chiederne la rettifica
+                  o la cancellazione ove applicabile, revocare il consenso per i trattamenti opzionali, opporsi al trattamento
+                  in determinate circostanze e presentare reclamo all’autorità di controllo competente.
+                </p>
+                <p>
+                  Poiche ERNEST utilizza attualmente solo storage necessario e storage opzionale per la preferenza del tema,
+                  la quantità di dati personali trattati tramite cookie è limitata.
+                </p>
+              </li>
+              <li>
+                <h3>Contatti</h3>
+                <p>
+                  Se hai domande o osservazioni su questa Cookie Policy, puoi aggiornare questa sezione con i riferimenti
+                  ufficiali di contatto di ERNEST e con le informazioni relative al titolare del trattamento prima della pubblicazione.
+                </p>
+                <p>
+                  Sito web: <a class="text-link" href="index.html">Sito ERNEST</a>
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Finanziato dall'Unione europea">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="../EN_FundedbytheEU_RGB_POS.png" alt="Finanziato dall'Unione europea">
+          </div>
+        </div>
+
+        <p class="funding-text">
+          ERNEST è un progetto della Notte Europea delle Ricercatrici e dei Ricercatori finanziato dalla Commissione Europea nell’ambito delle Marie Skłodowska-Curie Actions. GA 101305138
+        </p>
+
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../site.js"></script>
+  </body>
+</html>
