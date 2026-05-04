@@ -497,24 +497,15 @@ html[data-theme="dark"] .theme-toggle-moon {
   object-fit: cover;
   display: block;
 }
-
-
-.gallery-card-xl .gallery-media {
-  min-height: 520px;
-}
-
-.gallery-card-portrait .gallery-media {
-  min-height: 420px;
-}
-
-.gallery-card-square .gallery-media {
-  min-height: 250px;
-}
-
+.gallery-card-xl .gallery-media,
+.gallery-card-portrait .gallery-media,
+.gallery-card-square .gallery-media,
 .gallery-card-wide .gallery-media,
 .gallery-card-landscape .gallery-media {
-  min-height: 280px;
+  height: 100%;
 }
+
+
 
 .gallery-media::before {
   content: "";
