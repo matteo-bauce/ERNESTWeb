@@ -1642,6 +1642,11 @@ li {
   height: auto;
   display: block;
 }
+.eu-logo-full {
+  width: 180px;
+  height: auto;
+  display: block;
+}
 
 .funding-text {
   margin: 0;
