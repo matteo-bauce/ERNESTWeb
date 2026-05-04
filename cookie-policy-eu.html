@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy (EU) | ERNEST</title>
+    <meta
+      name="description"
+      content="EU cookie policy for the ERNEST website."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">The Network</a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="hero-copy hero-copy-full">
+            <p class="eyebrow">Cookie Policy</p>
+            <h1>Cookie Policy (EU)</h1>
+            <p class="lead">
+              This page explains how the ERNEST website uses cookies and similar
+              technologies for visitors in the European Economic Area and Switzerland.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Last Update</p>
+            <h2>Cookie information for the ERNEST website.</h2>
+            <p class="section-note">
+              This policy applies to the ERNEST website and describes which local storage
+              technologies are used, why they are used, and how you can manage them.
+            </p>
+          </div>
+          <article class="card">
+            <ol class="policy-list">
+              <li>
+                <h3>Introduction</h3>
+                <p>
+                  The ERNEST website uses cookies and related local storage technologies
+                  to ensure that essential site functions work correctly and, where you
+                  choose to allow it, to remember your preferred visual theme.
+                </p>
+                <p>
+                  For the purposes of this page, the term “cookies” also includes similar
+                  technologies such as browser local storage when they are used to store
+                  settings on your device.
+                </p>
+              </li>
+              <li>
+                <h3>What are cookies?</h3>
+                <p>
+                  Cookies are small text files stored by your browser on your computer,
+                  tablet, or mobile device when you visit a website. They can be used to
+                  remember settings, support functionality, and improve how a website works
+                  across visits.
+                </p>
+              </li>
+              <li>
+                <h3>What are scripts?</h3>
+                <p>
+                  A script is a piece of code that allows a website to function properly
+                  and interactively. Scripts may run on the server or in your browser.
+                </p>
+              </li>
+              <li>
+                <h3>What is a web beacon?</h3>
+                <p>
+                  A web beacon, pixel tag, or similar technology is a small invisible
+                  element that can be used to understand whether content has been viewed.
+                  At the time of writing, the ERNEST website does not use web beacons for
+                  advertising or user profiling.
+                </p>
+              </li>
+              <li>
+                <h3>Types of cookies used</h3>
+                <p>
+                  ERNEST uses only the categories strictly necessary to run the website
+                  and, if you choose to enable them, preference cookies that remember your
+                  theme selection.
+                </p>
+                <p>
+                  The website does not use marketing or profiling cookies.
+                </p>
+              </li>
+              <li>
+                <h3>Consent</h3>
+                <p>
+                  When you first visit the website, a banner appears at the bottom of the
+                  page. You can accept, deny, or open the preferences panel. Necessary
+                  cookies remain active because they are required for the service to work.
+                </p>
+              </li>
+              <li>
+                <h3>Local storage currently used by ERNEST</h3>
+                <p>
+                  Necessary storage is used to remember your cookie consent choice and to
+                  keep the consent interface working correctly.
+                </p>
+                <p><strong>Key:</strong> <code>ernest-cookie-consent</code></p>
+                <p><strong>Purpose:</strong> stores whether you accepted or denied optional preferences.</p>
+                <p><strong>Legal basis:</strong> legitimate interest / strictly necessary functionality.</p>
+                <p>
+                  If you explicitly allow preferences, the website can also remember whether
+                  you selected the light or dark version of the site.
+                </p>
+                <p><strong>Key:</strong> <code>ernest-theme</code></p>
+                <p><strong>Purpose:</strong> stores your chosen color theme between visits.</p>
+                <p><strong>Legal basis:</strong> consent.</p>
+              </li>
+              <li>
+                <h3>Managing your consent</h3>
+                <p>
+                  You can manage your selection directly from the cookie banner or the
+                  preferences panel. If you deny preferences, the site will continue to
+                  work, but your chosen theme will not be stored for future visits.
+                </p>
+              </li>
+              <li>
+                <h3>Browser controls</h3>
+                <p>
+                  You can also delete cookies and local storage manually through your
+                  browser settings. Most browsers let you block cookies entirely, remove
+                  existing data, or notify you when cookies are being placed.
+                </p>
+                <p>
+                  Please note that disabling all storage technologies may affect how some
+                  parts of the website behave.
+                </p>
+              </li>
+              <li>
+                <h3>Your rights in relation to personal data</h3>
+                <p>
+                  Under applicable data protection law, you may have the right to know why
+                  your data is processed, request access to your data, ask for correction or
+                  deletion where applicable, withdraw consent for optional processing, object
+                  to processing in certain circumstances, and lodge a complaint with the
+                  competent supervisory authority.
+                </p>
+                <p>
+                  Because ERNEST currently uses only necessary storage and optional theme
+                  preference storage, the amount of personal data processed through cookies
+                  is limited.
+                </p>
+              </li>
+              <li>
+                <h3>Contact</h3>
+                <p>
+                  If you have questions or comments about this Cookie Policy, you can update
+                  this section with the official ERNEST contact details and data controller
+                  information before publication.
+                </p>
+                <p>
+                  Website: <a class="text-link" href="index.html">ERNEST website</a>
+                </p>
+              </li>
+            </ol>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>ERNEST • European Researchers' Night Escape Science Team</p>
+        <p>EU cookie policy page for the ERNEST website.</p>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>

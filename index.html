@@ -10,10 +10,16 @@
     />
     <script>
       (() => {
-        const storedTheme = localStorage.getItem("ernest-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.setAttribute("data-theme", theme);
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
       })();
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -429,35 +435,6 @@
         </p>
       </footer>
     </div>
-    <script>
-      (() => {
-        const root = document.documentElement;
-        const toggle = document.querySelector(".theme-toggle");
-        const brandLogo = document.querySelector(".brand-logo img");
-        if (!toggle) return;
-
-        const updateThemeAssets = (theme) => {
-          if (brandLogo) {
-            const nextSrc =
-              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
-            if (nextSrc) brandLogo.src = nextSrc;
-          }
-        };
-
-        const applyTheme = (theme) => {
-          root.setAttribute("data-theme", theme);
-          toggle.setAttribute("aria-pressed", String(theme === "dark"));
-          updateThemeAssets(theme);
-        };
-
-        applyTheme(root.getAttribute("data-theme") || "light");
-
-        toggle.addEventListener("click", () => {
-          const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-          localStorage.setItem("ernest-theme", nextTheme);
-          applyTheme(nextTheme);
-        });
-      })();
-    </script>
+    <script src="site.js"></script>
   </body>
 </html>

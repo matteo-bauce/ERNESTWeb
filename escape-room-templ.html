@@ -10,10 +10,16 @@
     />
     <script>
       (() => {
-        const storedTheme = localStorage.getItem("ernest-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.setAttribute("data-theme", theme);
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
       })();
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -197,38 +203,9 @@
     </div>
 
     <script src="rooms.js"></script>
+    <script src="site.js"></script>
     <script>
       (() => {
-        const root = document.documentElement;
-        const toggle = document.querySelector(".theme-toggle");
-        const brandLogo = document.querySelector(".brand-logo img");
-
-        const updateThemeAssets = (theme) => {
-          if (brandLogo) {
-            const nextSrc =
-              theme === "dark" ? brandLogo.dataset.darkSrc : brandLogo.dataset.lightSrc;
-            if (nextSrc) brandLogo.src = nextSrc;
-          }
-        };
-
-        const applyTheme = (theme) => {
-          root.setAttribute("data-theme", theme);
-          if (toggle) {
-            toggle.setAttribute("aria-pressed", String(theme === "dark"));
-          }
-          updateThemeAssets(theme);
-        };
-
-        applyTheme(root.getAttribute("data-theme") || "light");
-
-        if (toggle) {
-          toggle.addEventListener("click", () => {
-            const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-            localStorage.setItem("ernest-theme", nextTheme);
-            applyTheme(nextTheme);
-          });
-        }
-
         const safeRooms = Array.isArray(window.escapeRooms) ? window.escapeRooms : [];
         const params = new URLSearchParams(window.location.search);
         const selectedSlug = params.get("room");
