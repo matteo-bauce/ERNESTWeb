@@ -1688,7 +1688,14 @@ li {
   height: auto;
   display: block;
 }
-
+.eu-logo-box {
+  background: #fffbea;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .eu-logo {
   width: 72px;
