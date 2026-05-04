@@ -73,6 +73,11 @@
                 </svg>
               </span>
             </button>
+            <div class="lang-switch" aria-label="Language selector">
+              <span class="lang-switch-current" aria-current="true">EN</span>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a id="lang-switch-link" href="it/escape-room-templ.html" lang="it">IT</a>
+            </div>
           </div>
         </nav>
 
@@ -222,6 +227,10 @@
         const safeRooms = Array.isArray(window.escapeRooms) ? window.escapeRooms : [];
         const params = new URLSearchParams(window.location.search);
         const selectedSlug = params.get("room");
+        const langSwitchLink = document.getElementById("lang-switch-link");
+        if (langSwitchLink && selectedSlug) {
+          langSwitchLink.href = `it/escape-room-templ.html?room=${encodeURIComponent(selectedSlug)}`;
+        }
         const room =
           safeRooms.find((entry) => entry.slug === selectedSlug) || safeRooms[0] || null;
 
