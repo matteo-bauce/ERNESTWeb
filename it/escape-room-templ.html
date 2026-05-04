@@ -74,9 +74,11 @@
               </span>
             </button>
             <div class="lang-switch" aria-label="Selettore lingua">
-              <a id="lang-switch-link" href="../escape-room-templ.html" lang="en">EN</a>
+              <a id="lang-switch-en" href="../escape-room-templ.html" lang="en">EN</a>
               <span class="lang-switch-separator" aria-hidden="true">|</span>
               <span class="lang-switch-current" aria-current="true">IT</span>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a id="lang-switch-fr" href="../fr/escape-room-templ.html" lang="fr">FR</a>
             </div>
           </div>
         </nav>
@@ -225,9 +227,11 @@
         const safeRooms = Array.isArray(window.escapeRooms) ? window.escapeRooms : [];
         const params = new URLSearchParams(window.location.search);
         const selectedSlug = params.get("room");
-        const langSwitchLink = document.getElementById("lang-switch-link");
-        if (langSwitchLink && selectedSlug) {
-          langSwitchLink.href = `../escape-room-templ.html?room=${encodeURIComponent(selectedSlug)}`;
+                const langSwitchEn = document.getElementById("lang-switch-en");
+        const langSwitchFr = document.getElementById("lang-switch-fr");
+        if (selectedSlug) {
+          if (langSwitchEn) langSwitchEn.href = `../escape-room-templ.html?room=${encodeURIComponent(selectedSlug)}`;
+          if (langSwitchFr) langSwitchFr.href = `../fr/escape-room-templ.html?room=${encodeURIComponent(selectedSlug)}`;
         }
         const room =
           safeRooms.find((entry) => entry.slug === selectedSlug) || safeRooms[0] || null;
