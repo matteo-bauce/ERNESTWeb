@@ -1637,16 +1637,6 @@ li {
   color: var(--text);
 }
 
-.eu-logo {
-  width: 72px;
-  height: auto;
-  display: block;
-}
-.eu-logo-full {
-  width: 180px;
-  height: auto;
-  display: block;
-}
 
 .funding-text {
   margin: 0;
@@ -1674,6 +1664,36 @@ li {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.16em;
+}
+.footer {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(240px, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 28px;
+  border-top: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(255, 251, 234, 0.96), rgba(255, 229, 72, 0.22)),
+    rgba(255, 251, 234, 0.94);
+}
+
+.eu-funding-mark {
+  display: flex;
+  align-items: center;
+}
+
+.eu-logo-full {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.eu-logo {
+  width: 72px;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 760px) {
