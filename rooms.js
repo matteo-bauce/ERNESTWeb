@@ -18,7 +18,7 @@ window.escapeRooms = [
     practicalInfo: {
       duration: "45 minutes",
       languages: "French, Italian",
-      website: "web.infn.it/hepscape/",
+      website: "https://web.infn.it/hepscape/",
       websiteLabel: "Official website"
     },
     special:
