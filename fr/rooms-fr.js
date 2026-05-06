@@ -94,7 +94,7 @@ window.escapeRooms = [
     description:
       "Le principal institut italien de recherche en astrophysique, apportant son expertise en sciences spatiales, en astronomie et en médiation scientifique.",
     logo: {
-      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      src: "../network_img/Logos/PNG/inaf-fondo-trasparente.png",
       alt: "Logo INAF"
     },
     website: "http://www.inaf.it/en",
