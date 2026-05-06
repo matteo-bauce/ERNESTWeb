@@ -65,6 +65,72 @@ window.escapeRooms = [
     }
   },
   {
+  slug: "photon",
+  title: "A bordo di un fotone",
+  heroText:
+    "A bordo di un fotone è un’esperienza interattiva che permette ai giocatori di rivivere il viaggio dei fotoni – particelle di luce – dalle profondità del Sole, dove iniziano la loro avventura, attraverso i pianeti del Sistema Solare, fino ai telescopi degli astronomi che osservano questi corpi celesti dalla Terra e cercano di dare un senso al cosmo in cui viviamo.",
+  story:
+    "Quanto tempo impiegheranno i fotoni a emergere dall’interno solare fino alla superficie del Sole? Quale pianeta visiteranno nella loro avventura cosmica attraverso il Sistema Solare? Quanto dura il viaggio per arrivarci, alla velocità della luce? E su quale telescopio terminerà il loro tour? Esplora queste domande, risolvendo sfide di coding e robotica, a bordo di un fotone. A bordo di un fotone è stato creato dal gruppo di lavoro Play dell’INAF, l’Istituto Nazionale di Astrofisica (da Claudia Mignone, Silvia Galleti, Laura Leonardi, Federico Di Giacomo, Maria Teresa Fulco e Maura Sandri). È stato presentato in anteprima al Festival della Scienza di Genova 2022.",
+  mission:
+    "All’interno del Sole, nelle profondità del suo nucleo, le reazioni nucleari fondono l’idrogeno, l’elemento più leggero, per creare elio. Nel processo viene anche prodotta energia: è così che il Sole brilla, rilasciando fotoni – particelle di luce. Sei un fotone appena creato al centro del Sole e la tua missione è esplorare il Sistema Solare! I fotoni viaggiano molto velocemente – ricordi la velocità della luce? – ma l’interno solare è un luogo così denso che urtano continuamente altre particelle, perciò impiegano centinaia di migliaia di anni per uscire dalla nostra stella: è un labirinto! La prima sfida è uscire dal Sole – più facile a dirsi che a farsi. Poi, decodificando indizi attraverso pixel art e robotica, scoprirai la tua destinazione planetaria e alla fine concluderai il tuo viaggio... come immagine cosmica!",
+  discover:
+    "Esplorerai il viaggio di una particella di luce dalla sua generazione nel nucleo del Sole e il suo complesso percorso attraverso l’interno solare, fino allo spazio e a uno dei pianeti del Sistema Solare che la riflette verso la Terra, dove infine arriva su un telescopio che produce un’immagine di quel particolare pianeta. Oltre a esplorare lo spazio, eserciterai anche il pensiero computazionale decifrando indizi e risolvendo sfide con coding unplugged e piccoli robot.",
+  participants: {
+    ageGroup: "Dai 10 anni in su",
+    audience: "Studenti, famiglie e pubblico generale",
+    groupSize: "Fino a 25 partecipanti per sessione"
+  },
+  practicalInfo: {
+    duration: "60 minuti",
+    languages: "Italiano, inglese (presto)",
+    website: "",
+    websiteLabel: ""
+  },
+  special:
+    "Attraverso indizi in linguaggio di coding e sfide di robotica, questa escape room permette ai giocatori di vivere l’esperienza di una particella di luce! Puoi viaggiare più velocemente di qualsiasi cosa nell’universo, eppure impiegherai centinaia di migliaia di anni per uscire dal Sole e iniziare il tuo viaggio cosmico. Poi, nel giro di pochi minuti o al massimo di alcune ore, potrai attraversare il Sistema Solare, portando con te informazioni sui tuoi viaggi che gli astronomi cercano con telescopi all’avanguardia.",
+  gallery: [
+    {
+      src: "escape-rooms_img/photon/img2.jpeg",
+      alt: "",
+      caption: "Scena principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "escape-rooms_img/photon/img1.jpeg",
+      alt: "",
+      caption: "Dettaglio dell’enigma",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/photon/img3.jpeg",
+      alt: "",
+      caption: "Partecipanti in azione",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/photon/img4.jpeg",
+      alt: "",
+      caption: "Postazione interattiva",
+      size: "gallery-card-landscape"
+    }
+  ],
+  owner: {
+    name: "Istituto Nazionale di Astrofisica",
+    description:
+      "Il principale istituto italiano per la ricerca in astrofisica, che contribuisce con competenze in scienze spaziali, astronomia e coinvolgimento del pubblico.",
+    logo: {
+      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      alt: "Logo INAF"
+    },
+    website: "http://www.inaf.it/en",
+    websiteLabel: "Visita il sito dell’istituzione"
+  },
+  contact: {
+    email: "claudia.mignone@inaf.it"
+  }
+},
+
+  {
     slug: "bang",
     title: "Bang! Chi è stato?",
     heroText:
