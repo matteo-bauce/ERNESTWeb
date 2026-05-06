@@ -65,25 +65,25 @@ window.escapeRooms = [
     "Grâce à des indices en langage de codage et à des défis de robotique, cette escape room permet aux joueurs de vivre l’expérience d’une particule de lumière ! Vous pouvez voyager plus vite que tout ce qui existe dans l’univers, et pourtant il vous faudra des centaines de milliers d’années pour sortir du Soleil et commencer votre voyage cosmique. Ensuite, en quelques minutes ou tout au plus quelques heures, vous pourrez traverser le Système solaire, en transportant des informations sur vos voyages que les astronomes recherchent avec des télescopes de pointe.",
   gallery: [
     {
-      src: "escape-rooms_img/photon/img2.jpeg",
+      src: "../escape-rooms_img/photon/img2.jpeg",
       alt: "",
       caption: "Scène principale",
       size: "gallery-card-xl"
     },
     {
-      src: "escape-rooms_img/photon/img1.jpeg",
+      src: "../escape-rooms_img/photon/img1.jpeg",
       alt: "",
       caption: "Détail de l’énigme",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/photon/img3.jpeg",
+      src: "../escape-rooms_img/photon/img3.jpeg",
       alt: "",
       caption: "Participants en action",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/photon/img4.jpeg",
+      src: "../escape-rooms_img/photon/img4.jpeg",
       alt: "",
       caption: "Station interactive",
       size: "gallery-card-landscape"
