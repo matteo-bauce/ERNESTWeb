@@ -119,7 +119,7 @@ window.escapeRooms = [
     description:
       "Il principale istituto italiano per la ricerca in astrofisica, che contribuisce con competenze in scienze spaziali, astronomia e coinvolgimento del pubblico.",
     logo: {
-      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      src: "../network_img/Logos/PNG/inaf-fondo-trasparente.png",
       alt: "Logo INAF"
     },
     website: "http://www.inaf.it/en",
