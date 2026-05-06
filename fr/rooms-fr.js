@@ -40,6 +40,72 @@ window.escapeRooms = [
     contact: { email: "hepscape@lists.infn.it" }
   },
   {
+  slug: "photon",
+  title: "À bord d’un photon",
+  heroText:
+    "À bord d’un photon est une expérience interactive qui permet aux joueurs de revivre le voyage des photons – des particules de lumière – depuis les profondeurs du Soleil, où ils commencent leur aventure, à travers les planètes du Système solaire, jusqu’aux télescopes des astronomes qui observent ces corps célestes depuis la Terre et tentent de donner un sens au cosmos dans lequel nous vivons.",
+  story:
+    "Combien de temps faudra-t-il aux photons pour émerger de l’intérieur solaire jusqu’à la surface du Soleil ? Quelle planète visiteront-ils au cours de leur aventure cosmique à travers le Système solaire ? Combien de temps dure le voyage pour y parvenir, à la vitesse de la lumière ? Et sur quel télescope leur parcours se terminera-t-il ? Explorez ces questions en résolvant des défis de codage et de robotique, à bord d’un photon. À bord d’un photon a été créé par le groupe de travail Play de l’INAF, l’Institut national italien d’astrophysique (par Claudia Mignone, Silvia Galleti, Laura Leonardi, Federico Di Giacomo, Maria Teresa Fulco et Maura Sandri). Il a été présenté en avant-première au Festival de la Science de Gênes 2022.",
+  mission:
+    "À l’intérieur du Soleil, au plus profond de son noyau, des réactions nucléaires fusionnent l’hydrogène, l’élément le plus léger, pour créer de l’hélium. Ce processus produit aussi de l’énergie : c’est ainsi que le Soleil brille, en libérant des photons – des particules de lumière. Vous êtes un photon tout juste créé au centre du Soleil et votre mission est d’explorer le Système solaire ! Les photons voyagent très vite – vous vous souvenez de la vitesse de la lumière ? – mais l’intérieur solaire est un milieu si dense qu’ils heurtent constamment d’autres particules ; il leur faut donc des centaines de milliers d’années pour sortir de notre étoile : c’est un labyrinthe ! Le premier défi consiste à sortir du Soleil – plus facile à dire qu’à faire. Ensuite, en décodant des indices grâce au pixel art et à la robotique, vous découvrirez votre destination planétaire et finirez votre voyage... sous forme d’image cosmique !",
+  discover:
+    "Vous explorerez le voyage d’une particule de lumière depuis sa création dans le noyau du Soleil et son parcours complexe à travers l’intérieur solaire, puis à travers l’espace jusqu’à l’une des planètes du Système solaire qui la réfléchit vers la Terre, où elle finit par arriver sur un télescope qui produit une image de cette planète particulière. En plus d’explorer l’espace, vous exercerez aussi votre pensée computationnelle en déchiffrant des indices et en résolvant des défis à l’aide de codage débranché et de petits robots.",
+  participants: {
+    ageGroup: "À partir de 10 ans",
+    audience: "Élèves, familles et grand public",
+    groupSize: "Jusqu’à 25 participants par session"
+  },
+  practicalInfo: {
+    duration: "60 minutes",
+    languages: "Italien, anglais (bientôt)",
+    website: "",
+    websiteLabel: ""
+  },
+  special:
+    "Grâce à des indices en langage de codage et à des défis de robotique, cette escape room permet aux joueurs de vivre l’expérience d’une particule de lumière ! Vous pouvez voyager plus vite que tout ce qui existe dans l’univers, et pourtant il vous faudra des centaines de milliers d’années pour sortir du Soleil et commencer votre voyage cosmique. Ensuite, en quelques minutes ou tout au plus quelques heures, vous pourrez traverser le Système solaire, en transportant des informations sur vos voyages que les astronomes recherchent avec des télescopes de pointe.",
+  gallery: [
+    {
+      src: "escape-rooms_img/photon/img2.jpeg",
+      alt: "",
+      caption: "Scène principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "escape-rooms_img/photon/img1.jpeg",
+      alt: "",
+      caption: "Détail de l’énigme",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/photon/img3.jpeg",
+      alt: "",
+      caption: "Participants en action",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/photon/img4.jpeg",
+      alt: "",
+      caption: "Station interactive",
+      size: "gallery-card-landscape"
+    }
+  ],
+  owner: {
+    name: "Institut national italien d’astrophysique",
+    description:
+      "Le principal institut italien de recherche en astrophysique, apportant son expertise en sciences spatiales, en astronomie et en médiation scientifique.",
+    logo: {
+      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      alt: "Logo INAF"
+    },
+    website: "http://www.inaf.it/en",
+    websiteLabel: "Visiter le site de l’institution"
+  },
+  contact: {
+    email: "claudia.mignone@inaf.it"
+  }
+},
+
+  {
     slug: "bang",
     title: "Bang! Chi è stato?",
     heroText:
