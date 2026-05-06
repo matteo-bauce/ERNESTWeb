@@ -5,7 +5,7 @@ window.escapeRooms = [
     heroText:
       "HEPscape! is an immersive escape room inspired by real research at CERN’s Large Hadron Collider. Guided through a virtual journey into an LHC experiment, participants solve puzzles, uncover clues, and work together to explore the fundamental building blocks of matter.",
      story:
-      "HEPscape! is an immersive escape room dedicated to high-energy physics. Born from the passion of scientists involved in the CMS and ATLAS experiments at CERN, the project turns complex ideas into an engaging adventure for all ages. Its mission is to bring particle physics closer to the public through play and discovery. Touring across Italy, HEPscape! has reached thousands of people, offering a unique experience: an interactive and accessible journey into the mysteries of the Large Hadron Collider. The HEPscape! experience starts already outside the room. Visitors are welcomed in the experimental aerea by the facilitator that acts like an experimental area guide,  as it happen in the real visit of the experiments at CERN.   Since visitors have to enter the experimental cavern, they are asked to wear the helmet! Once entered in the HEPscape! room, visitors are guided through virtual journey at the LHC and will have to tackle and solve puzzles before being allowed to leave the room.      Although virtual, the experience at 360°, with projections, sounds, lights e many unexpected surprises.  Any element in the room could be useful to find the solution of the games.",
+      "HEPscape! is an escape room dedicated to high-energy physics. Born from the passion of scientists involved in the CMS and ATLAS experiments at CERN, the project turns complex ideas into an engaging adventure for all ages. Its mission is to bring particle physics closer to the public through play and discovery. Touring across Italy, HEPscape! has reached thousands of people, offering a unique experience: an interactive and accessible journey into the mysteries of the Large Hadron Collider. The HEPscape! experience starts already outside the room. Visitors are welcomed in the experimental aerea by the facilitator that acts like an experimental area guide,  as it happen in the real visit of the experiments at CERN.   Since visitors have to enter the experimental cavern, they are asked to wear the helmet! Once entered in the HEPscape! room, visitors are guided through virtual journey at the LHC and will have to tackle and solve puzzles before being allowed to leave the room.      Although virtual, the experience at 360°, with projections, sounds, lights e many unexpected surprises.  Any element in the room could be useful to find the solution of the games.",
     mission:
       "Step into the role of physicists and solve a series of scientific challenges to uncover how particles are studied and discovered. Working as a team, participants follow clues, interpret data, and complete experiments inspired by real high-energy physics research. Their goal is to progress through the investigation and ultimately reveal the “discovery” hidden within the escape room narrative — mirroring the journey of scientists at the Large Hadron Collider.",
     discover:
@@ -62,6 +62,71 @@ window.escapeRooms = [
     },
     contact: {
       email: "hepscape@lists.infn.it"
+    }
+  },
+   {
+    slug: "photon",
+    title: "On board a photon",
+    heroText:
+      "On board a photon is an interactive experience that allows players to relive the journey of photons – light particles – from the depths of the Sun, where they start their adventure, through the planets of the Solar System, all the way to the telescopes of astronomers who observe these celestial bodies from Earth and try to make sense of the cosmos we live in.",
+     story:
+      "How long will it take for photons to emerge from the solar interior to the surface of the Sun? Which planet will they visit on their cosmic adventure through the Solar System? How long is the journey to get there, at the speed of light? And on which telescope will their tour end? Explore these questions, solving coding and robotics challenges, on board a photon.  On board a photon has been created by the Play working group of INAF, the Italian National Institute for Astrophysics (by Claudia Mignone, Silvia Galleti, Laura Leonardi, Federico Di Giacomo, Maria Teresa Fulco and Maura Sandri). It premiered at the 2022 Genova Science Festival. ",
+    mission:
+      "Inside the Sun, deep at its core, nuclear reactions fuse hydrogen, the lightest element, to create helium. Incidentally, the process also produces energy: this is how the Sun shines, releasing photons – particles of light. You are a newly created photon at the center of the Sun and your mission is to explore the Solar System!  Photons travel very fast – remember the speed of light? – but the solar interior is such a dense place that they constantly bump into other particles so it takes hundreds of thousands of years for them to get out of our star: it’s a maze! The first challenge is to get out of the Sun – easier said than done. Then, by decoding clues through pixel art and robotics, you will discover your planetary destination and eventually end your journey... as a cosmic image! ",
+    discover:
+      "You will explore the journey of a light particle from its generation in the core of the Sun and its complex trek across the solar interior, all the way across space to one of the Solar System’s planets that reflect it towards Earth, where it eventually lands on a telescope that produces an image of that particular planet. Besides exploring outer space, you will also practice computational thinking by deciphering clues and solving challenges using unplugged coding and small robots. ",
+    participants: {
+      ageGroup: "Ages 10 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 25 participants per session"
+    },
+    practicalInfo: {
+      duration: "60 minutes",
+      languages: "Italian, English (soon) ",
+      website: "",
+      websiteLabel: ""
+    },
+    special:
+      "Through clues in coding language and robotics challenges, this escape room lets players experience life as a particle of light! You can travel faster than anything in the universe, yet it will take you hundreds of thousands of years to get out of the Sun and start your cosmic journey. Then, within minutes or hours at most, you can cross the Solar System, carrying information about your travels that astronomers hunt with cutting-edge telescopes. ",
+    gallery: [
+      {
+        src: "escape-rooms_img/photon/img2.jpg",
+        alt: "",
+        caption: "Main scene",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "escape-rooms_img/photon/img1.jpg",
+        alt: "",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/photon/img3.jpg",
+        alt: "",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/photon/img4.jpg",
+        alt: "",
+        caption: "Interactive station",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "Istituto Nazionale di Astrofisica ",
+      description:
+        "Italy’s leading institute for astrophysics research, contributing expertise in space science, astronomy, and public engagement.",
+      logo: {
+        src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+        alt: "INFN logo"
+      },
+      website: "http://www.inaf.it/en",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "claudia.mignone@inaf.it"
     }
   },
    {
