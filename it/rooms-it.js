@@ -90,25 +90,25 @@ window.escapeRooms = [
     "Attraverso indizi in linguaggio di coding e sfide di robotica, questa escape room permette ai giocatori di vivere l’esperienza di una particella di luce! Puoi viaggiare più velocemente di qualsiasi cosa nell’universo, eppure impiegherai centinaia di migliaia di anni per uscire dal Sole e iniziare il tuo viaggio cosmico. Poi, nel giro di pochi minuti o al massimo di alcune ore, potrai attraversare il Sistema Solare, portando con te informazioni sui tuoi viaggi che gli astronomi cercano con telescopi all’avanguardia.",
   gallery: [
     {
-      src: "escape-rooms_img/photon/img2.jpeg",
+      src: "../escape-rooms_img/photon/img2.jpeg",
       alt: "",
       caption: "Scena principale",
       size: "gallery-card-xl"
     },
     {
-      src: "escape-rooms_img/photon/img1.jpeg",
+      src: "../escape-rooms_img/photon/img1.jpeg",
       alt: "",
       caption: "Dettaglio dell’enigma",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/photon/img3.jpeg",
+      src: "../escape-rooms_img/photon/img3.jpeg",
       alt: "",
       caption: "Partecipanti in azione",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/photon/img4.jpeg",
+      src: "../escape-rooms_img/photon/img4.jpeg",
       alt: "",
       caption: "Postazione interattiva",
       size: "gallery-card-landscape"
