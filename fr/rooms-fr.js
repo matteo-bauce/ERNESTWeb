@@ -130,10 +130,10 @@ window.escapeRooms = [
     special:
       "L’astronomie gamma avec des télescopes Cherenkov est une manière très particulière d’étudier le ciel, car elle utilise l’atmosphère comme détecteur et observe seulement indirectement les sources d’intérêt. Cette escape room fait passer les joueuses et joueurs par toutes les étapes d’une véritable recherche scientifique.",
     gallery: [
-      { src: "../gallery-image-1.jpg", alt: "Scène principale de Bang! Chi è stato?", caption: "Scène principale ou installation", size: "gallery-card-xl" },
-      { src: "../gallery-image-2.jpg", alt: "Détail d’une énigme de Bang! Chi è stato?", caption: "Détail d’une énigme", size: "gallery-card-square" },
-      { src: "../gallery-image-3.jpg", alt: "Participant·es dans Bang! Chi è stato?", caption: "Participant·es en action", size: "gallery-card-square" },
-      { src: "../gallery-image-4.jpg", alt: "Station interactive de Bang! Chi è stato?", caption: "Station interactive", size: "gallery-card-landscape" }
+      { src: "escape-rooms_img/bang/INAF_BANG_1.jpg", alt: "Scène principale de Bang! Chi è stato?", caption: "Scène principale ou installation", size: "gallery-card-xl" },
+      { src: "escape-rooms_img/bang/INAF_BANG_2.jpg", alt: "Détail d’une énigme de Bang! Chi è stato?", caption: "Détail d’une énigme", size: "gallery-card-square" },
+      { src: "escape-rooms_img/bang/INAF_BANG_3.jpg", alt: "Participant·es dans Bang! Chi è stato?", caption: "Participant·es en action", size: "gallery-card-square" },
+      { src: "escape-rooms_img/bang/INAF_BANG_4.jpg", alt: "Station interactive de Bang! Chi è stato?", caption: "Station interactive", size: "gallery-card-landscape" }
     ],
     owner: {
       name: "Istituto Nazionale di Astrofisica (INAF)",
