@@ -65,6 +65,136 @@ window.escapeRooms = [
     }
   },
    {
+    slug: "mastem",
+    title: "maSTEM game",
+    heroText:
+      "maSTEM game (a Multilingual Approach to STEM disciplines in GAME-based learning) is a Public Engagement project developed by the University of Turin to promote active and inclusive STEM education through educational escape rooms. The project combines science, technology, engineering, mathematics, and foreign languages using a game-based and CLIL (Content and Language Integrated Learning) approach.  ",
+     story:
+      "The first educational escape rooms on medical physics and multilingualism were developed by the Departments of Physics and Languages at UniTo in 2021. What started as an experimental outreach activity quickly evolved into a collaborative network involving more than ten university departments, museums, scientific societies, and territorial partners. Each escape room tells a different story: from medical science and diagnostic technologies to One Health challenges. Participants become explorers, investigators, or problem-solvers immersed in scientific mysteries where every clue opens the door to a new discovery. The narrative dimension transforms science into an emotional and memorable experience.",
+    mission:
+      "Your mission is to work as a team to solve scientific enigmas before time runs out. Players must observe their surroundings, interpret hidden messages, manipulate experimental objects, and unlock mechanisms to progress through the rooms. Every challenge is inspired by real STEM concepts and often includes multilingual elements designed to stimulate communication and reasoning skills. Depending on the chosen escape room, participants may investigate medical technologies, discover overlooked scientists, or explore environmental sustainability and animal welfare. Cooperation, creativity, critical thinking, and curiosity are the keys to completing the adventure successfully.",
+    discover:
+      "Participants discover how STEM disciplines are deeply connected to everyday life, healthcare, sustainability, and society. The escape rooms introduce themes such as medical imaging, waves and diagnostics, microbiology, antibiotic resistance, One Health, environmental protection, and the history of science. Several activities also include English-language clues inspired by the CLIL educational approach. The project promotes interdisciplinary thinking by showing how physics, biology, chemistry, mathematics, engineering, and languages can work together to solve real-world problems. Alongside scientific content, the activities encourage reflection on inclusion, gender stereotypes, and the social impact of science.",
+    participants: {
+      ageGroup: "Ages 10 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 8 participants per session"
+    },
+    practicalInfo: {
+      duration: "Independent thematic environments lasting approximately 15–20 minutes each",
+      languages: "Italian",
+      website: "https://www.mastem-game.unito.it/",
+      websiteLabel: "Official website"
+    },
+    special:
+      "maSTEM game combines educational innovation, multilingualism, inclusion, and scientific outreach in a highly interactive format. Unlike traditional science communication activities, participants learn through direct engagement, collaboration, and immersive storytelling. The project integrates STEM subjects with foreign languages and creative disciplines such as art and museum heritage, creating a truly multidisciplinary experience.  Simplified versions are also available for younger children starting from primary school.  A strong emphasis is also placed on inclusion and gender equality, with activities specifically designed to reduce stereotypes and make STEM more accessible to all. Research questionnaires collected before and after the escape rooms show positive effects on interest in STEM, perceived usefulness of science, and reduction of perceived difficulty. The project collaborates with institutions and associations such as INFN, AIF, AIFM, ANILS, ARPA Piemonte, museums of the university system, and territorial partners.",
+    gallery: [
+      {
+        src: "escape-rooms_img/mastem/img2.jpg",
+        alt: "",
+        caption: "Main scene",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "escape-rooms_img/mastem/img1.jpg",
+        alt: "",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/mastem/img3.jpg",
+        alt: "",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/mastem/img4.jpg",
+        alt: "",
+        caption: "Interactive station",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "Università degli Studi di Torino",
+      description:
+        "A major Italian university contributing to research, education, and the development of innovative outreach methodologies. ",
+      logo: {
+        src: "network_img/Logos/SVG/UNITO.svg",
+        alt: "UniTo logo"
+      },
+      website: "https://www.unito.it",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "anna.vignati@unito.it"
+    }
+  },
+  {
+    slug: "medical",
+    title: "Medical Physics Escape Room",
+    heroText:
+      "The Medical Physics Escape Room is an interactive science experience designed to introduce participants to the fascinating role of physics in medicine. Created by the Medical Physics group of the University of Turin, INFN Torino, and AIFM (Italian Association of Physics in Medicine), the activity combines puzzles, teamwork, and scientific discovery in a playful learning environment.",
+    story:
+      " Players follow the journey of an imaginary cancer patient from diagnosis to treatment and finally to cutting-edge medical research. Moving through three themed environments, teams must solve riddles, unlock clues, and complete collaborative missions inspired by real medical physics applications. Each room reveals how physicists and medical professionals work together to improve diagnosis and therapy. The final stage introduces ongoing research challenges and future technologies in oncology and radiation medicine.",
+    mission:
+      "Your mission is to solve scientific puzzles before time runs out. Working in teams, participants manipulate objects, decode hidden messages, observe experimental setups, and unlock mechanisms to progress through the Escape Room. Every challenge is inspired by real-world medical physics concepts, from imaging techniques such as CT (Computed Tomography) and MRI (Magnetic Resonance Imaging) to advanced radiotherapy and particle therapy. Players must collaborate, think critically, and connect scientific clues to uncover the final solution. Along the way, researchers and medical physicists guide participants and help transform each challenge into a memorable learning experience.",
+    discover:
+      "Participants discover how physics contributes to modern medicine and cancer care. The Escape Room introduces concepts related to medical imaging, radiation therapy, proton and ion therapy, and emerging research topics such as FLASH radiotherapy and BNCT (Boron Neutron Capture Therapy). Scientific ideas are presented through games, visual clues, and interactive experiments that make complex concepts accessible to all audiences. Each stage ends with a short scientific debriefing designed to reinforce the “take-home message” of the activity. The experience also highlights the importance of research and innovation in improving patient treatments and healthcare technologies. ",
+    participants: {
+      ageGroup: "Ages 10 and up",
+      audience: "School students, families, and general public audiences",
+      groupSize: "Up to 10 participants per session"
+    },
+    practicalInfo: {
+      duration: "Three independent thematic stages, each lasting approximately 15 minutes. ",
+      languages: "Italian",
+      website: "https://fisica61.wordpress.com/chi-siamo/",
+      websiteLabel: "Official website"
+    },
+    special:
+      "The Medical Physics Escape Room combines scientific outreach, active learning, and immersive storytelling in a unique educational format. Unlike traditional science communication activities, participants learn by directly interacting with puzzles and experimental elements inspired by real medical technologies. The activity is highly adaptable and continuously evolving, with new scientific themes added over time to reflect current research frontiers. Researchers are directly involved in guiding participants, encouraging dialogue and curiosity about STEM careers and healthcare innovation. The project has also attracted interest from hospitals and research centres as a tool for patient education and public engagement. The Medical Physics Escape Room was conceived by Anna Vignati and developed by the Medical Physics research group of the University of Turin and INFN Torino, in collaboration with the Italian Association of Medical Physics (AIFM). ",
+    gallery: [
+      {
+        src: "escape-rooms_img/medical/img2.jpg",
+        alt: "",
+        caption: "Main scene",
+        size: "gallery-card-xl"
+      },
+      {
+        src: "escape-rooms_img/medical/img1.jpg",
+        alt: "",
+        caption: "Puzzle detail",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/medical/img3.jpg",
+        alt: "",
+        caption: "Participants in action",
+        size: "gallery-card-square"
+      },
+      {
+        src: "escape-rooms_img/medical/img4.jpg",
+        alt: "",
+        caption: "Interactive station",
+        size: "gallery-card-landscape"
+      }
+    ],
+    owner: {
+      name: "Università degli Studi di Torino",
+      description:
+        "A major Italian university contributing to research, education, and the development of innovative outreach methodologies. ",
+      logo: {
+        src: "network_img/Logos/SVG/UNITO.svg",
+        alt: "UniTo logo"
+      },
+      website: "https://www.unito.it",
+      websiteLabel: "Visit institution website"
+    },
+    contact: {
+      email: "anna.vignati@unito.it"
+    }
+  },
+   {
     slug: "photon",
     title: "On board a photon",
     heroText:
