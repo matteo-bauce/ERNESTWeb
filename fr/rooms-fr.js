@@ -94,7 +94,7 @@ window.escapeRooms = [
     description:
       "Une grande université italienne contribuant à la recherche, à l'éducation et au développement de méthodologies innovantes de médiation scientifique.",
     logo: {
-      src: "network_img/Logos/SVG/UNITO.svg",
+      src: "../network_img/Logos/SVG/UNITO.svg",
       alt: "Logo UniTo"
     },
     website: "https://www.unito.it",
@@ -159,7 +159,7 @@ window.escapeRooms = [
     description:
       "Une grande université italienne contribuant à la recherche, à l'éducation et au développement de méthodologies innovantes de médiation scientifique.",
     logo: {
-      src: "network_img/Logos/SVG/UNITO.svg",
+      src: "../network_img/Logos/SVG/UNITO.svg",
       alt: "Logo UniTo"
     },
     website: "https://www.unito.it",
