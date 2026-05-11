@@ -156,25 +156,25 @@ window.escapeRooms = [
       "L’astronomia gamma con telescopi Cherenkov è un modo molto particolare di studiare il cielo, perché usa l’atmosfera come rivelatore e osserva solo indirettamente le sorgenti di interesse. Questa escape room mostra proprio come funziona questo approccio, mettendo i giocatori nel ruolo di un team scientifico e facendoli passare attraverso tutte le fasi della vera ricerca: dalle domande iniziali alla raccolta e analisi dei dati, fino alla pubblicazione finale di un articolo.",
     gallery: [
       {
-        src: "escape-rooms_img/bang/INAF_BANG_1.jpg",
+        src: "../escape-rooms_img/bang/INAF_BANG_1.jpg",
         alt: "Scena principale di Bang! Chi è stato?",
         caption: "Scena principale o allestimento",
         size: "gallery-card-xl"
       },
       {
-        src: "escape-rooms_img/bang/INAF_BANG_2.jpg",
+        src: "../escape-rooms_img/bang/INAF_BANG_2.jpg",
         alt: "Dettaglio di un enigma di Bang! Chi è stato?",
         caption: "Dettaglio di un enigma",
         size: "gallery-card-square"
       },
       {
-        src: "escape-rooms_img/bang/INAF_BANG_3.jpg",
+        src: "../escape-rooms_img/bang/INAF_BANG_3.jpg",
         alt: "Partecipanti in Bang! Chi è stato?",
         caption: "Partecipanti in azione",
         size: "gallery-card-square"
       },
       {
-        src: "escape-rooms_img/bang/INAF_BANG_4.jpg",
+        src: "../escape-rooms_img/bang/INAF_BANG_4.jpg",
         alt: "Stazione interattiva di Bang! Chi è stato?",
         caption: "Stazione interattiva",
         size: "gallery-card-landscape"
