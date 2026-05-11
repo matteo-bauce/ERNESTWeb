@@ -64,6 +64,136 @@ window.escapeRooms = [
       email: "hepscape@lists.infn.it"
     }
   },
+{
+  slug: "mastem",
+  title: "maSTEM game",
+  heroText:
+    "maSTEM game (un Approccio Multilingue alle discipline STEM nell'apprendimento basato sul gioco) è un progetto di Public Engagement sviluppato dall'Università di Torino per promuovere un'educazione STEM attiva e inclusiva attraverso escape room educative. Il progetto combina scienza, tecnologia, ingegneria, matematica e lingue straniere utilizzando un approccio basato sul gioco e CLIL (Content and Language Integrated Learning).",
+  story:
+    "Le prime escape room educative sulla fisica medica e sul multilinguismo sono state sviluppate dai Dipartimenti di Fisica e Lingue dell'UniTo nel 2021. Quella che era nata come attività sperimentale di outreach si è rapidamente evoluta in una rete collaborativa che coinvolge più di dieci dipartimenti universitari, musei, società scientifiche e partner territoriali. Ogni escape room racconta una storia diversa: dalla scienza medica e dalle tecnologie diagnostiche alle sfide One Health. I partecipanti diventano esploratori, investigatori o risolutori di problemi immersi in misteri scientifici, dove ogni indizio apre la porta a una nuova scoperta. La dimensione narrativa trasforma la scienza in un'esperienza emozionante e memorabile.",
+  mission:
+    "La vostra missione è lavorare in squadra per risolvere enigmi scientifici prima che il tempo scada. I giocatori devono osservare l'ambiente circostante, interpretare messaggi nascosti, manipolare oggetti sperimentali e sbloccare meccanismi per avanzare nelle stanze. Ogni sfida è ispirata a concetti STEM reali e spesso include elementi multilingue pensati per stimolare le capacità di comunicazione e ragionamento. A seconda dell'escape room scelta, i partecipanti possono indagare tecnologie mediche, scoprire scienziate e scienziati dimenticati, oppure esplorare la sostenibilità ambientale e il benessere animale. Cooperazione, creatività, pensiero critico e curiosità sono le chiavi per completare con successo l'avventura.",
+  discover:
+    "I partecipanti scoprono come le discipline STEM siano profondamente connesse alla vita quotidiana, alla salute, alla sostenibilità e alla società. Le escape room introducono temi come l'imaging medico, le onde e la diagnostica, la microbiologia, la resistenza agli antibiotici, One Health, la protezione ambientale e la storia della scienza. Diverse attività includono anche indizi in lingua inglese ispirati all'approccio educativo CLIL. Il progetto promuove il pensiero interdisciplinare mostrando come fisica, biologia, chimica, matematica, ingegneria e lingue possano lavorare insieme per risolvere problemi reali. Accanto ai contenuti scientifici, le attività incoraggiano la riflessione sull'inclusione, sugli stereotipi di genere e sull'impatto sociale della scienza.",
+  participants: {
+    ageGroup: "Dai 10 anni in su",
+    audience: "Studenti, famiglie e pubblico generale",
+    groupSize: "Fino a 8 partecipanti per sessione"
+  },
+  practicalInfo: {
+    duration: "Ambienti tematici indipendenti della durata di circa 15-20 minuti ciascuno",
+    languages: "Italiano",
+    website: "https://www.mastem-game.unito.it/",
+    websiteLabel: "Sito ufficiale"
+  },
+  special:
+    "maSTEM game combina innovazione educativa, multilinguismo, inclusione e divulgazione scientifica in un formato altamente interattivo. A differenza delle attività tradizionali di comunicazione della scienza, i partecipanti imparano attraverso il coinvolgimento diretto, la collaborazione e lo storytelling immersivo. Il progetto integra le discipline STEM con le lingue straniere e ambiti creativi come l'arte e il patrimonio museale, creando un'esperienza realmente multidisciplinare. Sono disponibili anche versioni semplificate per bambine e bambini più piccoli, a partire dalla scuola primaria. Grande attenzione è inoltre dedicata all'inclusione e alla parità di genere, con attività specificamente progettate per ridurre gli stereotipi e rendere le STEM più accessibili a tutte e tutti. I questionari di ricerca raccolti prima e dopo le escape room mostrano effetti positivi sull'interesse verso le STEM, sulla percezione dell'utilità della scienza e sulla riduzione della difficoltà percepita. Il progetto collabora con istituzioni e associazioni come INFN, AIF, AIFM, ANILS, ARPA Piemonte, musei del sistema universitario e partner territoriali.",
+  gallery: [
+    {
+      src: "../escape-rooms_img/mastem/img2.jpg",
+      alt: "",
+      caption: "Scena principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "../escape-rooms_img/mastem/img1.jpg",
+      alt: "",
+      caption: "Dettaglio del puzzle",
+      size: "gallery-card-square"
+    },
+    {
+      src: "../escape-rooms_img/mastem/img3.jpg",
+      alt: "",
+      caption: "Partecipanti in azione",
+      size: "gallery-card-square"
+    },
+    {
+      src: "../escape-rooms_img/mastem/img4.jpg",
+      alt: "",
+      caption: "Postazione interattiva",
+      size: "gallery-card-landscape"
+    }
+  ],
+  owner: {
+    name: "Università degli Studi di Torino",
+    description:
+      "Un grande ateneo italiano che contribuisce alla ricerca, alla formazione e allo sviluppo di metodologie innovative di divulgazione.",
+    logo: {
+      src: "network_img/Logos/SVG/UNITO.svg",
+      alt: "Logo UniTo"
+    },
+    website: "https://www.unito.it",
+    websiteLabel: "Visita il sito dell'istituzione"
+  },
+  contact: {
+    email: "anna.vignati@unito.it"
+  }
+},
+{
+  slug: "medical",
+  title: "Escape Room di Fisica Medica",
+  heroText:
+    "L'Escape Room di Fisica Medica è un'esperienza scientifica interattiva pensata per introdurre i partecipanti all'affascinante ruolo della fisica in medicina. Creata dal gruppo di Fisica Medica dell'Università di Torino, da INFN Torino e da AIFM (Associazione Italiana di Fisica Medica), l'attività combina enigmi, lavoro di squadra e scoperta scientifica in un ambiente di apprendimento giocoso.",
+  story:
+    "I giocatori seguono il percorso di un paziente oncologico immaginario, dalla diagnosi al trattamento fino alla ricerca medica più avanzata. Muovendosi attraverso tre ambienti tematici, le squadre devono risolvere indovinelli, sbloccare indizi e completare missioni collaborative ispirate ad applicazioni reali della fisica medica. Ogni stanza rivela come fisici e professionisti della medicina lavorino insieme per migliorare diagnosi e terapie. La fase finale introduce sfide di ricerca in corso e tecnologie future in oncologia e medicina delle radiazioni.",
+  mission:
+    "La vostra missione è risolvere puzzle scientifici prima che il tempo scada. Lavorando in squadra, i partecipanti manipolano oggetti, decodificano messaggi nascosti, osservano apparati sperimentali e sbloccano meccanismi per avanzare nell'Escape Room. Ogni sfida è ispirata a concetti reali di fisica medica, dalle tecniche di imaging come TC (Tomografia Computerizzata) e RM (Risonanza Magnetica) alla radioterapia avanzata e alla terapia con particelle. I giocatori devono collaborare, pensare in modo critico e collegare gli indizi scientifici per arrivare alla soluzione finale. Lungo il percorso, ricercatori e fisici medici guidano i partecipanti e contribuiscono a trasformare ogni sfida in un'esperienza di apprendimento memorabile.",
+  discover:
+    "I partecipanti scoprono come la fisica contribuisca alla medicina moderna e alla cura del cancro. L'Escape Room introduce concetti legati all'imaging medico, alla radioterapia, alla terapia con protoni e ioni e a temi di ricerca emergenti come la radioterapia FLASH e la BNCT (Boron Neutron Capture Therapy). Le idee scientifiche sono presentate attraverso giochi, indizi visivi ed esperimenti interattivi che rendono concetti complessi accessibili a tutti i pubblici. Ogni fase si conclude con un breve debriefing scientifico pensato per rafforzare il messaggio chiave dell'attività. L'esperienza mette inoltre in evidenza l'importanza della ricerca e dell'innovazione nel migliorare i trattamenti per i pazienti e le tecnologie sanitarie.",
+  participants: {
+    ageGroup: "Dai 10 anni in su",
+    audience: "Studenti, famiglie e pubblico generale",
+    groupSize: "Fino a 10 partecipanti per sessione"
+  },
+  practicalInfo: {
+    duration: "Tre fasi tematiche indipendenti, ciascuna della durata di circa 15 minuti.",
+    languages: "Italiano",
+    website: "https://fisica61.wordpress.com/chi-siamo/",
+    websiteLabel: "Sito ufficiale"
+  },
+  special:
+    "L'Escape Room di Fisica Medica combina divulgazione scientifica, apprendimento attivo e storytelling immersivo in un formato educativo unico. A differenza delle attività tradizionali di comunicazione della scienza, i partecipanti imparano interagendo direttamente con puzzle ed elementi sperimentali ispirati a tecnologie mediche reali. L'attività è altamente adattabile e in continua evoluzione, con nuovi temi scientifici aggiunti nel tempo per riflettere le frontiere attuali della ricerca. I ricercatori sono direttamente coinvolti nel guidare i partecipanti, incoraggiando il dialogo e la curiosità verso le carriere STEM e l'innovazione in ambito sanitario. Il progetto ha suscitato interesse anche da parte di ospedali e centri di ricerca come strumento di educazione dei pazienti e di public engagement. L'Escape Room di Fisica Medica è stata ideata da Anna Vignati e sviluppata dal gruppo di ricerca in Fisica Medica dell'Università di Torino e da INFN Torino, in collaborazione con l'Associazione Italiana di Fisica Medica (AIFM).",
+  gallery: [
+    {
+      src: "../escape-rooms_img/medical/img2.jpg",
+      alt: "",
+      caption: "Scena principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "../escape-rooms_img/medical/img1.jpg",
+      alt: "",
+      caption: "Dettaglio del puzzle",
+      size: "gallery-card-square"
+    },
+    {
+      src: "../escape-rooms_img/medical/img3.jpg",
+      alt: "",
+      caption: "Partecipanti in azione",
+      size: "gallery-card-square"
+    },
+    {
+      src: "../escape-rooms_img/medical/img4.jpg",
+      alt: "",
+      caption: "Postazione interattiva",
+      size: "gallery-card-landscape"
+    }
+  ],
+  owner: {
+    name: "Università degli Studi di Torino",
+    description:
+      "Un grande ateneo italiano che contribuisce alla ricerca, alla formazione e allo sviluppo di metodologie innovative di divulgazione.",
+    logo: {
+      src: "network_img/Logos/SVG/UNITO.svg",
+      alt: "Logo UniTo"
+    },
+    website: "https://www.unito.it",
+    websiteLabel: "Visita il sito dell'istituzione"
+  },
+  contact: {
+    email: "anna.vignati@unito.it"
+  }
+},
   {
   slug: "photon",
   title: "A bordo di un fotone",
