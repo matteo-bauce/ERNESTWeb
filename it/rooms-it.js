@@ -119,7 +119,7 @@ window.escapeRooms = [
     description:
       "Un grande ateneo italiano che contribuisce alla ricerca, alla formazione e allo sviluppo di metodologie innovative di divulgazione.",
     logo: {
-      src: "network_img/Logos/SVG/UNITO.svg",
+      src: "../network_img/Logos/SVG/UNITO.svg",
       alt: "Logo UniTo"
     },
     website: "https://www.unito.it",
@@ -184,7 +184,7 @@ window.escapeRooms = [
     description:
       "Un grande ateneo italiano che contribuisce alla ricerca, alla formazione e allo sviluppo di metodologie innovative di divulgazione.",
     logo: {
-      src: "network_img/Logos/SVG/UNITO.svg",
+      src: "../network_img/Logos/SVG/UNITO.svg",
       alt: "Logo UniTo"
     },
     website: "https://www.unito.it",
