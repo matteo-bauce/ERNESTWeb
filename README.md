@@ -9,11 +9,14 @@ This repository contains the HTML, CSS, and asset files that power the website. 
 ## 🛠️ How to Edit Files Directly on GitHub (Browser)
 
 If you spot a typo or need to update text, you can do it right here on GitHub in just a few clicks.
+Currently we will use two branches of the code:
+- `test` --> used to make changes and to test the website before deploying it online. The temporary website will is visible on xxx 
+- `main` --> containing the website that is currently online on www.ernest-project.eu 
+To propagate the changes from the `test` to `main` (ie. to www.ernest-project.eu) you will make a pull request (see Step 6)
 
-### Step 1: Select the Correct Branch
-1. Navigate to the main page of this repository.
-2. In the top-left corner, just above the list of files, look for the branch dropdown menu (it usually says `main` by default).
-3. Ensure **`main`** is selected. 
+### Step 1: Select the Correct Branch (test)
+1. Navigate to the main page of this https://github.com/matteo-bauce/ERNESTWeb/tree/test (note: `tree/test` at the end).
+2. In the top-left corner, just above the list of files, look for the branch dropdown menu and ensure **`test`** is selected (instead of `main`). 
 
 ### Step 2: Open the File
 Click on the name of the file you want to edit. For example:
@@ -32,5 +35,9 @@ Make your necessary text edits within the HTML.
 2. A dialog box will appear. In the first text box, write a brief, descriptive message explaining what you changed (e.g., *"Added the Gravity Lab escape room"* or *"Fixed a typo in the About section"*).
 3. Make sure the option **"Commit directly to the `main` branch"** is selected.
 4. Click the green **Commit changes** button to finalize your edit.
+
+### Step 6: Deploy Online of Your changes
+1. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/pull/new/test
+2. 
 
 Your changes are now saved to the repository!
