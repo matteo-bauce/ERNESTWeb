@@ -15,7 +15,7 @@ Currently we will use two branches of the code:
 To propagate the changes from the `test` to `main` (ie. to https://www.ernest-project.eu) you will make a pull request (see Step 6)
 
 ### Step 1: Select the Correct Branch (test)
-1. Navigate to the main page of this https://github.com/matteo-bauce/ERNESTWeb/tree/test (note: `tree/test` at the end).
+1. Navigate to the [repository page on the `test` branch](../tree/test).
 2. In the top-left corner, just above the list of files, look for the branch dropdown menu and ensure **`test`** is selected (instead of `main`). 
 
 ### Step 2: Open the File
