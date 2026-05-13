@@ -37,7 +37,12 @@ Make your necessary text edits within the HTML.
 4. Click the green **Commit changes** button to finalize your edit.
 
 ### Step 6: Deploy Online of Your changes
-1. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/pull/new/test
-2. 
+1. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/compare/main...test?expand=1
+2. Put a Title and a Description
+3. Check the changed files correspond to your changes
+4. Push on the green button "Create pull request"
+5. Once the pull request is create, the browser will open the pull request page (*). To merge it simply push on the pull "Merge pull request"
+7. Check that your changes are online on www.ernest-project.eu
+ (*) If you closed by mistake the pull request page, you can find it from https://github.com/matteo-bauce/ERNESTWeb/pulls
 
 Your changes are now saved to the repository!
