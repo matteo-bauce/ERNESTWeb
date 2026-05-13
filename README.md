@@ -10,9 +10,9 @@ This repository contains the HTML, CSS, and asset files that power the website. 
 
 If you spot a typo or need to update text, you can do it right here on GitHub in just a few clicks.
 Currently we will use two branches of the code:
-- `test` --> used to make changes and to test the website before deploying it online. The temporary website will is visible on xxx 
-- `main` --> containing the website that is currently online on www.ernest-project.eu 
-To propagate the changes from the `test` to `main` (ie. to www.ernest-project.eu) you will make a pull request (see Step 6)
+- `test` --> used to make changes and test the website before deploying it online.
+- `main` --> contains the website that is currently online at https://www.ernest-project.eu
+To propagate the changes from the `test` to `main` (ie. to https://www.ernest-project.eu) you will make a pull request (see Step 6)
 
 ### Step 1: Select the Correct Branch (test)
 1. Navigate to the main page of this https://github.com/matteo-bauce/ERNESTWeb/tree/test (note: `tree/test` at the end).
