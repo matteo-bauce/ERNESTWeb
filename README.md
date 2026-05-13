@@ -44,6 +44,7 @@ Make your necessary text edits within the HTML.
 5. Once the pull request is create, the browser will open the pull request page. After a couple of minutes you should get the Copilot AID review. You can click on the green button "Commit suggestion" and then "Apply suggestion" to accept Copilot suggestions.
 6. To merge it simply push on the pull "Merge pull request" from the Pull Request page (*).
 7. Check that your changes are online on www.ernest-project.eu
+
  (*) If you closed by mistake the pull request page, you can find it from https://github.com/matteo-bauce/ERNESTWeb/pulls
 
 Important: if you create a pull request and you do not merge it, all the changes applied on `test` branch will be automatically included in your pull request
