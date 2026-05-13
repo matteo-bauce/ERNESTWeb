@@ -45,4 +45,6 @@ Make your necessary text edits within the HTML.
 7. Check that your changes are online on www.ernest-project.eu
  (*) If you closed by mistake the pull request page, you can find it from https://github.com/matteo-bauce/ERNESTWeb/pulls
 
-Your changes are now saved to the repository!
+Important: if you create a pull request and you do not merge it, all the changes applied on `test` branch will be automatically included in your pull request
+
+Your changes are now saved to the repository in the branch `main` and they should be online on www.ernest-project.eu .
