@@ -33,7 +33,7 @@ Make your necessary text edits within the HTML.
 ### Step 5: Save (Commit) Your Changes
 1. Once you are happy with your edits, click the green **Commit changes...** button in the top right corner.
 2. A dialog box will appear. In the first text box, write a brief, descriptive message explaining what you changed (e.g., *"Added the Gravity Lab escape room"* or *"Fixed a typo in the About section"*).
-3. Make sure the option **"Commit directly to the `main` branch"** is selected.
+3. Make sure the option **"Commit directly to the `test` branch"** is selected.
 4. Click the green **Commit changes** button to finalize your edit.
 
 ### Step 6: Deploy Online of Your changes
