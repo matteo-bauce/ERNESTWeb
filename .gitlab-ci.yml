@@ -11,3 +11,14 @@ deploy_to_webeos:
     - deploy-eos
   rules:
     - if: $CI_COMMIT_BRANCH == "main" # Assicurati che sia il nome corretto del tuo branch principale
+
+deploy_to_webeos_test:
+  stage: deploy
+  image: gitlab-registry.cern.ch/ci-tools/ci-web-deployer:latest
+  variables:
+    CI_OUTPUT_DIR: "."
+    EOS_PATH: "/eos/user/s/sdonato/ERNEST-website/ERNESTWeb_test"
+  script:
+    - deploy-eos
+  rules:
+    - if: $CI_COMMIT_BRANCH == "test"
