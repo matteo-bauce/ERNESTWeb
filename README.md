@@ -35,10 +35,10 @@ Make your necessary text edits within the HTML.
 2. A dialog box will appear. In the first text box, write a brief, descriptive message explaining what you changed (e.g., *"Added the Gravity Lab escape room"* or *"Fixed a typo in the About section"*).
 3. Make sure the option **"Commit directly to the `test` branch"** is selected.
 4. Click the green **Commit changes** button to finalize your edit.
-5. Your changes should be visible on  https://ernest-project.webtest.cern.ch/ERNESTWeb_test/ after 5 minutes or sooner
+5. Your changes should be visible on https://ernest-project.webtest.cern.ch/ERNESTWeb_test/ within 5 minutes.
 
 ### Step 6: Deploy Online of Your changes
-1. Wait 5 minutes and check that the test website (https://ernest-project.webtest.cern.ch/ERNESTWeb_test/) looks ok. 
+1. Wait 5 minutes and check that the test website (https://ernest-project.webtest.cern.ch/ERNESTWeb_test/) looks ok.
 2. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/compare/main...test?expand=1
 3. Put a Title and a Description
 4. Check the changed files correspond to your changes
