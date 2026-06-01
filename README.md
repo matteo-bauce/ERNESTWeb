@@ -10,8 +10,8 @@ This repository contains the HTML, CSS, and asset files that power the website. 
 
 If you spot a typo or need to update text, you can do it right here on GitHub in just a few clicks.
 Currently we will use two branches of the code:
-- `test` --> used to make changes and test the website before deploying it online.
-- `main` --> contains the website that is currently online at https://www.ernest-project.eu
+- `test` --> used to make changes and test the website before deploying it to the official website. You can see the results of the changes in `test` on https://ernest-project.webtest.cern.ch/ERNESTWeb_test/ (Note: it is updated every 5 minutes)
+- `main` --> contains the official website that is currently online at https://www.ernest-project.eu
 To propagate the changes from the `test` to `main` (ie. to https://www.ernest-project.eu) you will make a pull request (see Step 6)
 
 ### Step 1: Select the Correct Branch (test)
@@ -35,18 +35,24 @@ Make your necessary text edits within the HTML.
 2. A dialog box will appear. In the first text box, write a brief, descriptive message explaining what you changed (e.g., *"Added the Gravity Lab escape room"* or *"Fixed a typo in the About section"*).
 3. Make sure the option **"Commit directly to the `test` branch"** is selected.
 4. Click the green **Commit changes** button to finalize your edit.
+5. Your changes should be visible on https://ernest-project.webtest.cern.ch/ERNESTWeb_test/ within 5 minutes.
 
 ### Step 6: Deploy Online of Your changes
-1. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/compare/main...test?expand=1
-2. Put a Title and a Description
-3. Check the changed files correspond to your changes
-4. Push on the green button "Create pull request"
-5. Once the pull request is create, the browser will open the pull request page. After a couple of minutes you should get the Copilot AID review. You can click on the green button "Commit suggestion" and then "Apply suggestion" to accept Copilot suggestions.
-6. To merge it simply push on the pull "Merge pull request" from the Pull Request page (*).
-7. Check that your changes are online on www.ernest-project.eu
+1. Wait 5 minutes and check that the test website (https://ernest-project.webtest.cern.ch/ERNESTWeb_test/) looks ok.
+2. Make a Pull Request from `test` to `main`: simply click on https://github.com/matteo-bauce/ERNESTWeb/compare/main...test?expand=1
+3. Put a Title and a Description
+4. Check the changed files correspond to your changes
+5. Push on the green button "Create pull request"
+6. Once the pull request is create, the browser will open the pull request page. After a couple of minutes you should get the Copilot AID review. You can click on the green button "Commit suggestion" and then "Apply suggestion" to accept Copilot suggestions.
+7. To merge it simply push on the pull "Merge pull request" from the Pull Request page (*).
+8. Check that your changes are online on www.ernest-project.eu
 
  (*) If you closed by mistake the pull request page, you can find it from https://github.com/matteo-bauce/ERNESTWeb/pulls
 
 Important: if you create a pull request and you do not merge it, all the changes applied on `test` branch will be automatically included in your pull request
 
 Your changes are now saved to the repository in the branch `main` and they should be online on www.ernest-project.eu .
+
+#### Expert links
+- GitLab pipelines: https://gitlab.cern.ch/sdonato/ERNESTWeb/-/pipelines (used to update ernest-project.webtest.cern.ch)
+- GitLab mirroring: https://gitlab.cern.ch/sdonato/ERNESTWeb/-/settings/repository#js-push-remote-settings
