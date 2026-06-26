@@ -1761,6 +1761,10 @@ li {
   text-decoration: none;
 }
 
+.footer-social-links .social-link svg,
+.footer-social-links .social-link path {
+  fill: #fffbea;
+}
 .social-link {
   display: inline-flex;
   align-items: center;
