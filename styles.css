@@ -1756,6 +1756,11 @@ li {
   gap: 10px;
 }
 
+.footer-social-links .social-link {
+  color: #fffbea;
+  text-decoration: none;
+}
+
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -1778,8 +1783,8 @@ li {
 }
 
 .social-link svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: block;
   fill: currentColor;
 }
