@@ -355,7 +355,6 @@ window.escapeRooms = [
     },
     contact: { email: "physics4teenagers@unipv.it" }
   },
-  ```javascript
 {
   slug: "buio",
   title: "À la chasse dans l'obscurité",
@@ -432,8 +431,6 @@ window.escapeRooms = [
     email: "silvia.casu@inaf.it"
   }
 }
-```
-
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
