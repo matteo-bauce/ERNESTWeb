@@ -456,6 +456,81 @@ window.escapeRooms = [
       email: "physics4teenagers@unipv.it"
     }
   },
+{
+  slug: "buio",
+  title: "A caccia nel buio",
+  heroText: "Un'esperienza educativa interattiva e narrativa che permette ai partecipanti di entrare nel laboratorio di un'astrofisica per scoprire i segreti della formazione di stelle e pianeti. Esplorando un ufficio di ricerca ricostruito, i giocatori risolvono una serie di enigmi logici e scientifici per ricostruire l'abstract di una straordinaria scoperta su un disco protoplanetario.",
+
+  story:
+    "Quali segreti si nascondono nelle oscure nubi molecolari dove nascono nuove stelle e sistemi planetari? Come fanno gli astronomi a osservare l'universo attraverso la polvere cosmica utilizzando lunghezze d'onda invisibili? Quali molecole familiari, come acqua e ammoniaca, sono presenti nelle nebulose, e quale ruolo svolgono gravità e campi magnetici nella loro evoluzione? Per scoprirlo dovrete affrontare enigmi di logica e crittografia collaborando all'interno dell'ufficio di una ricercatrice. A caccia nel buio è stata ideata dal settore D&D di INAF–Osservatorio Astronomico di Cagliari (Silvia Casu, Alessia Zurru e Silvia Leurini) in collaborazione con l'associazione culturale Laboratorio Scienza, ed è stata presentata per la prima volta al FestivalScienza di Cagliari nel 2022.",
+
+  mission:
+    "Una giovane astrofisica e il suo gruppo di ricerca hanno appena realizzato una scoperta rivoluzionaria su un disco protoplanetario. I risultati sono sotto embargo internazionale fino all'imminente conferenza stampa. Per garantire la massima riservatezza, il comunicato ufficiale è stato preparato lasciando vuoti tutti i dati più sensibili, come il nome della sorgente osservata, le coordinate celesti e il telescopio utilizzato, conservati separatamente nei diversi punti del laboratorio. Poco prima dell'assemblaggio finale, un'improvvisa emergenza costringe la ricercatrice ad allontanarsi. Sarete voi, nei panni dei suoi colleghi, a recuperare gli indizi, completare il comunicato e ricostruire l'immagine finale, così da annunciare la scoperta al mondo allo scadere dell'embargo.",
+
+  discover:
+    "Durante l'esperienza scoprirete come nascono stelle e pianeti all'interno delle strutture filamentari del mezzo interstellare. Esplorerete concetti fondamentali dell'astrofisica, dall'uso della radiazione infrarossa per osservare attraverso la polvere cosmica, alla composizione chimica delle nubi molecolari, fino al ruolo di gravità e campi magnetici nella formazione delle strutture cosmiche. Imparerete inoltre come gli astronomi utilizzano ascensione retta e declinazione per orientarsi nel cielo e sperimenterete in prima persona il lavoro di squadra, il ragionamento logico e il metodo di ricerca scientifico.",
+
+  participants: {
+    ageGroup: "Dai 10 anni in su",
+    audience: "Studenti, famiglie e pubblico generale",
+    groupSize: "Fino a 20 partecipanti per sessione"
+  },
+
+  practicalInfo: {
+    duration: "60 minuti",
+    languages: "Italiano",
+    website:
+      "https://openaccess.inaf.it/entities/publication/a1c42521-3b1b-481b-9bd6-52e717d0ac93",
+    websiteLabel: "Sito ufficiale"
+  },
+
+  special:
+    "Attraverso enigmi fisici e sfide crittografiche integrate nella narrazione, questa escape room permette di vivere in prima persona il funzionamento di un moderno gruppo di ricerca scientifica. Utilizzerete gli stessi strumenti e gli stessi concetti impiegati dagli astronomi per osservare l'universo, scoprendo come la luce invisibile possa rivelare dettagli sorprendenti nascosti nelle regioni più oscure dello spazio. In un'ora di gioco collegherete oggetti della vita quotidiana ai dati raccolti dal radiotelescopio ALMA, fino a ricostruire una straordinaria immagine astronomica.",
+
+  gallery: [
+    {
+      src: "escape-rooms_img/buio/img2.jpg",
+      alt: "Scena principale",
+      caption: "Scena principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "escape-rooms_img/buio/img1.png",
+      alt: "Dettaglio di un enigma",
+      caption: "Dettaglio di un enigma",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img3.jpg",
+      alt: "Partecipanti",
+      caption: "Partecipanti durante il gioco",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img4.jpg",
+      alt: "Postazione interattiva",
+      caption: "Postazione interattiva",
+      size: "gallery-card-landscape"
+    }
+  ],
+
+  owner: {
+    name: "Istituto Nazionale di Astrofisica (INAF)",
+    description:
+      "L'ente pubblico nazionale di riferimento per la ricerca astronomica e astrofisica in Italia, impegnato nello sviluppo della conoscenza dell'Universo e nella divulgazione scientifica.",
+    logo: {
+      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      alt: "Logo INAF"
+    },
+    website: "http://www.inaf.it/en",
+    websiteLabel: "Visita il sito dell'istituto"
+  },
+
+  contact: {
+    email: "silvia.casu@inaf.it"
+  }
+}
+  
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
