@@ -396,7 +396,7 @@ window.escapeRooms = [
       size: "gallery-card-xl"
     },
     {
-      src: "../escape-rooms_img/buio/img1.png",
+      src: "../escape-rooms_img/buio/img1.jpg",
       alt: "Détail d'une énigme",
       caption: "Détail d'une énigme",
       size: "gallery-card-square"
