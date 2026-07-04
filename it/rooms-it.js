@@ -529,8 +529,7 @@ window.escapeRooms = [
   contact: {
     email: "silvia.casu@inaf.it"
   }
-}
-  
+},  
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
