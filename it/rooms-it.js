@@ -489,25 +489,25 @@ window.escapeRooms = [
 
   gallery: [
     {
-      src: "escape-rooms_img/buio/img2.jpg",
+      src: "../escape-rooms_img/buio/img2.jpg",
       alt: "Scena principale",
       caption: "Scena principale",
       size: "gallery-card-xl"
     },
     {
-      src: "escape-rooms_img/buio/img1.png",
+      src: "../escape-rooms_img/buio/img1.png",
       alt: "Dettaglio di un enigma",
       caption: "Dettaglio di un enigma",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/buio/img3.jpg",
+      src: "../escape-rooms_img/buio/img3.jpg",
       alt: "Partecipanti",
       caption: "Partecipanti durante il gioco",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/buio/img4.jpg",
+      src: "../escape-rooms_img/buio/img4.jpg",
       alt: "Postazione interattiva",
       caption: "Postazione interattiva",
       size: "gallery-card-landscape"
@@ -519,7 +519,7 @@ window.escapeRooms = [
     description:
       "L'ente pubblico nazionale di riferimento per la ricerca astronomica e astrofisica in Italia, impegnato nello sviluppo della conoscenza dell'Universo e nella divulgazione scientifica.",
     logo: {
-      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      src: "../network_img/Logos/PNG/inaf-fondo-trasparente.png",
       alt: "Logo INAF"
     },
     website: "http://www.inaf.it/en",
