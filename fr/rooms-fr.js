@@ -390,25 +390,25 @@ window.escapeRooms = [
 
   gallery: [
     {
-      src: "escape-rooms_img/buio/img2.jpg",
+      src: "../escape-rooms_img/buio/img2.jpg",
       alt: "Scène principale",
       caption: "Scène principale",
       size: "gallery-card-xl"
     },
     {
-      src: "escape-rooms_img/buio/img1.png",
+      src: "../escape-rooms_img/buio/img1.png",
       alt: "Détail d'une énigme",
       caption: "Détail d'une énigme",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/buio/img3.jpg",
+      src: "../escape-rooms_img/buio/img3.jpg",
       alt: "Participants",
       caption: "Participants en pleine activité",
       size: "gallery-card-square"
     },
     {
-      src: "escape-rooms_img/buio/img4.jpg",
+      src: "../escape-rooms_img/buio/img4.jpg",
       alt: "Station interactive",
       caption: "Station interactive",
       size: "gallery-card-landscape"
@@ -420,7 +420,7 @@ window.escapeRooms = [
     description:
       "L'organisme public italien de référence pour la recherche en astronomie et en astrophysique, engagé dans l'étude de l'Univers et la diffusion de la culture scientifique.",
     logo: {
-      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      src: "../network_img/Logos/PNG/inaf-fondo-trasparente.png",
       alt: "Logo de l'INAF"
     },
     website: "http://www.inaf.it/en",
