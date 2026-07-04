@@ -495,7 +495,7 @@ window.escapeRooms = [
       size: "gallery-card-xl"
     },
     {
-      src: "../escape-rooms_img/buio/img1.png",
+      src: "../escape-rooms_img/buio/img1.jpg",
       alt: "Dettaglio di un enigma",
       caption: "Dettaglio di un enigma",
       size: "gallery-card-square"
