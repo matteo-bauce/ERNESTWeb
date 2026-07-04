@@ -355,6 +355,85 @@ window.escapeRooms = [
     },
     contact: { email: "physics4teenagers@unipv.it" }
   },
+  ```javascript
+{
+  slug: "buio",
+  title: "À la chasse dans l'obscurité",
+
+  heroText:
+    "Une expérience pédagogique interactive et immersive qui invite les participants à entrer dans le bureau d'une astrophysicienne afin de percer les secrets de la formation des étoiles et des planètes. En explorant un véritable environnement de recherche, les joueurs résolvent une série d'énigmes scientifiques et logiques pour reconstituer le résumé d'une découverte exceptionnelle sur un disque protoplanétaire.",
+
+  story:
+    "Quels secrets se cachent dans les nuages moléculaires obscurs où naissent les étoiles et les systèmes planétaires ? Comment les astronomes utilisent-ils des longueurs d'onde invisibles pour observer l'Univers à travers la poussière cosmique ? Quelles molécules familières, comme l'eau ou l'ammoniac, sont présentes dans les nébuleuses, et quel rôle jouent la gravité et les champs magnétiques dans leur évolution ? Pour le découvrir, vous devrez résoudre en équipe des énigmes de logique et de cryptographie dans le bureau d'une chercheuse. À la chasse dans l'obscurité a été conçue par le secteur D&D de l'INAF – Observatoire astronomique de Cagliari (Silvia Casu, Alessia Zurru et Silvia Leurini), en collaboration avec l'association culturelle Laboratorio Scienza. Elle a été présentée pour la première fois au FestivalScienza de Cagliari en 2022.",
+
+  mission:
+    "Une jeune astrophysicienne et son équipe viennent de réaliser une découverte majeure concernant un disque protoplanétaire. Les résultats sont soumis à un embargo international jusqu'à une conférence de presse imminente. Afin de garantir la confidentialité des informations, le communiqué officiel a été préparé en laissant vides les données les plus sensibles — le nom de la source observée, ses coordonnées célestes ou encore le télescope utilisé —, conservées séparément dans différents postes de travail du laboratoire. Quelques instants avant l'assemblage final, une urgence familiale oblige la chercheuse à quitter son bureau. Vous incarnez ses collègues : retrouvez les indices, complétez le communiqué et reconstituez l'image finale afin de révéler cette découverte au monde dès la levée de l'embargo.",
+
+  discover:
+    "Au cours de cette expérience, vous découvrirez comment naissent les étoiles et les planètes au sein des structures filamenteuses du milieu interstellaire. Vous explorerez des notions essentielles d'astrophysique : l'utilisation du rayonnement infrarouge pour observer à travers la poussière cosmique, la composition chimique des nuages moléculaires, le rôle de la gravité et des champs magnétiques, ainsi que l'utilisation de l'ascension droite et de la déclinaison pour repérer les objets dans le ciel. Au-delà des connaissances scientifiques, vous développerez également votre esprit d'équipe, votre raisonnement logique et votre capacité à résoudre des problèmes selon la démarche scientifique.",
+
+  participants: {
+    ageGroup: "À partir de 10 ans",
+    audience: "Scolaires, familles et grand public",
+    groupSize: "Jusqu'à 20 participants par session"
+  },
+
+  practicalInfo: {
+    duration: "60 minutes",
+    languages: "Italien",
+    website:
+      "https://openaccess.inaf.it/entities/publication/a1c42521-3b1b-481b-9bd6-52e717d0ac93",
+    websiteLabel: "Site officiel"
+  },
+
+  special:
+    "Grâce à des énigmes physiques et cryptographiques intégrées à une histoire captivante, cette escape room vous plonge dans le fonctionnement d'une véritable équipe de recherche scientifique. Vous manipulerez les mêmes concepts et outils que les astronomes utilisent pour explorer l'Univers, découvrant comment la lumière invisible révèle des structures planétaires cachées au cœur des régions les plus obscures du cosmos. En une heure, votre équipe reliera des objets du quotidien aux observations du réseau de radiotélescopes ALMA afin de reconstituer une image astronomique exceptionnelle.",
+
+  gallery: [
+    {
+      src: "escape-rooms_img/buio/img2.jpg",
+      alt: "Scène principale",
+      caption: "Scène principale",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "escape-rooms_img/buio/img1.png",
+      alt: "Détail d'une énigme",
+      caption: "Détail d'une énigme",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img3.jpg",
+      alt: "Participants",
+      caption: "Participants en pleine activité",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img4.jpg",
+      alt: "Station interactive",
+      caption: "Station interactive",
+      size: "gallery-card-landscape"
+    }
+  ],
+
+  owner: {
+    name: "Istituto Nazionale di Astrofisica (INAF)",
+    description:
+      "L'organisme public italien de référence pour la recherche en astronomie et en astrophysique, engagé dans l'étude de l'Univers et la diffusion de la culture scientifique.",
+    logo: {
+      src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+      alt: "Logo de l'INAF"
+    },
+    website: "http://www.inaf.it/en",
+    websiteLabel: "Visiter le site de l'institut"
+  },
+
+  contact: {
+    email: "silvia.casu@inaf.it"
+  }
+}
+```
+
   {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
