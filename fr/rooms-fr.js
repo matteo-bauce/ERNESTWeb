@@ -300,10 +300,10 @@ window.escapeRooms = [
     special:
       "Acceler8Escape rend compréhensible le fonctionnement des accélérateurs de particules grâce à un parcours fortement interactif, où chaque composant technique devient un défi narratif et collaboratif.",
     gallery: [
-      { src: "../gallery-image-1.jpg", alt: "Scène principale d’Acceler8Escape", caption: "Scène principale ou installation", size: "gallery-card-xl" },
-      { src: "../gallery-image-2.jpg", alt: "Détail d’une énigme d’Acceler8Escape", caption: "Détail d’une énigme", size: "gallery-card-square" },
-      { src: "../gallery-image-3.jpg", alt: "Participant·es dans Acceler8Escape", caption: "Participant·es en action", size: "gallery-card-square" },
-      { src: "../gallery-image-4.jpg", alt: "Station interactive d’Acceler8Escape", caption: "Station interactive", size: "gallery-card-landscape" }
+      { src: "../escape-rooms_img/ACCELER8/img1.jpeg", alt: "Scène principale d’Acceler8Escape", caption: "Scène principale ou installation", size: "gallery-card-xl" },
+      { src: "../escape-rooms_img/ACCELER8/img2.jpeg", alt: "Détail d’une énigme d’Acceler8Escape", caption: "Détail d’une énigme", size: "gallery-card-square" },
+      { src: "../escape-rooms_img/ACCELER8/img3.jpeg", alt: "Participant·es dans Acceler8Escape", caption: "Participant·es en action", size: "gallery-card-square" },
+      { src: "../escape-rooms_img/ACCELER8/img4.jpg", alt: "Station interactive d’Acceler8Escape", caption: "Station interactive", size: "gallery-card-landscape" }
     ],
     owner: {
       name: "Université de Manchester",

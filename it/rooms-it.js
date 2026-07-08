@@ -351,25 +351,25 @@ window.escapeRooms = [
       "Acceler8Escape rende accessibile il funzionamento degli acceleratori di particelle attraverso un percorso fortemente interattivo, dove ogni componente tecnico diventa una sfida narrativa e collaborativa. È un modo diretto e originale per avvicinarsi alla fisica contemporanea attraverso il gioco.",
     gallery: [
       {
-        src: "../gallery-image-1.jpg",
+        src: "../escape-rooms_img/ACCELER8/img1.jpeg",
         alt: "Scena principale di Acceler8Escape",
         caption: "Scena principale o allestimento",
         size: "gallery-card-xl"
       },
       {
-        src: "../gallery-image-2.jpg",
+        src: "../escape-rooms_img/ACCELER8/img2.jpeg",
         alt: "Dettaglio di un enigma di Acceler8Escape",
         caption: "Dettaglio di un enigma",
         size: "gallery-card-square"
       },
       {
-        src: "../gallery-image-3.jpg",
+        src: "../escape-rooms_img/ACCELER8/img3.jpeg",
         alt: "Partecipanti in Acceler8Escape",
         caption: "Partecipanti in azione",
         size: "gallery-card-square"
       },
       {
-        src: "../gallery-image-4.jpg",
+        src: "../escape-rooms_img/ACCELER8/img4.jpg",
         alt: "Stazione interattiva di Acceler8Escape",
         caption: "Stazione interattiva",
         size: "gallery-card-landscape"
