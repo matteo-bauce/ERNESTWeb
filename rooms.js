@@ -454,6 +454,70 @@ window.escapeRooms = [
   }
 },
   {
+  slug: "buio",
+  title: "A caccia nel buio (Hunting in the Dark)",
+  heroText: "Aan interactive, narrative-driven educational experience that allows players to step into the workspace of an astrophysicist to uncover the secrets of star and planet formation. Players explore a simulated research office, solving a sequence of logical and physical puzzles to reconstruct a breakthrough scientific abstract concerning a revolutionary protoplanetary disk discovery.",
+  story:
+    "What secrets are concealed inside the dark molecular clouds where new stars and planetary systems are born? How can researchers use invisible wavelengths of light to peer through cosmic dust and map the universe? What everyday chemical ingredients are hidden inside a distant nebula , and how do gravity and magnetic fields influence their evolution? Explore these questions by solving collaborative logic and cryptography challenges inside a scientist's office. A caccia nel buio! was created by the D&D sector of INAF-OAC (by Silvia Casu, Alessia Zurru, and Silvia Leurini) in collaboration with the Laboratorio Scienza cultural association. It premiered at the 2022 Cagliari FestivalScienza",
+  mission:
+    "A young astrophysicist and her team have made a historic discovery regarding a protoplanetary disk. The results are subject to a strict global media embargo until an imminent international press conference. To maintain absolute information security, the official press release document has been drafted with blank placeholders, keeping the highly sensitive data—such as the source name, specific coordinates, and the observing telescope—confined to the separate, specialized lab stations where they were processed. Just before the final assembly, an urgent family emergency forces the lead scientist to leave the laboratory immediately. You are her research colleagues, and the countdown to the media briefing has begun! Your mission is to securely retrieve the embargoed data from her notes across the office, fill in the blanks of the press release, and reconstruct the final image to announce the discovery to the world the exact moment the embargo lifts.",
+  discover:
+    "You will explore the journey of scientific discovery regarding stellar and planetary evolution, focusing on how celestial bodies develop within filamentary interstellar structures. The experience covers core astronomical concepts, including the use of invisible infrared radiation to penetrate cosmic dust, the chemical composition of molecular clouds containing familiar compounds like water and ammonia , the impact of gravity and magnetic fields on cosmic matter , and the practical use of right ascension and declination coordinates to map the sky. Beyond astrophysics, you will practice collaborative teamwork, logical deduction, and group problem-solving modeled directly after real scientific research dynamics.",
+  participants: {
+    ageGroup: "Ages 10 and up",
+    audience: "School students but also families and general public audiences",
+    groupSize: "Up to 20 participants per session"
+  },
+  practicalInfo: {
+    duration: "60 minutes",
+    languages: "Italian",
+    website:
+      "https://openaccess.inaf.it/entities/publication/a1c42521-3b1b-481b-9bd6-52e717d0ac93",
+    websiteLabel: "Official website"
+  },
+  special: "Through integrated physical puzzles and cryptographic challenges, this escape room lets players experience the collaborative workflows of a modern scientific research group. You will manipulate the same tools and variables that astronomers use, discovering how invisible light reveals detailed planetary rings hidden inside the darkest regions of space. Within an hour, your team will connect everyday items to cutting-edge interstellar data, ultimately reconstructing a revolutionary image captured by the advanced ALMA telescope array.",
+  gallery: [
+    {
+      src: "escape-rooms_img/buio/img2.jpg",
+      alt: "Main scene",
+      caption: "Main scene",
+      size: "gallery-card-xl"
+    },
+    {
+      src: "escape-rooms_img/buio/img1.jpg",
+      alt: "Puzzle detail",
+      caption: "Puzzle detail",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img3.jpg",
+      alt: "Participants",
+      caption: "Participants in action",
+      size: "gallery-card-square"
+    },
+    {
+      src: "escape-rooms_img/buio/img4.jpg",
+      alt: "Interactive feature",
+      caption: "Interactive station",
+      size: "gallery-card-landscape"
+    }
+  ],
+  owner: {
+      name: "Istituto Nazionale di Astrofisica ",
+      description:
+        "Italy’s leading institute for astrophysics research, contributing expertise in space science, astronomy, and public engagement.",
+      logo: {
+        src: "network_img/Logos/PNG/inaf-fondo-trasparente.png",
+        alt: "INAF logo"
+      },
+      website: "http://www.inaf.it/en",
+      websiteLabel: "Visit institution website"
+    },
+  contact: {
+    email: "silvia.casu@inaf.it"
+  }
+},
+  {
     slug: "equilibrio",
     title: "Alla Ricerca dell'Equilibrio Perduto",
     heroText:

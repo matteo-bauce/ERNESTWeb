@@ -79,6 +79,8 @@ a {
 .topbar-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 14px;
 }
 
@@ -110,6 +112,18 @@ a {
 .nav-links a[aria-current="page"] {
   color: var(--text);
   font-weight: 700;
+}
+
+.topbar-social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding-left: 4px;
+}
+
+.topbar-social-links .social-link {
+  width: 40px;
+  height: 40px;
 }
 
 .lang-switch {
@@ -1211,8 +1225,8 @@ html[data-theme="dark"] .cookie-switch {
   }
 
   .page-hero-copy {
-  padding-left: 170px;
-}
+    padding-left: 170px;
+  }
 
 }
 
@@ -1237,7 +1251,11 @@ html[data-theme="dark"] .cookie-switch {
 
   .topbar-actions {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
   }
 
   .brand-logo img {
@@ -1253,17 +1271,19 @@ html[data-theme="dark"] .cookie-switch {
   }
 
   .page-hero-copy {
-  padding-left: 112px;
-  position: relative;
-  z-index: 2;
-}
+    padding-left: 112px;
+    position: relative;
+    z-index: 2;
+  }
 
   .hero-stars {
     opacity: 0.72;
   }
-.page-hero-layout .hero-stars {
-  display: none;
-}
+
+  .page-hero-layout .hero-stars {
+    display: none;
+  }
+
   .star-xl {
     width: 64px;
     height: 64px;
@@ -1471,6 +1491,7 @@ html[data-theme="dark"] .cookie-switch {
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 2rem;
 }
+
 @media (max-width: 980px) {
   .institutions-grid,
   .people-grid {
@@ -1727,6 +1748,49 @@ li {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.16em;
+}
+
+.footer-social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social-links .social-link {
+  color: #fffbea;
+  text-decoration: none;
+}
+
+.footer-social-links .social-link svg,
+.footer-social-links .social-link path {
+  fill: #fffbea;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(31, 32, 65, 0.1);
+  border-radius: 999px;
+  background: var(--text);
+  color: #fffbea;
+  box-shadow: 0 8px 22px rgba(31, 32, 65, 0.14);
+  transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  transform: translateY(-2px);
+  background: var(--muted);
+  box-shadow: 0 12px 28px rgba(31, 32, 65, 0.2);
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  fill: currentColor;
 }
 .footer {
   display: grid;
