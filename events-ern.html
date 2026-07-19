@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>European Researchers' Night Events | ERNEST</title>
+    <meta
+      name="description"
+      content="Explore ERNEST activities connected to the European Researchers' Night, including upcoming and past public events."
+    />
+    <script>
+      (() => {
+        try {
+          const consent = JSON.parse(localStorage.getItem("ernest-cookie-consent") || "null");
+          const storedTheme = consent?.preferences ? localStorage.getItem("ernest-theme") : null;
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero page-hero">
+        <nav class="topbar">
+          <a class="brand brand-logo" href="index.html#top" aria-label="ERNEST home">
+            <img
+              src="ERNEST_long_blue.svg"
+              data-light-src="ERNEST_long_blue.svg"
+              data-dark-src="ERNEST_long_yellow.svg"
+              alt="ERNEST project logo"
+            />
+          </a>
+          <div class="topbar-actions">
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About ERNEST</a>
+              <a href="escape-rooms.html">Escape Rooms</a>
+              <a href="network.html">The Network</a>
+              <a href="index.html#events" aria-current="page">Events</a>
+            </div>
+            <div class="topbar-social-links" aria-label="Social media">
+              <a class="social-link" href="https://www.facebook.com/profile.php?id=61591591581986" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 8.4h2.2V5.1c-.4-.1-1.6-.2-3-.2-3 0-5 1.8-5 5.2v2.9H5v3.7h3.2V24h3.9v-7.3h3.1l.5-3.7h-3.6v-2.5c0-1.1.3-2.1 1.9-2.1Z" />
+                </svg>
+              </a>
+              <a class="social-link" href="https://www.instagram.com/ernestproject_eu/" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5-2.7a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 17 6.5Z" />
+                </svg>
+              </a>
+            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor" />
+                  <g stroke="currentColor" stroke-linecap="round" stroke-width="1.8" fill="none">
+                    <path d="M12 1.8v3.2" />
+                    <path d="M12 19v3.2" />
+                    <path d="M1.8 12H5" />
+                    <path d="M19 12h3.2" />
+                    <path d="M4.4 4.4l2.2 2.2" />
+                    <path d="M17.4 17.4l2.2 2.2" />
+                    <path d="M19.6 4.4l-2.2 2.2" />
+                    <path d="M6.6 17.4l-2.2 2.2" />
+                  </g>
+                </svg>
+              </span>
+              <span class="theme-toggle-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="theme-icon" focusable="false">
+                  <path
+                    d="M16.8 15.9A8.2 8.2 0 0 1 8.1 7.2a8.8 8.8 0 0 1 .2-1.8 8.9 8.9 0 1 0 10.3 10.3 8.8 8.8 0 0 1-1.8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div class="lang-switch" aria-label="Language selector">
+              <span class="lang-switch-current" aria-current="true">EN</span>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a href="it/events-ern.html" lang="it">IT</a>
+              <span class="lang-switch-separator" aria-hidden="true">|</span>
+              <a href="fr/events-ern.html" lang="fr">FR</a>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-hero-layout">
+          <div class="hero-stars" aria-hidden="true">
+            <span class="star star-xl star-a"></span>
+            <span class="star star-md star-b"></span>
+            <span class="star star-sm star-c"></span>
+            <span class="star star-md star-d"></span>
+          </div>
+          <div class="hero-cat-mark" aria-hidden="true"></div>
+          <div class="page-hero-copy">
+            <p class="eyebrow">Events programme</p>
+            <h1>European Researchers' Night Events</h1>
+            <p class="lead">
+              Every year, on the last Friday of September, the European Researchers' Night brings
+              research closer to society through public events across Europe. ERNEST contributes
+              with immersive activities where visitors of all ages become investigators, follow
+              clues, test ideas, and discover how scientific research connects people, countries,
+              and everyday life.
+            </p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">European Researchers' Night</p>
+            <h2>Science as a shared investigation.</h2>
+            <p class="section-note">
+              The European Researchers' Night is a Europe-wide public event dedicated to research
+              careers, EU-funded science, and the impact of research on citizens' daily lives. It
+              welcomes the general public regardless of scientific background, with a special focus
+              on young people, families, pupils, students, and audiences who may have fewer
+              opportunities to engage with STEAM fields.
+            </p>
+            <p class="section-note">
+              ERNEST turns this mandate into an open investigation. Escape rooms introduce major
+              scientific cases; hands-on activities and short challenges help visitors observe,
+              test, and interpret clues; the investigator passport records their journey; debrief
+              moments with researchers connect the experience to real scientific practice; and the
+              EU Explorer links each discovery to a wider European research effort.
+            </p>
+          </div>
+
+          <div class="event-route" aria-label="ERNEST event journey">
+            <article class="journey-step">
+              <div class="journey-marker" aria-hidden="true">Start</div>
+              <div class="journey-copy">
+                <h3>ERNEST HQ</h3>
+                <p>
+                  Visitors receive an investigator passport and enter the storyline: every activity
+                  is a clue, and every clue helps them understand how science works.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-step">
+              <div class="journey-marker" aria-hidden="true">Explore</div>
+              <div class="journey-copy">
+                <h3>Investigation area</h3>
+                <p>
+                  Escape rooms, hands-on experiments, games, simulations, quizzes, and short
+                  challenges invite visitors to observe, hypothesize, test, and collaborate.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-step">
+              <div class="journey-marker" aria-hidden="true">Understand</div>
+              <div class="journey-copy">
+                <h3>Debrief area</h3>
+                <p>
+                  Researchers help participants interpret what they experienced and connect the
+                  clues, methods, and discoveries to real scientific practice.
+                </p>
+              </div>
+            </article>
+
+            <article class="journey-step journey-step-final">
+              <div class="journey-marker" aria-hidden="true">Connect</div>
+              <div class="journey-copy">
+                <h3>EU Explorer</h3>
+                <p>
+                  The final station links the local investigation to European research, showing how
+                  discoveries grow through collaboration, mobility, funding programmes, and shared
+                  scientific networks.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="passport-note">
+            <h3>The investigator passport</h3>
+            <p>
+              The passport works as a simple logbook: visitors collect stamps linked to the
+              scientific process, such as observing, testing, collaborating, concluding, and
+              connecting their discoveries. There is no fixed route. Each visitor builds a personal
+              investigation path and completes the journey through the final EU Explorer step.
+            </p>
+          </div>
+        </section>
+
+        <section class="section events-page-section">
+          <div class="section-heading">
+            <p class="section-kicker">Upcoming events</p>
+            <h2>Next ERN activities.</h2>
+          </div>
+
+          <div class="events-list events-list-full">
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Castello_Orsini.jpg?width=900" alt="Historic Castello Orsini in Avezzano." loading="lazy" />
+              <p class="event-date">25-26 September 2026</p>
+              <h3>Avezzano</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.infn.it" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Fisica Nucleare</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Palazzo Orsini</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Biblioteca_comunale_di_Terni.jpg?width=900" alt="Biblioteca comunale di Terni." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Terni</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.unipg.it" target="_blank" rel="noopener noreferrer">Università degli Studi di Perugia</a>
+                    <br />
+                    <a class="text-link event-inline-link" href="https://www.infn.it" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Fisica Nucleare</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>TBD</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_dei_Miracoli%2C_Pisa.jpg?width=900" alt="Piazza dei Miracoli in Pisa." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Pisa</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.unipi.it" target="_blank" rel="noopener noreferrer">Università di Pisa</a>
+                    <br />
+                    <a class="text-link event-inline-link" href="https://www.infn.it" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Fisica Nucleare</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>TBD</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/372_Piazza_Umberto_I_%28Bari%29%2C_font_i_Palazzo_dell%27Ateneo%2C_seu_de_la_Universitat_Aldo_Moro.jpg?width=900" alt="Palazzo Ateneo and fountain in Piazza Umberto I, Bari." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Bari</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.uniba.it" target="_blank" rel="noopener noreferrer">Università degli Studi di Bari Aldo Moro</a>
+                    <br />
+                    <a class="text-link event-inline-link" href="https://www.infn.it" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Fisica Nucleare</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Piazza Umberto / Palazzo Ateneo Bari</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Campus_Ecole_polytechnique_de_palaiseau.jpg?width=900" alt="Aerial view of the École polytechnique campus in Palaiseau." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Paris / Palaiseau</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.cnrs.fr" target="_blank" rel="noopener noreferrer">Centre National de la Recherche Scientifique</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Ecole Polytechnique (Palaiseau)</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chiesa_di_Santa_Maria_la_Nova_%28Napoli%29_-_Facciata_004.JPG?width=900" alt="Facade of Santa Maria la Nova in Naples." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Napoli</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.cnr.it" target="_blank" rel="noopener noreferrer">Consiglio Nazionale delle Ricerche</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Piazza Santa Maria la Nova, Napoli</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cortile_universit%C3%A0_pavia.jpg?width=900" alt="Courtyard of the University of Pavia." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Pavia</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.unipv.it" target="_blank" rel="noopener noreferrer">Università di Pavia</a>
+                    <br />
+                    <a class="text-link event-inline-link" href="https://www.infn.it" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Fisica Nucleare</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>TBD</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Museum_of_Science_and_Industry_Manchester.jpg?width=900" alt="Entrance area of the Museum of Science and Industry in Manchester." loading="lazy" />
+              <p class="event-date">25-26 September 2026</p>
+              <h3>Manchester</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.manchester.ac.uk" target="_blank" rel="noopener noreferrer">The University of Manchester</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Manchester Science and Industry Museum</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rettorato_Universit%C3%A0_di_Roma_Tor_Vergata.png?width=900" alt="Tor Vergata University rectorate in Rome." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Roma</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Area di Ricerca Tor Vergata</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Museomotori_-_unipa.jpg?width=900" alt="Museum of Engines and Mechanisms at the University of Palermo." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Palermo</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Campus dell'Università di Palermo</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_Research_Area.jpg?width=900" alt="Bologna Research Area." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Bologna</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Area di Ricerca</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Padova_-_Osservatorio_e_museo_%22La_Specola%22_-_2025-09-13_Marcok_005.jpeg?width=900" alt="Osservatorio e museo La Specola in Padova." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Padova</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Museo La Specola</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Parco_ex_Vetreria.JPG?width=900" alt="Parco ex Vetreria in Cagliari." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Cagliari</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Ex Vetreria di Pirri</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Torino_-_Castello_del_Valentino.jpg?width=900" alt="Castello del Valentino in Turin." loading="lazy" />
+              <p class="event-date">25-26 September 2026</p>
+              <h3>Torino</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.unito.it" target="_blank" rel="noopener noreferrer">Università degli Studi di Torino</a>
+                    <br />
+                    <a class="text-link event-inline-link" href="http://www.inaf.it/en" target="_blank" rel="noopener noreferrer">Istituto Nazionale di Astrofisica</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Castello del Valentino, Sala delle colonne</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="event-card event-detail-card">
+              <img class="event-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Alessandria_Piazza_della_Libert%C3%A0.jpg?width=900" alt="Piazza della Libertà in Alessandria." loading="lazy" />
+              <p class="event-date">25 September 2026</p>
+              <h3>Alessandria</h3>
+              <dl class="event-meta-list">
+                <div>
+                  <dt>Institution</dt>
+                  <dd><a class="text-link event-inline-link" href="https://www.uniupo.it" target="_blank" rel="noopener noreferrer">Università del Piemonte Orientale</a></dd>
+                </div>
+                <div>
+                  <dt>Venue</dt>
+                  <dd>Dipartimento di Scienze</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </section>
+
+        <section class="section image-credits-section">
+          <details class="credits-disclosure">
+            <summary>Image credits</summary>
+            <p>
+              Representative city images. The images used in the event cards are representative
+              images of the cities or venues. They are sourced from Wikimedia Commons and used under
+              the license indicated for each file. They do not necessarily show the exact ERNEST
+              event setup.
+            </p>
+            <ul>
+                <li><strong>Avezzano:</strong> Castello Orsini, Public domain. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Castello_Orsini.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Terni:</strong> Biblioteca comunale di Terni, Milarix / Marco Ilari, CC BY-SA 3.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Biblioteca_comunale_di_Terni.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Pisa:</strong> Piazza dei Miracoli, Julian Lupyan, CC0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Piazza_dei_Miracoli,_Pisa.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Bari:</strong> Piazza Umberto I and Palazzo Ateneo, Wikimedia Commons license as listed on file page. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:372_Piazza_Umberto_I_(Bari),_font_i_Palazzo_dell%27Ateneo,_seu_de_la_Universitat_Aldo_Moro.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Paris / Palaiseau:</strong> Campus École polytechnique de Palaiseau, Jérémy Barande / Collections École Polytechnique, Wikimedia Commons license as listed on file page. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Campus_Ecole_polytechnique_de_palaiseau.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Napoli:</strong> Chiesa di Santa Maria la Nova, Mentnafunangann, Wikimedia Commons license as listed on file page. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_la_Nova_(Napoli)_-_Facciata_004.JPG" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Pavia:</strong> Cortile universita pavia, FabioRomanoni, CC BY-SA 4.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Cortile_università_pavia.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Manchester:</strong> Museum of Science and Industry Manchester, MSI Marketing, CC BY-SA 4.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Museum_of_Science_and_Industry_Manchester.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Roma:</strong> Rettorato Università di Roma Tor Vergata, Nericci, CC BY-SA 4.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Rettorato_Università_di_Roma_Tor_Vergata.png" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Palermo:</strong> Museomotori - unipa, Wikimedia Commons license as listed on file page. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Museomotori_-_unipa.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Bologna:</strong> Bologna Research Area, Ugeorge, CC BY-SA 3.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Bologna_Research_Area.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Padova:</strong> Osservatorio e museo La Specola, Marco_Chemello_(WMIT), CC BY-SA 4.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Padova_-_Osservatorio_e_museo_%22La_Specola%22_-_2025-09-13_Marcok_005.jpeg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Cagliari:</strong> Parco ex Vetreria, Municipality of Cagliari, CC BY-SA 3.0 IT. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Parco_ex_Vetreria.JPG" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Torino:</strong> Torino - Castello del Valentino, Riccardo Speziari, CC BY-SA 3.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Torino_-_Castello_del_Valentino.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+                <li><strong>Alessandria:</strong> Alessandria Piazza della Libertà, Zairon, CC BY-SA 4.0. <a class="text-link event-inline-link" href="https://commons.wikimedia.org/wiki/File:Alessandria_Piazza_della_Libertà.jpg" target="_blank" rel="noopener noreferrer">Source</a></li>
+            </ul>
+          </details>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="eu-funding-mark" aria-label="Funded by the European Union">
+          <div class="eu-logo-box">
+            <img class="eu-logo-full" src="EN_FundedbytheEU_RGB_POS.png" alt="Funded by the European Union">
+          </div>
+        </div>
+
+        <p class="funding-text">
+          ERNEST is a European Researchers' Night project funded by the European Commission under the Marie Skłodowska-Curie Actions. GA 101305138.
+        </p>
+
+        <div class="footer-policy-links">
+          <p>© 2026 ERNEST</p>
+          <a href="cookie-policy-eu.html">Cookie policy</a>
+          <div class="footer-social-links" aria-label="Social media">
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=61591591581986" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 8.4h2.2V5.1c-.4-.1-1.6-.2-3-.2-3 0-5 1.8-5 5.2v2.9H5v3.7h3.2V24h3.9v-7.3h3.1l.5-3.7h-3.6v-2.5c0-1.1.3-2.1 1.9-2.1Z" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/ernestproject_eu/" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5-2.7a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 17 6.5Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>
