@@ -1215,7 +1215,7 @@ const programmeActivities2026 = {
         "it": "Avezzano",
         "fr": "Avezzano"
       },
-      "image": "activities-ern-2026_img/avezzano-seminario-lhc.png",
+      "image": "activities-ern-2026_img/avezzano-seminario-lhc-eventbrite.png",
       "venue": {
         "en": "Castello Orsini",
         "it": "Castello Orsini",
@@ -1253,14 +1253,21 @@ const programmeActivities2026 = {
         "it": "Sessioni a orario",
         "fr": "Sessions programmées"
       },
-      "duration": "45",
-      "sessions25": "TBD",
-      "sessions26": "",
+      "duration": "60",
+      "sessions25": "",
+      "sessions26": "10:00–11:00",
       "maxParticipants": "150",
       "bookingRequired": {
         "en": "Yes",
         "it": "Sì",
         "fr": "Oui"
+      },
+      "showBooking": true,
+      "bookingUrl": "https://www.eventbrite.com/e/seminario-su-lhc-per-le-scuole-e-il-pubblico-tickets-2000859447469?aff=oddtdtcreator",
+      "bookingLabel": {
+        "en": "Book the LHC seminar",
+        "it": "Prenota il seminario LHC",
+        "fr": "Réserver le séminaire LHC"
       },
       "bookingMethod": {
         "en": "Online registration, Information desk, First Come, First Served",
@@ -4095,7 +4102,7 @@ function eventIncludesDay(day) {
 function sharedZoneActivitiesForEvent() {
   if (!eventProgramme) return [];
   const sessions25 = eventIncludesDay("25") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
-  const sessions26 = eventKey !== "avezzano" && eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
+  const sessions26 = eventIncludesDay("26") ? { en: "Open", it: "Aperto", fr: "Ouvert" } : "";
   const cityCode = String(eventKey || "ernest").toUpperCase().replace(/[^A-Z0-9]/g, "-");
   const allAges = { en: "All ages", it: "Tutte le età", fr: "Tous les âges" };
 
