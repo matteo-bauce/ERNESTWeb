@@ -24,6 +24,7 @@ const eventProgrammes2026 = {
     image: "TERNI.png"
   },
   pisa: {
+    time: "9–13 (scuole su prenotazione) & 16–20 (tutti)",
     city: { en: "Pisa", it: "Pisa", fr: "Pise" },
     date: { en: "25 September 2026", it: "25 settembre 2026", fr: "25 septembre 2026" },
     institution: {
@@ -31,8 +32,8 @@ const eventProgrammes2026 = {
       it: "Università di Pisa · Istituto Nazionale di Fisica Nucleare",
       fr: "Université de Pise · Institut national italien de physique nucléaire"
     },
-    venue: { en: "Department of Physics", it: "Dipartimento di Fisica", fr: "Département de physique" },
-    image: "PISA.png"
+    venue: { en: "Department of Physics", it: "Polo Fibonacci, lato Nord Ed. B, aule X5 & X6", fr: "Département de physique" },
+    image: "PISA-locandina.png"
   },
   bari: {
     time: "10–22",
