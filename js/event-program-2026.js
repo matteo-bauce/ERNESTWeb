@@ -33,7 +33,7 @@ const eventProgrammes2026 = {
       fr: "Université de Pise · Institut national italien de physique nucléaire"
     },
     venue: { en: "Department of Physics", it: "Polo Fibonacci, lato Nord Ed. B, aule X5 & X6", fr: "Département de physique" },
-    image: "PISA.png"
+    image: "PISA-locandina.png"
   },
   bari: {
     time: "10–22",
